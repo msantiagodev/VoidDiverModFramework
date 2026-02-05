@@ -1,0 +1,15 @@
+Id,~이름,Type,ActionId,IsForcedSpawnOnly
+int,참조,EGuestType,int,bool
+600001,김서현,Customer,10001,FALSE
+600002,류진,Customer,10002,FALSE
+600003,최도윤,Customer,10003,FALSE
+600004,알렉세이 드라코프,Customer,10004,FALSE
+600005,리 시엔화,Customer,10005,FALSE
+600006,호시노 메이,Customer,10006,FALSE
+600007,니콜라 모로,Customer,10007,FALSE
+600008,베네딕트 옹,Customer,10008,FALSE
+600009,사카모토 아야카,Customer,10009,FALSE
+600010,로한 메타,Customer,10010,FALSE
+600011,엘라 크로포드,Customer,10011,FALSE
+600012,아서 알바레온,Customer,10012,TRUE
+600013,유물 수거자,Customer,1001,TRUE

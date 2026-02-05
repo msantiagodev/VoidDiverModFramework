@@ -1,0 +1,209 @@
+Id,~Itemname,ResultGoods,~Type,~GoodsId,MaterialItems,NeedCurrency,UnlockConditions
+int,,Goods,,int,Goods[],long,EventCondition[]
+1001,회복 드링크,Item:2001:1,Item,2001,Item:3000:1|Item:3008:1,0,
+1002,진정제 앰풀,Item:2002:1,Item,2002,Item:3001:1|Item:3009:1,0,
+1003,대형 회복 드링크,Item:2013:1,Item,2013,Item:3000:1|Item:3008:3|Item:7002:1,0,TechTree:6001
+1004,대형 진정제 앰플,Item:2015:1,Item,2015,Item:3001:1|Item:3009:3|Item:7002:1,0,TechTree:6001
+1005,해독제,Item:2006:1,Item,2006,Item:3003:1|Item:3008:1|Item:3011:1,0,
+1006,지혈 벌레,Item:2007:1,Item,2007,Item:3003:1|Item:7033:1|Item:7000:1,0,
+1007,화상 연고,Item:2008:1,Item,2008,Item:3004:1|Item:3008:1|Item:7221:1,0,
+1008,회복 카트리지,Item:2014:1,Item,2014,Item:3001:1|Item:7003:1|Item:7033:1,0,TechTree:6002
+1009,진정제 카트리지,Item:2016:1,Item,2016,Item:3001:1|Item:7003:1|Item:3009:1,0,TechTree:6002
+1010,해독제 카트리지,Item:2017:1,Item,2017,Item:3001:1|Item:3011:1|Item:7101:1,0,TechTree:6002
+1011,지혈 카트리지,Item:2018:1,Item,2018,Item:3001:1|Item:7033:1|Item:7101:1,0,TechTree:6002
+1012,항생 카트리지,Item:2019:1,Item,2019,Item:3001:1|Item:2008:1|Item:7101:1,0,TechTree:6002
+1013,섬광류탄,Item:2025:1,Item,2025,Item:7000:1|Item:7018:1|Item:3010:1,0,TechTree:6001
+1014,스파이크 샷,Item:2026:1,Item,2026,Item:7000:1|Item:7003:1|Item:3010:1,0,TechTree:6001
+1015,독가스 수류탄,Item:2027:1,Item,2027,Item:3004:1|Item:3011:1|Item:3010:1,0,TechTree:6001
+1016,가솔린 플라스크,Item:2031:1,Item,2031,Item:3003:1|Item:3006:1,0,TechTree:6001
+1017,곰 덫,Item:2010:1,Item,2010,Item:7000:1|Item:3007:1,0,TechTree:6001
+1018,화염병,Item:2012:1,Item,2012,Item:3003:1|Item:3006:1|Item:7211:1,0,TechTree:6001
+1019,액체 질소 텀블러,Item:2032:1,Item,2032,Item:3004:1|Item:7221:1|Item:7000:1,0,TechTree:6001
+1020,고압 폭풍탄,Item:2033:1,Item,2033,Item:3004:1|Item:7231:1|Item:3010:1,0,TechTree:6002
+1021,몽환의 회복 파편병,Item:2036:1,Item,2036,Item:3003:1|Item:2001:1|Item:3010:1,0,TechTree:6003
+1022,몽환의 진정 파편병,Item:2038:1,Item,2038,Item:3003:1|Item:2002:1|Item:3010:1,0,TechTree:6003
+1023,레플리카 성표,Item:2040:1,Item,2040,Item:7003:1|Item:7028:1,0,TechTree:6003
+1024,강화 화염병,Item:2004:1,Item,2004,Item:2012:1|Item:7212:1,0,TechTree:6003
+1025,강화 스파이크 샷,Item:2029:1,Item,2029,Item:2025:1|Item:7019:1,0,TechTree:6003
+1026,강화 독 수류탄,Item:2030:1,Item,2030,Item:2027:1|Item:7025:1,0,TechTree:6003
+1027,강화 액체 질소 텀블러,Item:2034:1,Item,2034,Item:2032:1|Item:7223:1,0,TechTree:6003
+1028,강화 고압 폭풍탄,Item:2035:1,Item,2035,Item:2033:1|Item:7232:1,0,TechTree:6003
+1029,에테르 배터리,Item:2003:1,Item,2003,Item:3002:1|Item:7002:1,0,TechTree:6002
+1030,보석 파편,Item:7001:1,Item,7001,Item:7000:7,0,
+1031,금속 고리,Item:7003:1,Item,7003,Item:7000:7,0,
+1032,실끈 조각,Item:7006:1,Item,7006,Item:7000:7,0,
+1033,은제 침편,Item:7009:1,Item,7009,Item:7000:7,0,
+1034,금속 띠편,Item:7012:1,Item,7012,Item:7000:7,0,
+1035,문양된 금속판,Item:7015:1,Item,7015,Item:7000:7,0,
+1036,회로 모듈,Item:7018:1,Item,7018,Item:7000:7,0,
+1037,매듭끈,Item:7021:1,Item,7021,Item:7000:7,0,
+1038,응축 잔류물,Item:7024:1,Item,7024,Item:7000:7,0,
+1039,심연 침전물,Item:7025:1,Item,7025,Item:7000:7,0,
+1040,부품 더미,Item:7101:1,Item,7101,Item:7000:7,0,
+1041,불씨 조각,Item:7211:1,Item,7211,Item:7000:7,0,
+1042,이슬 조각,Item:7221:1,Item,7221,Item:7000:7,0,
+1043,산들바람 깃털,Item:7231:1,Item,7231,Item:7000:7,0,
+1044,강화 금속괴,Item:7311:1,Item,7311,Item:7000:7,0,
+1045,아카나 프리즘,Item:7321:1,Item,7321,Item:7000:7,0,
+1046,강철 약실,Item:7331:1,Item,7331,Item:7000:7,0,
+1047,신성의 파편,Item:7028:1,Item,7028,Item:7000:5|Item:7001:3|Item:7003:3,0,TechTree:6001
+1048,짐승의 이빨,Item:7029:1,Item,7029,Item:7000:5|Item:7006:3|Item:7231:3,0,TechTree:6001
+1049,금단의 성서편,Item:7030:1,Item,7030,Item:7000:5|Item:7012:3|Item:7101:3,0,TechTree:6001
+1050,봉인의 인장,Item:7031:1,Item,7031,Item:7000:5|Item:7015:3|Item:7321:3,0,TechTree:6001
+1051,증오의 단도,Item:7032:1,Item,7032,Item:7000:5|Item:7018:3|Item:7024:3,0,TechTree:6001
+1052,생명의 싹,Item:7033:1,Item,7033,Item:7000:5|Item:7211:3|Item:7009:3,0,TechTree:6001
+1053,톱니 바퀴 조각,Item:7034:1,Item,7034,Item:7000:5|Item:7025:3|Item:7021:3,0,TechTree:6001
+1054,왜곡된 수정구,Item:7035:1,Item,7035,Item:7000:5|Item:7331:3|Item:7221:3,0,TechTree:6001
+1055,에테르 용액,Item:7002:1,Item,7002,Item:7000:3|Item:7001:5|Item:7028:5,0,TechTree:6002
+1056,보석 세팅편,Item:7004:1,Item,7004,Item:7000:3|Item:7003:5|Item:7029:5,0,TechTree:6003
+1057,펜던트 베이스,Item:7007:1,Item,7007,Item:7000:3|Item:7006:5|Item:7030:5,0,TechTree:6002
+1058,장식 구슬,Item:7010:1,Item,7010,Item:7000:3|Item:7009:5|Item:7031:5,0,TechTree:6003
+1059,유리 장식편,Item:7013:1,Item,7013,Item:7000:3|Item:7012:5|Item:7032:5,0,TechTree:6002
+1060,상징 조각,Item:7016:1,Item,7016,Item:7000:3|Item:7015:5|Item:7033:5,0,TechTree:6003
+1061,디스플레이 조각,Item:7019:1,Item,7019,Item:7000:3|Item:7018:5|Item:7034:5,0,TechTree:6002
+1062,자개편,Item:7022:1,Item,7022,Item:7000:3|Item:7021:5|Item:7035:5,0,TechTree:6003
+1063,위상 잔재,Item:7026:1,Item,7026,Item:7000:3|Item:7024:5|Item:7029:5,0,TechTree:6002
+1064,허무의 결정,Item:7027:1,Item,7027,Item:7000:3|Item:7025:5|Item:7028:5,0,TechTree:6003
+1065,마력석,Item:7102:1,Item,7102,Item:7000:3|Item:7101:5|Item:7030:5,0,TechTree:6002
+1066,화염 수정,Item:7212:1,Item,7212,Item:7000:3|Item:7211:5|Item:7034:5,0,TechTree:6003
+1067,용암 파편,Item:7213:1,Item,7213,Item:7000:3|Item:7221:5|Item:7031:5,0,TechTree:6002
+1068,파도 수정,Item:7222:1,Item,7222,Item:7000:3|Item:7231:5|Item:7035:5,0,TechTree:6003
+1069,빙결 파편,Item:7223:1,Item,7223,Item:7000:3|Item:7311:5|Item:7033:5,0,TechTree:6002
+1070,질풍 파편,Item:7232:1,Item,7232,Item:7000:3|Item:7321:5|Item:7032:5,0,TechTree:6003
+1071,뇌전 수정,Item:7233:1,Item,7233,Item:7000:3|Item:7331:5|Item:7029:5,0,TechTree:6002
+1072,티타늄 합금,Item:7241:1,Item,7241,Item:7000:3|Item:7006:5|Item:7034:5,0,TechTree:6003
+1073,검신 주형,Item:7312:1,Item,7312,Item:7000:3|Item:7101:5|Item:7031:5,0,TechTree:6002
+1074,이차원 연산핵,Item:7322:1,Item,7322,Item:7000:3|Item:7311:5|Item:7028:5,0,TechTree:6003
+1075,폭압 코어,Item:7332:1,Item,7332,Item:7000:3|Item:7015:5|Item:7032:5,0,TechTree:6003
+1076,표준형 검,Equipment:1003:1,Equipment,1003,Item:7000:5,750,ItemUsed:201003
+1077,경합금도,Equipment:1005:1,Equipment,1005,Item:7000:10|Item:7311:3|Item:7312:1,3000,TechTree:6001
+1078,열단도,Equipment:1008:1,Equipment,1008,Item:7000:10|Item:7311:3|Item:7312:1|Item:7211:3,3500,ItemUsed:201008
+1079,습윤검,Equipment:1011:1,Equipment,1011,Item:7000:10|Item:7311:3|Item:7312:1|Item:7221:3,3500,ItemUsed:201011
+1080,풍아검,Equipment:1014:1,Equipment,1014,Item:7000:10|Item:7311:3|Item:7312:1|Item:7231:3,3500,ItemUsed:201014
+1081,강합금도,Equipment:1006:1,Equipment,1006,Item:7003:10|Item:7241:5|Item:7005:1|Item:7312:3|Item:7029:3,30000,TechTree:6002
+1082,발열도,Equipment:1009:1,Equipment,1009,Item:7003:10|Item:7241:5|Item:7005:1|Item:7002:3|Item:7212:3,30000,ItemUsed:201009
+1083,적열도,Equipment:1010:1,Equipment,1010,Item:7311:20|Item:7312:5|Item:8015:1|Item:7241:3|Item:7214:1,180000,ItemUsed:201010
+1084,촉수검,Equipment:1012:1,Equipment,1012,Item:7003:10|Item:7241:5|Item:7005:1|Item:7002:3|Item:7222:3,30000,ItemUsed:201012
+1085,파랑도,Equipment:1013:1,Equipment,1013,Item:7311:20|Item:7312:5|Item:8015:1|Item:7241:3|Item:7224:1,180000,ItemUsed:201013
+1086,선풍검,Equipment:1015:1,Equipment,1015,Item:7003:10|Item:7241:5|Item:7005:1|Item:7002:3|Item:7233:3,30000,ItemUsed:201015
+1087,폭풍검,Equipment:1016:1,Equipment,1016,Item:7311:20|Item:7312:5|Item:8015:1|Item:7241:3|Item:7234:1,180000,ItemUsed:201016
+1088,암영검,Equipment:1007:1,Equipment,1007,Item:7311:20|Item:7312:5|Item:8015:1|Item:7241:3|Item:7242:1,180000,TechTree:6003
+1089,에테르 패드,Equipment:1103:1,Equipment,1103,Item:7000:5,750,ItemUsed:201103
+1090,루멘 패드,Equipment:1105:1,Equipment,1105,Item:7000:10|Item:8014:3|Item:7018:5,3000,TechTree:6001
+1091,인페르노 터치,Equipment:1108:1,Equipment,1108,Item:7000:10|Item:8014:3|Item:7019:3|Item:7211:3,3500,ItemUsed:201108
+1092,아쿠아 스크립트,Equipment:1111:1,Equipment,1111,Item:7000:10|Item:8014:3|Item:7019:5|Item:7221:3,3500,ItemUsed:201111
+1093,게일 패널,Equipment:1114:1,Equipment,1114,Item:7000:10|Item:8014:3|Item:7020:1|Item:7231:3,3500,ItemUsed:201114
+1094,코스믹 패드,Equipment:1106:1,Equipment,1106,Item:7321:10|Item:7322:5|Item:8015:1|Item:8018:1|Item:7026:3,30000,TechTree:6002
+1095,플레어 오브 리추얼,Equipment:1109:1,Equipment,1109,Item:7321:10|Item:7322:5|Item:8015:1|Item:7027:3|Item:7212:3,30000,ItemUsed:201109
+1096,헬파이어 시그널,Equipment:1110:1,Equipment,1110,Item:7321:20|Item:7322:5|Item:8015:1|Item:7241:3|Item:7215:1,180000,ItemUsed:201110
+1097,타이드 오브 위스퍼,Equipment:1112:1,Equipment,1112,Item:7321:10|Item:7322:5|Item:8015:1|Item:7027:3|Item:7222:3,30000,ItemUsed:201112
+1098,오션 오브 에테르,Equipment:1113:1,Equipment,1113,Item:7321:20|Item:7322:5|Item:8015:1|Item:7241:3|Item:7225:1,180000,ItemUsed:201113
+1099,스톰 오브 세이지,Equipment:1115:1,Equipment,1115,Item:7321:10|Item:7322:5|Item:8015:1|Item:7027:3|Item:7233:3,30000,ItemUsed:201115
+1100,제피르 오브 디멘션,Equipment:1116:1,Equipment,1116,Item:7321:20|Item:7322:5|Item:8015:1|Item:7241:3|Item:7235:1,180000,ItemUsed:201116
+1101,에니그마 패드,Equipment:1107:1,Equipment,1107,Item:7321:20|Item:7322:5|Item:8015:1|Item:7241:3|Item:7242:1,180000,TechTree:6003
+1102,군용 펌프샷건,Equipment:1203:1,Equipment,1203,Item:7000:5,750,ItemUsed:201203
+1103,스펙터 샷건,Equipment:1205:1,Equipment,1205,Item:7000:10|Item:7331:3|Item:7332:1,3000,TechTree:6001
+1104,인페르노 브레이커,Equipment:1208:1,Equipment,1208,Item:7000:10|Item:7331:3|Item:7332:1|Item:7211:3,3500,ItemUsed:201208
+1105,아쿠아 런처,Equipment:1211:1,Equipment,1211,Item:7000:10|Item:7331:3|Item:7332:1|Item:7221:3,3500,ItemUsed:201211
+1106,게일 슈터,Equipment:1214:1,Equipment,1214,Item:7000:10|Item:7331:3|Item:7332:1|Item:7231:3,3500,ItemUsed:201214
+1107,팬텀 브레이커,Equipment:1206:1,Equipment,1206,Item:7101:10|Item:7332:3|Item:7242:1|Item:7035:3|Item:8013:1,30000,TechTree:6002
+1108,블레이즈 소버린,Equipment:1209:1,Equipment,1209,Item:7101:10|Item:7332:3|Item:7242:1|Item:7002:3|Item:7212:3,30000,ItemUsed:201209
+1109,헬파이어 캐논,Equipment:1210:1,Equipment,1210,Item:7331:20|Item:7332:5|Item:8015:1|Item:7241:3|Item:7214:1,180000,ItemUsed:201210
+1110,타이드 크러셔,Equipment:1212:1,Equipment,1212,Item:7101:10|Item:7332:3|Item:7242:1|Item:7002:3|Item:7222:3,30000,ItemUsed:201212
+1111,레비아탄 로어,Equipment:1213:1,Equipment,1213,Item:7331:20|Item:7332:5|Item:8015:1|Item:7241:3|Item:7224:1,180000,ItemUsed:201213
+1112,스톰 브레이커,Equipment:1215:1,Equipment,1215,Item:7101:10|Item:7332:3|Item:7242:1|Item:7002:3|Item:7233:3,30000,ItemUsed:201215
+1113,템페스트 하울러,Equipment:1216:1,Equipment,1216,Item:7331:20|Item:7332:5|Item:8015:1|Item:7241:3|Item:7234:1,180000,ItemUsed:201216
+1114,레이스 헌터,Equipment:1207:1,Equipment,1207,Item:7331:20|Item:7332:5|Item:8015:1|Item:7241:3|Item:7242:1,180000,TechTree:6003
+1115,적혈의 반지,Equipment:20011:1,Equipment,20011,Item:7000:5|Item:7003:1,500,
+1116,적혈의 반지,Equipment:20012:1,Equipment,20012,Equipment:20011:1|Item:7000:5|Item:7033:2,1500,ItemUsed:220012
+1117,적혈의 반지,Equipment:20013:1,Equipment,20013,Equipment:20012:1|Item:7000:10|Item:7033:3|Item:7025:1,5000,ItemUsed:220013
+1118,적혈의 반지,Equipment:20014:1,Equipment,20014,Equipment:20013:1|Item:7004:3|Item:7025:3|Item:7017:1|Item:7214:1,25000,ItemUsed:220014
+1119,예지의 반지,Equipment:20021:1,Equipment,20021,Item:7000:5|Item:7003:1,500,
+1120,예지의 반지,Equipment:20022:1,Equipment,20022,Equipment:20021:1|Item:7000:5|Item:7001:3,1500,ItemUsed:220022
+1121,예지의 반지,Equipment:20023:1,Equipment,20023,Equipment:20022:1|Item:7000:10|Item:7001:5|Item:7231:3,5000,ItemUsed:220023
+1122,예지의 반지,Equipment:20024:1,Equipment,20024,Equipment:20023:1|Item:7004:3|Item:7232:5|Item:7017:1|Item:7234:1,25000,ItemUsed:220024
+1123,참극의 반지,Equipment:20031:1,Equipment,20031,Item:7000:5|Item:7003:1,500,
+1124,참극의 반지,Equipment:20032:1,Equipment,20032,Equipment:20031:1|Item:7000:5|Item:7029:3,1500,ItemUsed:220032
+1125,참극의 반지,Equipment:20033:1,Equipment,20033,Equipment:20032:1|Item:7000:10|Item:7029:5|Item:7032:1,5000,ItemUsed:220033
+1126,참극의 반지,Equipment:20034:1,Equipment,20034,Equipment:20033:1|Item:7004:3|Item:7032:3|Item:7017:1|Item:7214:1,25000,ItemUsed:220034
+1127,철극의 반지,Equipment:20041:1,Equipment,20041,Item:7000:5|Item:7003:3|Item:7012:2,1500,ItemUsed:220041
+1128,철극의 반지,Equipment:20042:1,Equipment,20042,Equipment:20041:1|Item:7000:10|Item:7012:5|Item:7241:1,5000,ItemUsed:220042
+1129,철극의 반지,Equipment:20043:1,Equipment,20043,Equipment:20042:1|Item:7012:3|Item:7241:3|Item:7242:1|Item:7002:3,25000,ItemUsed:220043
+1130,정적의 반지,Equipment:20051:1,Equipment,20051,Item:7000:5|Item:3009:3|Item:7003:2,1500,ItemUsed:220051
+1131,정적의 반지,Equipment:20052:1,Equipment,20052,Equipment:20051:1|Item:7000:10|Item:7024:3|Item:7022:2,5000,ItemUsed:220052
+1132,정적의 반지,Equipment:20053:1,Equipment,20053,Equipment:20052:1|Item:7024:3|Item:7022:5|Item:7017:1|Item:7002:3,25000,ItemUsed:220053
+1133,격동의 반지,Equipment:20061:1,Equipment,20061,Item:7000:5|Item:7231:3|Item:7003:2,1500,ItemUsed:220061
+1134,격동의 반지,Equipment:20062:1,Equipment,20062,Equipment:20061:1|Item:7000:10|Item:7233:1|Item:7027:2,5000,ItemUsed:220062
+1135,격동의 반지,Equipment:20063:1,Equipment,20063,Equipment:20062:1|Item:7232:3|Item:7234:3|Item:7027:3|Item:7017:1,25000,ItemUsed:220063
+1136,수호의 목걸이,Equipment:21011:1,Equipment,21011,Item:7000:5|Item:7006:1,500,
+1137,수호의 목걸이,Equipment:21012:1,Equipment,21012,Equipment:21011:1|Item:7000:5|Item:7012:3,1500,ItemUsed:221012
+1138,수호의 목걸이,Equipment:21013:1,Equipment,21013,Equipment:21012:1|Item:7000:10|Item:7012:5|Item:7015:2,5000,ItemUsed:221013
+1139,수호의 목걸이,Equipment:21014:1,Equipment,21014,Equipment:21013:1|Item:7007:3|Item:7015:5|Item:7011:1|Item:7242:1,25000,ItemUsed:221014
+1140,활력의 목걸이,Equipment:21021:1,Equipment,21021,Item:7000:5|Item:7006:1,500,
+1141,활력의 목걸이,Equipment:21022:1,Equipment,21022,Equipment:21021:1|Item:7000:5|Item:7033:3,1500,ItemUsed:221022
+1142,활력의 목걸이,Equipment:21023:1,Equipment,21023,Equipment:21022:1|Item:7000:10|Item:7033:5|Item:7024:3,5000,ItemUsed:221023
+1143,활력의 목걸이,Equipment:21024:1,Equipment,21024,Equipment:21023:1|Item:7007:3|Item:7024:5|Item:7011:1|Item:7002:3,25000,ItemUsed:221024
+1144,재생의 목걸이,Equipment:21031:1,Equipment,21031,Item:7000:5|Item:7033:5|Item:7007:1,1500,ItemUsed:221031
+1145,재생의 목걸이,Equipment:21032:1,Equipment,21032,Equipment:21031:1|Item:7000:10|Item:7033:10|Item:7024:3,5000,ItemUsed:221032
+1146,풍요의 목걸이,Equipment:21041:1,Equipment,21041,Item:7000:5|Item:7001:3|Item:7007:1,1500,ItemUsed:221041
+1147,풍요의 목걸이,Equipment:21042:1,Equipment,21042,Equipment:21041:1|Item:7000:10|Item:7004:3|Item:7013:3,5000,ItemUsed:221042
+1148,풍요의 목걸이,Equipment:21043:1,Equipment,21043,Equipment:21042:1|Item:7004:3|Item:7013:2|Item:7011:1|Item:7002:3,25000,ItemUsed:221043
+1149,질주의 귀걸이,Equipment:22011:1,Equipment,22011,Item:7000:5|Item:7009:1,500,
+1150,질주의 귀걸이,Equipment:22012:1,Equipment,22012,Equipment:22011:1|Item:7000:5|Item:7231:2,1500,ItemUsed:222012
+1151,질주의 귀걸이,Equipment:22013:1,Equipment,22013,Equipment:22012:1|Item:7000:10|Item:7231:3|Item:7013:3,5000,ItemUsed:222013
+1152,질주의 귀걸이,Equipment:22014:1,Equipment,22014,Equipment:22013:1|Item:7013:3|Item:7232:5|Item:7014:1|Item:7234:1,25000,ItemUsed:222014
+1153,시간왜곡의 팔찌,Equipment:23011:1,Equipment,23011,Item:7000:5|Item:7018:3|Item:7026:1,1500,ItemUsed:223011
+1154,시간왜곡의 팔찌,Equipment:23012:1,Equipment,23012,Equipment:23011:1|Item:7000:10|Item:7018:5|Item:7020:1,5000,ItemUsed:223012
+1155,시간왜곡의 팔찌,Equipment:23013:1,Equipment,23013,Equipment:23012:1|Item:7018:3|Item:7020:3|Item:7322:1|Item:7002:3,25000,ItemUsed:223013
+1156,사냥꾼의 서약,Equipment:23061:1,Equipment,23061,Item:7000:5|Item:3007:1|Item:7029:3,1500,ItemUsed:223061
+1157,사냥꾼의 서약,Equipment:23062:1,Equipment,23062,Equipment:23061:1|Item:7000:10|Item:7029:20|Item:7015:2,5000,ItemUsed:223062
+1158,사냥꾼의 서약,Equipment:23063:1,Equipment,23063,Equipment:23062:1|Item:7029:3|Item:7015:5|Item:7241:3|Item:7002:3,25000,ItemUsed:223063
+1159,성화의 잔재,Equipment:23071:1,Equipment,23071,Item:7000:5|Item:7028:3|Item:7211:3,1500,ItemUsed:223071
+1160,성화의 잔재,Equipment:23072:1,Equipment,23072,Equipment:23071:1|Item:7000:10|Item:7028:5|Item:7212:3,5000,ItemUsed:223072
+1161,성화의 잔재,Equipment:23073:1,Equipment,23073,Equipment:23072:1|Item:7212:3|Item:7028:2|Item:7214:1|Item:7030:3,25000,ItemUsed:223073
+1162,이계의 흔적,Equipment:23081:1,Equipment,23081,Item:7000:5|Item:7025:3|Item:7025:3,1500,ItemUsed:223081
+1163,이계의 흔적,Equipment:23082:1,Equipment,23082,Equipment:23081:1|Item:7000:10|Item:7025:5|Item:7026:3,5000,ItemUsed:223082
+1164,이계의 흔적,Equipment:23083:1,Equipment,23083,Equipment:23082:1|Item:7025:3|Item:7026:5|Item:7027:3|Item:7002:3,25000,ItemUsed:223083
+1165,복수의 송곳니,Equipment:23091:1,Equipment,23091,Item:7000:5|Item:7003:3,1500,ItemUsed:223091
+1166,복수의 송곳니,Equipment:23092:1,Equipment,23092,Equipment:23091:1|Item:7000:10|Item:7032:3|Item:7029:5,5000,ItemUsed:223092
+1167,복수의 송곳니,Equipment:23093:1,Equipment,23093,Equipment:23092:1|Item:7029:3|Item:7032:5|Item:7017:1|Item:7214:1,25000,ItemUsed:223093
+1168,개척자의 씨앗,Equipment:23101:1,Equipment,23101,Item:7000:5|Item:7023:3,1500,ItemUsed:223101
+1169,개척자의 씨앗,Equipment:23102:1,Equipment,23102,Equipment:23101:1|Item:7000:10|Item:7033:10,5000,ItemUsed:223102
+1170,개척자의 씨앗,Equipment:23103:1,Equipment,23103,Equipment:23102:1|Item:7033:3|Item:8013:1|Item:7242:1|Item:7002:3,25000,ItemUsed:223103
+1171,철의 망치,Equipment:23111:1,Equipment,23111,Item:7000:5|Item:7012:3|Item:7311:1,1500,ItemUsed:223111
+1172,철의 망치,Equipment:23112:1,Equipment,23112,Equipment:23111:1|Item:7000:10|Item:7311:3|Item:7241:1,5000,ItemUsed:223112
+1173,철의 망치,Equipment:23113:1,Equipment,23113,Equipment:23112:1|Item:7241:3|Item:7242:2|Item:7005:1|Item:7002:3,25000,ItemUsed:223113
+1174,환상의 눈,Equipment:23121:1,Equipment,23121,Item:7000:5|Item:7013:3|Item:7035:1,1500,ItemUsed:223121
+1175,환상의 눈,Equipment:23122:1,Equipment,23122,Equipment:23121:1|Item:7000:10|Item:7035:3|Item:7321:1,5000,ItemUsed:223122
+1176,환상의 눈,Equipment:23123:1,Equipment,23123,Equipment:23122:1|Item:7013:3|Item:7035:5|Item:7321:3|Item:7002:3,25000,ItemUsed:223123
+1177,홍련 노리개,Equipment:25011:1,Equipment,25011,Item:7000:5|Item:7021:3|Item:7211:3,1500,ItemUsed:225011
+1178,홍련 노리개,Equipment:25012:1,Equipment,25012,Equipment:25011:1|Item:7000:10|Item:7021:5|Item:7212:3,5000,ItemUsed:225012
+1179,홍련 노리개,Equipment:25013:1,Equipment,25013,Equipment:25012:1|Item:7021:3|Item:7212:5|Item:7214:1|Item:7002:3,25000,ItemUsed:225013
+1180,창해 노리개,Equipment:25021:1,Equipment,25021,Item:7000:5|Item:7021:3|Item:7221:3,1500,ItemUsed:225021
+1181,창해 노리개,Equipment:25022:1,Equipment,25022,Equipment:25021:1|Item:7000:10|Item:7021:5|Item:7222:3,5000,ItemUsed:225022
+1182,창해 노리개,Equipment:25023:1,Equipment,25023,Equipment:25022:1|Item:7021:3|Item:7222:5|Item:7224:1|Item:7002:3,25000,ItemUsed:225023
+1183,벽풍 노리개,Equipment:25031:1,Equipment,25031,Item:7000:5|Item:7021:3|Item:7231:3,1500,ItemUsed:225031
+1184,벽풍 노리개,Equipment:25032:1,Equipment,25032,Equipment:25031:1|Item:7000:10|Item:7021:5|Item:7232:3,5000,ItemUsed:225032
+1185,벽풍 노리개,Equipment:25033:1,Equipment,25033,Equipment:25032:1|Item:7021:3|Item:7232:5|Item:7234:1|Item:7002:3,25000,ItemUsed:225033
+1186,흑염의 노리개,Equipment:25041:1,Equipment,25041,Item:7000:5|Item:7021:3|Item:7026:2,1500,ItemUsed:225041
+1187,흑염의 노리개,Equipment:25042:1,Equipment,25042,Equipment:25041:1|Item:7000:10|Item:7021:5|Item:7026:3,5000,ItemUsed:225042
+1188,흑염의 노리개,Equipment:25043:1,Equipment,25043,Equipment:25042:1|Item:7021:3|Item:7026:2|Item:7027:3|Item:7002:3,25000,ItemUsed:225043
+1189,혈맥의 노리개,Equipment:25051:1,Equipment,25051,Item:7000:5|Item:7021:3|Item:7033:2,1500,ItemUsed:225051
+1190,혈맥의 노리개,Equipment:25052:1,Equipment,25052,Equipment:25051:1|Item:7000:10|Item:7021:5|Item:7025:2,5000,ItemUsed:225052
+1191,혈맥의 노리개,Equipment:25053:1,Equipment,25053,Equipment:25052:1|Item:7021:3|Item:7025:5|Item:7017:1|Item:7002:3,25000,ItemUsed:225053
+1192,사독의 노리개,Equipment:25071:1,Equipment,25071,Item:7000:5|Item:7021:3|Item:7001:3,1500,ItemUsed:225071
+1193,사독의 노리개,Equipment:25072:1,Equipment,25072,Equipment:25071:1|Item:7000:10|Item:7021:5|Item:7004:2,5000,ItemUsed:225072
+1194,사독의 노리개,Equipment:25073:1,Equipment,25073,Equipment:25072:1|Item:7021:3|Item:7004:5|Item:7022:3|Item:7002:3,25000,ItemUsed:225073
+1195,인내의 브로치,Equipment:24051:1,Equipment,24051,Item:7000:5|Item:7013:1,500,
+1196,인내의 브로치,Equipment:24052:1,Equipment,24052,Equipment:24051:1|Item:7000:5|Item:7321:1,1500,ItemUsed:224052
+1197,인내의 브로치,Equipment:24053:1,Equipment,24053,Equipment:24052:1|Item:7000:10|Item:7013:5|Item:7321:3,5000,ItemUsed:224053
+1198,인내의 브로치,Equipment:24054:1,Equipment,24054,Equipment:24053:1|Item:7013:3|Item:7321:3|Item:7014:1|Item:7002:3,25000,ItemUsed:224054
+1199,세인트 워치,Equipment:26011:1,Equipment,26011,Item:7000:5|Item:7018:3|Item:7028:2,1500,ItemUsed:226011
+1200,세라프 워치,Equipment:26022:1,Equipment,26022,Equipment:26011:1|Item:7000:10|Item:7028:5|Item:7020:1,5000,ItemUsed:226022
+1201,발로르 워치,Equipment:26031:1,Equipment,26031,Item:7000:5|Item:7018:3|Item:7311:2,1500,ItemUsed:226031
+1202,리전 워치,Equipment:26042:1,Equipment,26042,Equipment:26031:1|Item:7000:10|Item:8023:3|Item:7020:1,5000,ItemUsed:226042
+1203,퀵스텝 워치,Equipment:26051:1,Equipment,26051,Item:7000:5|Item:7018:3|Item:7231:3,1500,ItemUsed:226051
+1204,제피르 워치,Equipment:26062:1,Equipment,26062,Equipment:26051:1|Item:7000:10|Item:7232:3|Item:7020:1,5000,ItemUsed:226062
+1205,플러리 워치,Equipment:26071:1,Equipment,26071,Item:7000:5|Item:7018:3|Item:7221:3,1500,ItemUsed:226071
+1206,실드 워치,Equipment:26081:1,Equipment,26081,Item:7000:5|Item:7018:3|Item:7012:3,1500,ItemUsed:226081
+1207,배리어 워치,Equipment:26082:1,Equipment,26082,Equipment:26081:1|Item:7000:10|Item:7015:3|Item:7020:1,5000,ItemUsed:226082

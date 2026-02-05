@@ -1,0 +1,5 @@
+Id,~Memo,MaxValueType,MaxValue,Duration,IsStackable,IsDecrease
+int,string,EShieldMaxValueType,float,float,bool,bool
+100001,듀라한 패시브 쉴드,PercentOfMaxHp,20,8,TRUE,TRUE
+200001,쉴드 악세 쉴드,PercentOfMaxHp,300,8,TRUE,FALSE
+200002,패러독스 ,PercentOfMaxHp,10,8,TRUE,TRUE

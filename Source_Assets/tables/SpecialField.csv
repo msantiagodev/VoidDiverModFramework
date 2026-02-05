@@ -1,0 +1,10 @@
+Id,~memo,PrefabName,CharacterBuffId,MonsterBuffId,EffectDelay,Duration,DestroyTrigger,DestroyImmediatelyOnTrigger,Atk,HitBoxIdsOnDestroy
+int,,string,int,int,float,float,ESpecialFieldEvent,bool,float,int[]
+1001,가두리,SphereBlockedField,3103,1,0,-1,WaveClear,FALSE,0,
+1002,가두리,SphereBlockedField,3103,1,0,-1,OwnerDead,FALSE,0,
+1003,가두리,SphereBlockedField,3104,1,0,-1,WaveClear,FALSE,0,
+1004,가두리,SphereBlockedField,3105,1,0,-1,WaveClear,FALSE,0,
+2001,오일,SphereOilField,3101,3111,1.5,17,FireHit,TRUE,130,600000022|600000023
+2002,오일(클리너 보스),SphereOilField,3101,3112,0,30,FireHit,TRUE,130,210040006|210040007
+2003,오일(가솔린 플라스크),SphereOilField,3101,3111,0.5,8,FireHit,TRUE,130,600000022|600000023
+3001,독 안개,BoxFogField,3102,1,0,-1,None,FALSE,100,

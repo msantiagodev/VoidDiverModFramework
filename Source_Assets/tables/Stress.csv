@@ -1,0 +1,5 @@
+State,StressMax,DebuffIds,IntervalDebuffId,DebuffInterval,IntervalDebuffStartDelay
+EStressState,int,int[],int,float,float
+Alert,49,7002,0,0,0
+Fear,99,7003,2001002,180,10
+Despair,100,7004|7005,2001002,40,8

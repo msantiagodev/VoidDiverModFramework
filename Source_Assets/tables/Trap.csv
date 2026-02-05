@@ -1,0 +1,14 @@
+Id,~Memo,TeamSide,ActionDuration,DestroyAfterAction,CoolTime,HitBoxAtk,HitBoxIds
+int,string,ETeamSide,float,bool,float,float,int[]
+80001,화염 트랩,Monster,2,FALSE,6,120,600000025
+80002,화염 트랩(페이크),None,-1,FALSE,-1,0,
+80003,전기 트랩,Monster,1.2,FALSE,3.8,120,600000027
+80004,전기 트랩(페이크),None,-1,FALSE,-1,0,
+80005,가스 트랩,Monster,2,FALSE,5.5,100,600000028
+80006,가스 트랩(페이크),None,-1,FALSE,-1,0,
+80007,스트레스 가스 트랩,Monster,2,FALSE,5,100,600000029
+90001,가시 트랩,None,2,FALSE,6,135,600000026
+90002,가시 트랩(페이크),None,-1,FALSE,-1,0,
+90003,지뢰,None,-1,TRUE,-1,175,600000024|600000030
+90004,바닥 가스 트랩,None,2,FALSE,6,100,600000031
+90005,바닥 스트레스 가스 트랩,None,2,FALSE,6,100,600000032

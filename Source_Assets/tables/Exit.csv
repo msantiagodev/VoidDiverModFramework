@@ -1,0 +1,11 @@
+Id,Type,WaveId,IsOnce,ActivatingStateHoldingSfx,HoldingSfx,EscapeSfx,DisplayOnMinimapAtStart,UnlockGoods
+int,EExitType,int,bool,string,string,string,bool,Goods
+1001,WaveExit,1001,FALSE,InteractionAIPhoneBooth,InteractionPhoneBooth,EnterPhoneBooth,FALSE,
+1002,WaveExit,1001,FALSE,InteractionAIPhoneBooth,InteractionPhoneBooth,EnterPhoneBooth,TRUE,
+1004,SafeExit,-1,TRUE,,InteractionPhoneBooth,EnterPhoneBooth,FALSE,
+1005,SafeExit,-1,TRUE,,InteractionPhoneBooth,EnterPhoneBooth,TRUE,Item:10001:10
+1006,SafeExit,-1,TRUE,,InteractionPhoneBooth,EnterPhoneBooth,TRUE,Item:10001:10
+1007,SafeExit,-1,FALSE,,InteractionPhoneBooth,EnterPhoneBooth,TRUE,
+1011,WaveExit,1011,FALSE,InteractionAIPhoneBooth,InteractionPhoneBooth,EnterPhoneBooth,FALSE,
+1012,WaveExit,1011,FALSE,InteractionAIPhoneBooth,InteractionPhoneBooth,EnterPhoneBooth,TRUE,
+1000,WaveExit,1000,FALSE,InteractionAIPhoneBooth,InteractionPhoneBooth,EnterPhoneBooth,TRUE,

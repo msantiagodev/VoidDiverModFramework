@@ -1,0 +1,12 @@
+Id,WaveId,PrefabName,ClearReward
+int,int,string,Goods
+801021,801021,WaveBookShelf,
+802021,802021,WaveDisplay,
+803013,803013,WavePoliceCar,
+600001,600001,WaveStone,
+600002,600002,WaveBookShelf,Item:300003:1
+600003,600003,WavePoliceCar,
+600004,600004,WaveTVTower,
+610001,610001,WaveStone,Item:301002:1
+610002,610002,WaveTVTower,Item:301010:1
+610003,610003,WaveYog,Item:301002:1

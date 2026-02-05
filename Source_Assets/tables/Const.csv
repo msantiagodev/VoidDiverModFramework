@@ -1,0 +1,224 @@
+Id,IntValue,FloatValue,StringValue,~valueType,~memo
+string,int,float,string,,
+MaxWeight,0,30,,float,기본 최대 무게
+ItemCooltime,0,1,,float,아이템 글로벌쿨(개별 쿨은 별도)
+CharacterLevelMax,5,0,,int,캐릭터 최대 레벨
+DefaultGold,1500,0,,int,기본 소지 골드
+StressIntervalTimeMin,0,18,,float,스트레스 증가 간격
+StressIntervalTimeMax,0,24,,float,스트레스 증가 간격
+StressIntervalDamageMin,1,0,,int,스트레스 증가량
+StressIntervalDamageMax,2,0,,int,스트레스 증가량
+AimIgnoreSqrRadius,0,1,,float,캐릭터 주변 에임 무시거리(제곱값)
+HitShakeAmplitude,0,0.25,,float,피격 흔들림 세기
+HitShakeFrequency,0,0.1,,float,피격 흔들림 주기
+HitShakeDuration,0,0.15,,float,피격 흔들림 기간
+WhirlStopTime,0,1,,float,힐윈드 스탑 가능한 최소시간
+VignetteHPRatio,0,0.15,,float,hp가 요거 이하면 비네트 효과(%)
+ChestInteractionTime,0,0.2,,float,상자 루팅 시간
+LootingInteractionTime,0,0.2,,float,유닛 루팅 시간
+EntranceOpenInteractionTime,0,0.4,,float,entrance 여는 시간
+EntranceCloseInteractionTime,0,0.2,,float,entrance 닫는 시간
+ExitActivateInteractionTime,0,3,,float,탈출구 활성 인터렉션 시간
+ExitActivatingTime,0,15,,float,탈출구 활성 대기 시간
+ExitInteractionTime,0,2.5,,float,탈출 인터렉션 시간
+ExitActivatedTime,0,25,,float,탈출구 활성 시간
+SafeExitInteractionTime,0,3,,float,안전 탈출구 인터렉션 시간
+PortalInteractionTime,0,2,,float,포탈 인터렉션 시간
+ObstacleInteractionTime,0,1.5,,float,장애물 제거 시간
+WaveExecutorInteractionTime,0,2,,float,웨이브 인터렉션 시간
+DungeonEntranceInteractionTime,0,1.5,,float ,폰부스 던전 진입 인터렉션 시간
+AutoToastMessageInterval,0,0.4,,float,자동 메시지 나오는 간격
+InventoryOverloadRatio1,0,0.8,,float,과적 1단계로 진입하는 무게 비율 1=100%
+InventoryOverloadRatio2,0,0.95,,float,과적 2단계로 진입하는 무게 비율 1=100%
+InventoryOverloadToastMessage1,0,0,무거워서 느려지고 있어,string,과적 1단계 텍스트 메시지
+InventoryOverloadToastMessage2,0,0,너무 무거워서 움직여 지지 않아,string,과적 2단계 텍스트 메시지
+InventoryOverloadBuff1,10001,0,,int,과적 1단계 디버프
+InventoryOverloadBuff2,10002,0,,int,과적 2단계 디버프
+InteractSightRange,0,60,,float,상호 작용 중 시야 범위
+InteractSightBackRange,0,1.5,,float,상호 작용 중 후방 시야 범위
+InteractSightAngle,0,1.5,,float,상호 작용 중 시야 각도
+DefaultCriticalChancePercent,0,2,,float,기본 크리 확률
+DefaultCriticalDamagePercent,0,35,,float,크리 시 기본 데미지 증가 비율
+DefaultWeaknessDamagePercent,0,10,,float,
+MaxCooldownReductionPercent,0,40,,float,최대 쿨감
+MinCoolTime,0,0.2,,float,최소 쿨다운 시간
+TargetFollowRange,0,10,,float,[몬스터 추적포기] 몬스터가 이 거리 이상 벌어지면 돌아감
+TargetLostInSightTime,0,3.5,,float,[몬스터 추적포기] 이 시간 이상 시야에서 벗어나면 Idle
+TargetSpreadRange,0,5,,float,어그로 전파되는 거리
+MonsterSpawnRangeMin,0,6,,float,몬스터가 스폰되는 최소 거리 (이거보다 멀어야함)
+MonsterSpawnRangeMax,0,15,,float,몬스터가 스폰되는 최대 거리 (이거보다 가까워야함)
+WanderWaitTimeMin,0,3.5,,float,몬스터가 Idle상태에서 배회 상태로 전환되는데 걸리는 최소
+PatrolWanderWaitTime,0,1,,float,몬스터가 Idle상태에서 배회 상태로 전환되는데 걸리는 최대
+WanderMinTime,0,1,,float,랜덤 배회시간 최소값
+WanderMaxTime,0,5,,float,랜덤 배회시간 최대값
+WanderSpecificMaxTime,0,10,,float,특정 지점까지 배회하는 최대시간
+WanderWaitTimeMax,0,6.5,,float,몬스터가 Idle상태에서 배회 상태로 전환되는데 걸리는 최대
+StashPageSlotCount,30,0,,int,보관함 각 페이지의 슬롯 개수
+StashSlotCount,50,0,,int,캐릭터 보관함 기본 슬롯 수
+InventoryPageSlotCount,24,0,,int,인벤토리 각 페이지의 슬롯 개수
+SafeInventorySlotBaseCount,1,0,,int,안전 보관함 기본 슬롯 수
+CharacterInventorySlotCount,22,0,,int,캐릭터 인벤토리 기본 슬롯 수
+CharacterAccessorySlotCount,3,0,,int,액세서리 슬롯 개수
+CharacterArtifactSlotCount,2,0,,int,아티팩트 슬롯 개수
+MonsterReactionDelay,0,0.8,,float,"몬스터가 타겟이 변경되었을때, 다음 행동으로 변경되는데 걸리는 시간"
+ReviveDebuffId,8000000,0,,int,캐릭터 살렸을 경우 Debuff
+ReviveHpPercent,0,25,,float,캐릭터 살렸을 경우 HP 퍼센트
+ReviveStress,85,0,,int,캐릭터 살렸을 경우 스트레스 값
+ReviveBrightness,0,0,,int,캐릭터 살렸을 경우 Brightness 값
+ReviveInteractionTime,0,3,,float,동료 살리기 시간
+MonsterSpawnTime,0,0.2,,float,소환이나 웨이브 몬스터 Spawn -> Idle상태로 넘어가는데 걸리는 시간
+ParadoxCountMax,3,0,,int,패러독스 최대 개수
+ParadoxUniqueLevel,4,0,,int,해당레벨 부터 lv숫자가 아니라 lvUnique로 표시
+ParadoxUnluckyPercent,0,15,,float,패러독스 레벨을 확률적으로 업그레이드
+StressMax,100,0,,int,스트레스 최대치
+CorruptionMax,100,0,,int,오염도 기본 최대치
+ComboThresholdTime,0,0.15,,float,해당 시간 이내에 데미지를 받으면 누적 데미지로 적용
+AbsorbStressInteractionTime,0,1.5,,float,스트레스 나눠받기 상호작용 홀딩 시간
+AbsorbStressAmount,15,0,,int,스트레스 나눠 받는 양
+AbsorbStressLimit,60,0,,int,해당 스트레이스 이하인 유저만 스트레스 나눠 받는게 가능 하도록
+AbsorbStressCoolTime,0,8,,float,스트레스 치료 쿨타임
+StressDamageTriggerHpPercent,0,30,,float,스트레스 올라가는 큰 데미지 기준(최대 HP 기준 % 이상 데미지 받았을 때)
+StressDamageOnHpDamaged,3,0,,int,큰 데미지 받았을 때 스트레스 증가치
+StressDebuffTriggerAllyRange,0,0,,float,"높은 스트레스치 아군 (공포, 절망) 근접했을 때 디버프 받는 범위"
+StressDamageTriggerAllyDiedRange,0,8,,float,근처 아군 사망 시 스트레스 데미지 받는 범위
+StressDamageOnDead,8,0,,int,자신이 사망시 받는 스트레스 데미지
+StressDamageOnAllyDied,3,0,,int,근처 아군 사망 시 받는 스트레스 데미지
+StressDamageOnBackAttack,5,0,,int,백어택 당했을 때 스트레스 증가치
+StressRecoveryOnCritical,1,0,,int,크리티컬 발동 시 스트레스 회복치
+StressRecoveryPercentOnCritical,0,50,,float,크리티컬 스트레스 회복 확률 퍼센트
+StressRecoveryCoolTimeOnCritical,0,2,,float,크리티컬 발동 시 스트레스 회복 쿨타임
+StressRecoveryOnAllyRevive,3,0,,int,아군 부활 시 스트레스 회복량
+StressRecoveryTriggerAllyReviveRange,0,8,,float,아군 부활 시 스트레스 회복 범위
+LightFuelMax,100,0,,int,광원 최대치
+LightFuelDefault,100,0,,int,기본 연료
+LightFuelInterval,0,5,,float,연료 감소 주기 
+LightFuelTickDamage,1,0,,int,연료 감소 주기때 얼만큼 까이는지 (정수형임!)
+BlindSightRange,0,1,,float,암흑 효과 시야 수치
+TargetHighStressPlayerTriggerStress,0,75,,float,특정 몬스터는 어그로 내 스트레스가 일정치 이상인 유저 우선 타게팅
+AgentStoppingDistance,0,0.55,,float,내비 메쉬에서 저기로 가! 했을때 이 거리 이하가 되면 멈춤
+MoveSpeedThresholdForRun,0,2.4,,float,애니메이션 Run으로 바꾸는 MoveSpeed 수치
+MinWalkAnimationSpeed,0,0,,float,걷기 애니메이션의 최소 속도 배율
+MaxWalkAnimationSpeed,0,3.5,,float,걷기 애니메이션의 최대 속도 배율
+LoungeStageId,9001,0,,int,라운지 스테이지 Id
+WaitTimeOnTargetAdded,0,1.5,,float,"새로운 타겟이 생겼을때 대기하는 시간 (Idle,Wander상태일때)"
+ShadowMonsterSpawnStartDelay,0,5,,float,그림자 몬스터 소환 체크 시작 딜레이
+ShadowMonsterSpawnDelay,0,1.5,,float,그림자 몬스터 여러마리 일 경우 순자 소환 딜레이
+ShadowMonsterSpawnRange,0,3.5,,float,그림자 몬스터 스폰 범위
+ShadowMonsterLifeTime,0,90,,float,그림자 몬스터 라이프 타임
+ShadowMonsterDamagePercentOnHitByOther,0,100,,float,그림자 몬스터가 타겟이 아닌 플레이어 에게 맞은 경우 데미지
+CharacterBackAttackAngle,0,150,,float,[캐릭터] 백어택 앵글
+CharacterBackAttackIncreaseCriticalChancePercent,0,25,,float,[캐릭터] 백어택시 추가 크리티컬 확률 퍼센트
+DefaultCharacterBackAttackDamagePercent,0,15,,float,[캐릭터] 백어택시 추가 데미지 퍼센트
+ExtraUnitBackAttackIncreaseCriticalChancePercent,0,25,,float,[엑스트라 유닛] 백어택시 추가 크리티컬 확률 퍼센트
+DefaultExtraUnitBackAttackDamagePercent,0,15,,float,[엑스트라 유닛] 백어택시 추가 데미지 퍼센트
+MonsterBackAttackIncreaseCriticalChancePercent,0,0,,float,[몬스터] 백어택시 추가 크리티컬 확률 퍼센트
+DefaultMonsterBackAttackDamagePercent,0,25,,float,[몬스터] 백어택시 추가 데미지 퍼센트
+EtcBackAttackDamagePercent,0,25,,float,[트랩 및 기타] 백어택시 추가 데미지 퍼센트
+BackAttackMaxRange,0,2,,float,해당 거리보다 두 유닛의 거리가 짧아야 백어택 발생
+MonsterAlertStateTime,0,0.85,,float,몬스터 경계 시간(? 출력 시간)
+MonsterAggroStateTime,0,0.4,,float,몬스터 어그로 시간(! 출력 시간)
+MonsterCombatExitDelay,0,10,,float,전투 종료(비전투 전환)까지의 지연 시간
+MonsterDirectAggroSightRangeMultiplier,0,0.5,,float,경계(물음표)에서 바로 어그로(느낌표로)전환하는 시야거리 배수
+MonsterDirectAggroSightBackRangeMultiplier,0,0.9,,float,경계(물음표)에서 바로 어그로(느낌표로)전환하는 원형시야 배수
+MonsterAggroChainMax,1,0,,int,몬스터의 어그로가 연쇄되는 최대 횟수 (0은 어그로전파 없음)
+TeleportPathTolerance,0,1.5,,float,텔레포트시 최대거리x해당값보다 경로가 길면 실패
+MonsterLostTargetStateTime,0,0.45,,float,몬스터 타겟 놓쳤을때 ? 상태로 가만히 있는 시간
+MonsterReceiveAggroSpreadStateTime,0,0.75,,float,몬스터가 어그로 전파받았을때 ?상태로 잠시 대기하는 시간
+MonsterCuriousStateTime,0,0.6,,float,몬스터가 주변에 돌맹이 떨어졌을때 ?상태에서 배회상태로 변경되는 시간
+SoulMax,1000,0,,int,캐스터 변신에 필요한 영혼 최대치
+StressDespairVfxInterval,0,18,,float,스트레스 절망 이펙트 간격
+HpBarMaxLimit,1500,0,,int,HP 게이지가 해당 값 이상이면 최대 길이
+HpBarMinLimit,1000,0,,int,HP 게이지가 해당 값 이하면 최소 길이 
+BossHpBarMaxLimit,20000,0,,int,HP 게이지가 해당 값 이상이면 최대 길이
+BossHpBarMinLimit,12000,0,,int,HP 게이지가 해당 값 이하면 최소 길이 
+ObstacleEdgeCheckMargin,0,0.4,,float,장애물 모서리 여유
+StageEnterDelay,0,5,,float,모든 플레이어 레디 이후 폰부스 캔슬 가능시간
+GoodsRemovalPercentStory,0,0,,float,스토리 위험도 굿즈 유실 퍼센트 
+GoodsRemovalPercentJunior,0,50,,float,주니어 위험도 굿즈 유실 퍼센트 
+GoodsRemovalPercentClassic,0,50,,float,클래식 위험도 굿즈 유실 퍼센트 
+GoodsRemovalPercentVeteran,0,100,,float,베테랑 위험도 굿즈 유실 퍼센트 
+RevolverScrollerThreshold,0,20,,float,리볼버 슬롯 한칸 움직이는데 임계값 (두배로 커지면 휠 두배로 굴려야함)
+FullyImmuneToast,0,0,저지 불가!,string,면역상태 토스트 텍스트
+ReviveStressCost,0,0,,int,부활시 스트레스 증가량
+CutsceneStateBuffId,2002001,0,,int,컷씬 플레이어 무적 및 투명 처리
+MissionCount,7,0,,int,미션 개수
+ArtifactPrefixMinNormal,0,0,,int,아티팩트 Prefix 최소 개수
+ArtifactPrefixMinRare,1,0,,int,아티팩트 Prefix 최소 개수
+ArtifactPrefixMinElite,2,0,,int,아티팩트 Prefix 최소 개수
+ArtifactPrefixMinEpic,2,0,,int,아티팩트 Prefix 최소 개수
+ArtifactPrefixMinLegend,3,0,,int,아티팩트 Prefix 최소 개수
+ArtifactPrefixMinUnique,0,0,,int,아티팩트 Prefix 최소 개수
+ArtifactPrefixMaxNormal,0,0,,int,아티팩트 Prefix 최대 개수
+ArtifactPrefixMaxRare,4,0,,int,아티팩트 Prefix 최대 개수
+ArtifactPrefixMaxElite,4,0,,int,아티팩트 Prefix 최대 개수
+ArtifactPrefixMaxEpic,5,0,,int,아티팩트 Prefix 최대 개수
+ArtifactPrefixMaxLegend,6,0,,int,아티팩트 Prefix 최대 개수
+ArtifactPrefixMaxUnique,0,0,,int,아티팩트 Prefix 최대 개수
+CustomerMaxCount,5,0,,int,최대 손님 수
+CustomerSpawnPercentBase,0,40,,float,손님 스폰 확률 베이스
+CustomerSpawnPercentUserCount,0,12,,float,유저 수에 따른 추가 손님 스폰 확률
+StaminaRegenDelay,0,0.5,,float,스태미너가 다시 차기 시작하는데 걸리는 시간
+StaminaGaugeHideDelay,0,0.51,,float,스태미너 수치가 변경이 없을때 n초후 꺼짐
+CharacterSpawnSafeRange,0,5,,float,캐릭터 스폰시 안전 지역
+WeakPointGaugeCooldownDelay,0,1.2,,float,약점게이지 줄어들기 시작하는 시간
+WeakPointGaugeCooldownPercentPerSencod,0,33.3,,float,"약점게이지 초당 줄어드는 속도=25%일때 현재 75%면3초,  50%이면 2초"
+WeakPointFireFullStackDamagePercent,0,40,,float,약점 스택이 꽉찼을때 한번에 들어가는 데미지 퍼센트(쌓인 게이지의 %) 화염
+WeakPointWaterFullStackDamagePercent,0,35,,float,약점 스택이 꽉찼을때 한번에 들어가는 데미지 퍼센트(쌓인 게이지의 %) 물
+WeakPointWindFullStackDamagePercent,0,27.5,,float,약점 스택이 꽉찼을때 한번에 들어가는 데미지 퍼센트(쌓인 게이지의 %) 바람
+WeakPointGaugeBlockTime,0,2,,float,약점 게이지가 터진후에 주는 쿨타임
+ArtifactPrefixNegativePercent,0,37,,float,아티팩트 부정태그 뽑힐 확률 
+MonsterRetargetToPlayerChance,0,40,,float,몬스터끼리 전투 중 데미지 가할 시 플레이어로 타겟 재지정할 확률
+ExpFromRewardBox,10,0,,int,보상 상자 오픈 시 경험치 획득
+ExpFromNormalMonster,5,0,,int,일반 몬스터 kill 시 경험치 획득
+ExpFromBossMonster,100,0,,int,보스 몬스터 kill 시 경험치 획득
+ExpBonusFromNormalMonsterKill,1,0,,int,일반 몬스터 직집 킬 보너스 경험치 획득
+ExpBonusFromBossMonsterKill,10,0,,int,보스 몬스터 직집 킬 보너스 경험치 획득
+ExpFromEscape,30,0,,int,던전 탈출 시 경험치 획득
+CharacterTalentTier1UserLevel,1,0,,int,특성 티어 1 해금되는 조건 평판 레벨
+CharacterTalentTier2UserLevel,2,0,,int,특성 티어 2 해금되는 조건 평판 레벨
+CharacterTalentTier3UserLevel,3,0,,int,특성 티어 3 해금되는 조건 평판 레벨
+CharacterTalentTier4UserLevel,4,0,,int,특성 티어 4 해금되는 조건 평판 레벨
+CharacterTalentTier5UserLevel,5,0,,int,특성 티어 5 해금되는 조건 평판 레벨
+CharacterTalentTier6UserLevel,6,0,,int,특성 티어 6 해금되는 조건 평판 레벨
+CharacterTalentResetCost,0,0,,int,특성 초기화 비용 (골드)
+BuffEffectAmplifierMin,0,0.01,,float,버프 증감 효과 최소치 (1%)
+BuffEffectAmplifierMax,0,10,,float,버프 증감 효과 최대치 (1000%)
+MadnessAllyDamageFactor,0,0.15,,float,광기 상태로 아군 공격시 데미지 배율 (15%)
+ToggleRunExpireDelay,0,0.15,,float,움직임이 끝나도 달리기 토글(on일 경우)이 유지되는 시간
+SelfReviveMultiplayFactor,0,0.5,,float,죽음의 문턱 멀티플레이시 최종 값에 곱해지는 계수
+SelfReviveStressFactor,0,0.1,,float,죽음의 문턱 스트레스에 곱해지는 계수
+SelfReviveStressExponent,0,0.5,,float,죽음의 문턱 스트레스에 제곱되는 지수
+SelfReviveProbabilityReductionRate,0,0.5,,float,죽음의 문턱 반복시 확률 감소량
+RoomPlayerCountMax,3,0,,int,멀티 플레이 시 라운지 최대 인원(변경 시 개발과 상의할 것)
+TalentTierStackCostMultiplier,0,0.5,,float,특성에서 한 트리 동일 티어를 여러 번 찍을 때 가격 증가 계수(합연산)
+LostGoodsRetentionExitCount,3,0,,int,유실품 보존 기간
+LostGoodsPriceMultiplierMin,0,0.7,,float,유실품(아티팩트 제외) 가격 배율 Min
+LostGoodsPriceMultiplierMax,0,1.2,,float,유실품(아티팩트 제외) 가격 배율 Max
+LostArtifactPriceMultiplierMin,0,0.6,,float,유실품 아티팩트 가격 배율 Min
+LostArtifactPriceMultiplierMax,0,1.3,,float,유실품 아티팩트 가격 배율 Max
+LostGoodsStorageDefaultSlotCount,7,0,,int,유실품 보관소 슬롯 기본 개수
+LostGoodsGradeNormalWeightMultiplier,0,1,,float,유실품 보관소 등급별 선택 가중치 
+LostGoodsGradeRareWeightMultiplier,0,1.25,,float,유실품 보관소 등급별 선택 가중치 
+LostGoodsGradeEliteWeightMultiplier,0,2.5,,float,유실품 보관소 등급별 선택 가중치 
+LostGoodsGradeEpicWeightMultiplier,0,5,,float,유실품 보관소 등급별 선택 가중치 
+LostGoodsGradeLegendWeightMultiplier,0,10,,float,유실품 보관소 등급별 선택 가중치 
+LostGoodsGradeUniqueWeightMultiplier,0,10,,float,유실품 보관소 등급별 선택 가중치 
+LostGoodsArtifactWeightMultiplier,0,10,,float,유실품 보관소 아티팩트 선택 가중치 
+LostGoodsEquipmentWeightMultiplier,0,10,,float,유실품 보관소 장비(아티팩트 제외) 선택 가중치 
+LostGoodsConsumableWeightMultiplier,0,1,,float,유실품 보관소 소모품 선택 가중치 
+CampaignMaxCount,7,0,,int,일반 캠패인 최대 개수
+RecommendedLevelCampaignCount,3,0,,int,적정 레벨에 맞는 일반 캠페인 개수
+CampaignLevelDifferenceWeight,10,0,,int,일반 캠페인 뽑을 때 레벨 차이에 따른 가중치 감소
+CampaignLevelMaxOffset,1,0,,int,일반 캠페인 뽑을 때 현재 레벨 + 이 수치 까지의 레벨이 나옴
+RestCost,400,0,,int,휴식 비용
+RestCostMultiplier,0,2.5,,float,다이브 하지 않고 휴식 연속 했을 때 증가하는 비용 배율
+BackwardMoveSpeedMultiplier,0,0.82,,float,뒤로 이동 시 이동속도 반영 배율
+ArtifactShopCostMultiplier,0,0.7,,float,아티팩트 상점에 팔았을 때 가격 배율
+ArtifactDealNormalExpMultiplier,0,0.1,,float,아티팩트 거래시 가격값 대비 경험치 획득 배율 (등급별)
+ArtifactDealRareExpMultiplier,0,0.09,,float,아티팩트 거래시 가격값 대비 경험치 획득 배율 (등급별)
+ArtifactDealEliteExpMultiplier,0,0.07,,float,아티팩트 거래시 가격값 대비 경험치 획득 배율 (등급별)
+ArtifactDealEpicExpMultiplier,0,0.05,,float,아티팩트 거래시 가격값 대비 경험치 획득 배율 (등급별)
+ArtifactDealLegendExpMultiplier,0,0.03,,float,아티팩트 거래시 가격값 대비 경험치 획득 배율 (등급별)
+ArtifactDealUniqueExpMultiplier,0,0.02,,float,아티팩트 거래시 가격값 대비 경험치 획득 배율 (등급별)
+PartyPlayExpMultiplyPercent,0,80,,float,파티원이 2명이상일때 경험치에 곱해지는값
+MiniMapPingDuration,0,6,,float,핑 찍었을 때 미니맵에서의 유지 시간

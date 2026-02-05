@@ -1,0 +1,28 @@
+Id,ShopType,~상품명,Goods,BuyPrice,UnlockConditions,IsEnabled
+int,EShopType,,Goods,Goods,EventCondition[],bool
+1,LoungeShop,붕대,Item:2000:1,Gold:0:33,,TRUE
+2,LoungeShop,회복 드링크,Item:2001:1,Gold:0:110,,TRUE
+3,LoungeShop,진정제 앰풀,Item:2002:1,Gold:0:105,,TRUE
+4,LoungeShop,뾰족한 돌멩이,Item:2005:1,Gold:0:1,,TRUE
+5,LoungeShop,해독제,Item:2006:1,Gold:0:200,,TRUE
+6,LoungeShop,지혈 벌레,Item:2007:1,Gold:0:200,,TRUE
+7,LoungeShop,화상 연고,Item:2008:1,Gold:0:200,,TRUE
+8,LoungeShop,화염병,Item:2012:1,Gold:0:360,,TRUE
+9,LoungeShop,가솔린 통,Item:3006:1,Gold:0:1500,,TRUE
+10,LoungeShop,트랩 제작 도구,Item:3007:1,Gold:0:1550,TechTree:5001,TRUE
+11,LoungeShop,빈 파우치,Item:3000:1,Gold:0:120,,TRUE
+12,LoungeShop,빈 앰풀,Item:3001:1,Gold:0:114,,TRUE
+13,LoungeShop,다 쓴 배터리,Item:3002:1,Gold:0:126,,TRUE
+14,LoungeShop,빈 병,Item:3003:1,Gold:0:117,,TRUE
+15,LoungeShop,빈 용기,Item:3004:1,Gold:0:123,,TRUE
+16,LoungeShop,잡동사니 더미,Item:7000:1,Gold:0:300,,TRUE
+17,LoungeShop,금속 고리,Item:7003:1,Gold:0:1350,TechTree:5001,TRUE
+18,LoungeShop,부품 더미,Item:7101:1,Gold:0:1520,TechTree:5001,TRUE
+19,LoungeShop,강화 금속괴,Item:7311:1,Gold:0:1600,TechTree:5002,TRUE
+20,LoungeShop,아카나 프리즘,Item:7321:1,Gold:0:1580,TechTree:5002,TRUE
+21,LoungeShop,강철 약실,Item:7331:1,Gold:0:1620,TechTree:5003,TRUE
+22,LoungeShop,검신 주형,Item:7312:1,Gold:0:24500,TechTree:5003,TRUE
+23,LoungeShop,이차원 연산핵,Item:7322:1,Gold:0:25400,TechTree:5004,TRUE
+24,LoungeShop,폭압 코어,Item:7332:1,Gold:0:24800,TechTree:5004,TRUE
+25,LoungeShop,금고 열쇠,Item:9012:1,Gold:0:650,,TRUE
+28,LoungeShop,의식용 상자 열쇠,Item:9015:1,Gold:0:1000,TechTree:5001,TRUE

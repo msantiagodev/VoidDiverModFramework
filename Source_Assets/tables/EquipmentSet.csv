@@ -1,0 +1,5 @@
+Id,GroupId,Count,BuffId,~GroupKey,~SubKey
+int,int,int,int,GroupId,GroupId|Count
+1,1,2,30001,,
+2,1,4,30002,,
+3,2,3,30001,,

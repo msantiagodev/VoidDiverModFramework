@@ -1,0 +1,6 @@
+Difficulty,MonsterHpPercent,MonsterAtkPercent,MonsterDefPercent,MonsterSpawnPercent,RewardBoxSpawnPercent,DropRewardSpawnPercent,DropRewardPickPercent,RareItemPickPercent,UserExpPercent,CooldownReductionPercent,GlobalSkillCoolTimePercent
+EDifficulty,float,float,float,float,float,float,int,int,float,float,float
+Easy,60,50,60,70,50,50,100,35,85,-70,195
+Normal,85,85,85,95,60,60,100,55,100,-35,125
+Hard,130,115,110,120,75,75,100,75,135,10,100
+Insane,240,140,120,145,90,90,100,95,165,30,70

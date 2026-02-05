@@ -1,0 +1,43 @@
+Id,~이름,UnlockConditions,NpcFunctions,DefaultImageName,ShowNewContentPopup
+int,참조,EventCondition[],ENpcFunction[],string,bool
+700000,엘라라,,Campaign|Dialog,Default,FALSE
+700001,루카스,,Shop|Dialog,Default,FALSE
+700002,안티키테라,LoungeQuestCleared:810102,Crafting|TechTree|Dialog,Default,TRUE
+700003,에블린,MissionCleared:9003,ParadoxPurify|ParadoxLock|Dialog,Default,TRUE
+700004,쇼거스 소파,,Rest|Dialog,Default,FALSE
+700005,오너,LoungeQuestCleared:80201,LevelUp|Dialog,Default,FALSE
+700006,에드먼,,Stash|Dialog,Default,FALSE
+700008,펠릭스,,CharacterSkill|CharacterTalent|Dialog,Smile,FALSE
+700009,메이드,,Dialog,Default,FALSE
+700010,???,,Dialog,Default,FALSE
+700011,올드리(위험도 변경),,DangerLevel|Dialog,Default,FALSE
+700012,게이트키퍼(멀티),UserLevel:2,MultiplayCreate|MultiplayJoin|MultiplayLeave|Dialog,Default,TRUE
+700013,나르시스(캐릭터변경),,CharacterSelect|Dialog,Default,FALSE
+700014,더스터(보상/유실물),,Storage|LostGoodsStorage|Dialog,Default,FALSE
+700015,핌(유물),UserLevel:2,ArtifactShop|Dialog,Default,TRUE
+700101,셰이스,,Dialog,Default,FALSE
+700102,점장 집무실,,Dialog,Default,FALSE
+700103,매대,,,Default,FALSE
+700104,매대,,,Default,FALSE
+700105,폰부스투명,,,Default,FALSE
+700200,아주머니,,,Default,FALSE
+700201,강재현,,,Default,FALSE
+700202,조이스,,,Default,FALSE
+700203,고민하는 사교 수녀,,,Default,FALSE
+700204,생각하는 사교 평신도,,,Default,FALSE
+700205,생각하는 사교 수녀,,,Default,FALSE
+700206,악마,,,Default,FALSE
+700207,마스크맨,,,Default,FALSE
+700208,좀비 요리사,,,Default,FALSE
+700209,정체불명의 상인,,,Default,FALSE
+700210,고민하는 의사 좀비,,,Default,FALSE
+700211,고민하는 간호사 좀비,,,Default,FALSE
+700212,공사장 좀비,,,Default,FALSE
+700300,엘라라,,,Default,FALSE
+700301,루카스,,,Default,FALSE
+700303,에블린,,,Default,FALSE
+700306,에드먼,,,Default,FALSE
+700308,펠릭스,,,Default,FALSE
+700309,,,,Default,FALSE
+700401,아서 앨런,,,Default,FALSE
+700402,공허 연구자,,,Default,FALSE

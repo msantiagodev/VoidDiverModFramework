@@ -1,0 +1,15 @@
+Id,BitFlagIndex,ThemeType,ZoneSpawnIds,EventCondition,Goal,Rewards
+int,int,EThemeType,int[],EventCondition,long,Goods[]
+9001,1,None,900101|900102,LuaProgress:9001,1,
+9002,2,None,900201|900202,LuaProgress:9002,1,
+9003,3,None,900301|900302,LuaProgress:9003,1,
+9004,4,None,900401|900402,LuaProgress:9004,1,
+9005,5,None,900501|900502,LuaProgress:9005,1,
+9006,6,None,900601,LuaProgress:9006,1,
+9007,7,None,900701,LuaProgress:9007,1,
+9008,8,None,900801,LuaProgress:9008,1,
+9009,9,None,900901,LuaProgress:9009,1,
+9010,10,None,901001|901002,LuaProgress:9010,1,
+9011,11,None,901101|901102,LuaProgress:9011,1,
+9012,12,None,901201|901202,LuaProgress:9012,1,
+9013,13,None,901301|901302,LuaProgress:9013,1,

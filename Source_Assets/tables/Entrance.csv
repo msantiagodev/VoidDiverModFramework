@@ -1,0 +1,23 @@
+Id,~memo,PrefabName,EntranceType,IsOpened,HasKeyInteraction,KeyItemTypes,KeyItemIds,KeySuccessHitBoxId,KeyFailRetryAble,KeyFailHitboxId,HitBoxAtk
+int,,string,EEntranceType,bool,bool,EKeyItemType[],int[],int,bool,int,float
+1012,샘플,BaseEntrance,Gate,FALSE,TRUE,Medicine,2001|2002|2003,0,TRUE,0,100
+1013,,BaseEntrance,Gate,FALSE,FALSE,None,,0,TRUE,0,100
+1014,,BaseEntrance,Gate,FALSE,FALSE,None,,0,TRUE,0,100
+3001,실패하면 잠기는 문,BaseEntrance,Door,FALSE,TRUE,Medicine,2000|2001,0,TRUE,0,100
+3002,실패해도 열리긴 문,BaseEntrance,Door,FALSE,TRUE,Medicine,2002,0,TRUE,0,100
+1000,,SteelEntrance,Door,FALSE,FALSE,None,,0,TRUE,0,100
+1001,,BarredEntrance,Door,FALSE,FALSE,None,,0,TRUE,0,100
+1002,,FramedGlassEntrance,Door,FALSE,FALSE,None,,0,TRUE,0,100
+1003,,WoodEntrance,Door,FALSE,FALSE,None,,0,TRUE,0,100
+1004,,ThinFramedGlassEntrance,Door,FALSE,FALSE,None,,0,TRUE,0,100
+2000,경찰서 출입,SteelEntrance,Gate,FALSE,TRUE,Key,300009,0,TRUE,0,100
+2001,,BarredEntrance,Gate,FALSE,TRUE,Key,,0,TRUE,0,100
+2002,도서관 출입,FramedGlassEntrance,Gate,FALSE,TRUE,Key,300016,0,TRUE,0,100
+2003,,WoodEntrance,Gate,FALSE,TRUE,Key,,0,TRUE,0,100
+2004,,ThinFramedGlassEntrance,Gate,FALSE,TRUE,Key,,0,TRUE,0,100
+2005,튜토 출입,SteelEntrance,Gate,FALSE,TRUE,Key,300000,0,TRUE,0,100
+4001,귀신들린 사무실 열쇠,SteelEntrance,Gate,FALSE,TRUE,Key,9016,0,TRUE,0,100
+4002,기묘한 가전매장 열쇠,SteelEntrance,Gate,FALSE,TRUE,Key,9017,0,TRUE,0,100
+4003,축축한 물류창고 열쇠,SteelEntrance,Gate,FALSE,TRUE,Key,9018,0,TRUE,0,100
+4004,저주받은 매장 열쇠,SteelEntrance,Gate,FALSE,TRUE,Key,9019,0,TRUE,0,100
+4005,무너진 곳 열쇠,SteelEntrance,Gate,FALSE,TRUE,Key,9020,0,TRUE,0,100

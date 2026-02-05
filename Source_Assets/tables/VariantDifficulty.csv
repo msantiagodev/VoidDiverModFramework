@@ -1,0 +1,12 @@
+Id,MonsterHpPercent,MonsterAtkPercent,MonsterDefPercent,UserExpPercent,CooldownReductionPercent,GlobalSkillCoolTimePercent
+int,float,float,float,float,float,float
+1,90,90,95,100,0,100
+2,103,101,102,110,3,97
+3,115,112,110,122,6,94
+4,130,121,118,138,8,91
+5,146,132,128,156,10,87
+6,166,145,140,176,12,83
+7,300,200,225,198,15,80
+8,325,220,250,220,18,80
+9,350,240,275,244,18,80
+10,400,260,300,270,18,80

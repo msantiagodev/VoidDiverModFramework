@@ -1,0 +1,62 @@
+Id,~Name_Kr,PriceMultiplier,Weight,Stats
+int,string,float,int,Stat[]
+10001,왕가의 소유,1.55,100,HpMax:150|Def:20
+10002,성스러운 축복,1.38,200,CorruptionMax:20
+10003,승리의 증거,1.23,350,CriticalChancePercent:7.0
+10004,유명 장인의 서명,1.55,100,Atk:18|PenetrationPercent:10.0
+10005,연대기적 희귀성,1.55,100,AdditionalAttackDamagePercent:10.0
+10006,정확한 보존 상태,1.23,350,Def:20
+10007,고대의 지혜,1.38,200,CooldownReductionPercent:8.0|AtkSpeedPercent:5.0
+10008,상징적 문양,1.03,600,WeaknessDamagePercent:15.0
+10009,전설 속 등장품,1.55,100,CriticalDamagePercent:35.0
+10010,의례적 희귀성,1.23,200,FireResistancePercent:25.0
+10011,내재된 마력,1.38,200,PenetrationPercent:15.0
+10012,정령의 가호,1.23,200,WaterResistancePercent:25.0
+10013,천문학적 조화,1.23,200,WindResistancePercent:25.0
+10014,꿈의 매개체,1.23,350,MoveSpeedPercent:4.0
+10015,정화된 에너지,1.1,550,CorruptionMax:15
+10016,불멸의 상징,1.55,100,ReductionDamagePercent:10.0
+10017,기묘한 반짝임,1.03,600,CriticalChancePercent:3.0
+10018,시간의 잔향,1.38,200,AtkSpeedPercent:12.0
+10019,언어 보존,1.23,350,Def:15|CooldownReductionPercent:4.0
+10020,재생 능력,1.38,200,HpRegen:1.5
+10021,보존 상태 양호,1.23,350,HpMax:100
+10022,청결함,1.03,600,CorruptionMax:10
+10023,견고함,1.1,550,Def:10|HpMax:50
+10024,희미한 광택,1.03,600,PenetrationPercent:5.0
+10025,가벼움,1.03,600,MoveSpeedPercent:1.5
+10026,안정된 구조,1.1,550,Def:15
+10027,익숙한 디자인,1.23,350,Atk:5|AtkSpeedPercent:5.0
+10028,완전한 형태,1.1,550,Atk:10
+10029,읽기 쉬운 기록,1.03,600,CooldownReductionPercent:5.0
+10030,소량의 장식,1.03,600,BackAttackDamagePercent:10.0
+20001,부식됨,0.97,600,Def:-5
+20002,불완전한 조각,0.77,350,CriticalChancePercent:-3.0
+20003,미완성품,0.77,350,HpMax:-40
+20004,변색됨,0.97,600,FireResistancePercent:-10.0
+20005,파괴된 각인,0.5,167,AdditionalAttackDamagePercent:-5.0
+20006,금속 피로,0.77,350,ReductionDamagePercent:-4.0
+20007,너무 무거움,0.9,450,MoveSpeedPercent:-3.0
+20008,너무 작음,0.9,450,Def:-5|MoveSpeedPercent:-1.0
+20009,쓸데없는 부속품,0.97,600,MoveSpeedPercent:-1.5
+20010,귀찮은 소음,0.97,600,WindResistancePercent:-10.0
+20011,불길한 낙인,0.77,350,Def:-5|CorruptionMax:-10
+20012,저주받음,0.5,167,HpMax:-50|Def:-5
+20013,불경스러운 오염,0.65,200,CorruptionMax:-15
+20014,봉인 훼손,0.65,200,CooldownReductionPercent:-5.0
+20015,유령의 소문,0.65,200,Atk:-5|AtkSpeedPercent:-5.0
+20016,위조 의혹,0.5,166,Atk:-15
+20017,언어 단절,0.77,350,WeaknessDamagePercent:-10.0
+20018,불법 소지물,0.65,200,PenetrationPercent:-5.0
+20019,흔적만 남음,0.65,200,CriticalDamagePercent:-20.0
+20020,약화된 마력,0.77,350,AtkSpeedPercent:-7.0
+20021,이상한 냄새,0.97,600,WaterResistancePercent:-10.0
+20022,미적 센스 부족,0.97,600,BackAttackDamagePercent:-10.0
+20023,메이드 인 어제,0.9,450,Def:-4
+20024,과장된 전설,0.9,450,Atk:-5|Def:-5
+20025,애매한 기능,0.9,450,CooldownReductionPercent:-5.0
+20026,비호감 마스코트 새겨짐,0.77,350,CorruptionMax:-10
+20027,귀찮은 소문,0.97,600,HpRegen:-1.0
+20028,너무 번쩍임,0.97,600,CriticalChancePercent:-2.0|CriticalDamagePercent:-5.0
+20029,조잡한 수리 흔적,0.9,450,PenetrationPercent:-5.0
+20030,틀어진 균형,0.9,450,Atk:-3|HpMax:-30

@@ -1,0 +1,3 @@
+Id,~memo,PrefabName,DropRewardGroupId,HoldingTime,AggroSpreadRange
+int,,string,int,float,float
+1,샘플용 박스,SampleBox,111000,2,10

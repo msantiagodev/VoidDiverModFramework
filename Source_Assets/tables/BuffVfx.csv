@@ -1,0 +1,28 @@
+BuffId,~Desc,Vfx,VfxDuration,VfxBoneType,VfxOffset,Sfx,DotSfx,DotVfx,DotVfxBoneType,DotVfxOffset
+int,string,string,float,EUnitBoneType,Vector3,string,string,string,EUnitBoneType,Vector3
+1203,듀라한 지뢰차기 이펙트용,100003_Skill_2_BombCountDown,-1,Head,0:0:0,Skill_100003_BombKick_Buff,,,None,0:0:0
+1200,듀라한 불멸,100003_skill_ult_1_Immortal_Buff,-1,None,0:0:0,,,,None,0:0:0
+80001,랜덤 미션 버프 - 소화증진(중립),Common_Buff_Neutral,3,None,0:0:0,Common_Buff_Neutral,,,None,0:0:0
+80002,랜덤 미션 버프 - 불타는혀(중립),Common_Buff_Neutral,3,None,0:0:0,Common_Buff_Neutral,,,None,0:0:0
+80004,랜덤 미션 버프 - 끝없는 웃음(부정),Common_Buff_Negative,3,None,0:0:0,Common_Buff_Negative,,,None,0:0:0
+80006,랜덤 미션 버프 - 끝없는 우울(긍정),Common_Buff_Positive,3,None,0:0:0,Common_Buff_Positive,,,None,0:0:0
+80007,랜덤 미션 버프 - 광적인 신앙(중립),Common_Buff_Neutral,3,None,0:0:0,Common_Buff_Neutral,,,None,0:0:0
+80009,랜덤 미션 버프 - 신약 효과(중립),Common_Buff_Neutral,3,None,0:0:0,Common_Buff_Neutral,,,None,0:0:0
+80010,랜덤 미션 버프 - 럭키데이(긍정),Common_Buff_Positive,3,None,0:0:0,Common_Buff_Positive,,,None,0:0:0
+80011,랜덤 미션 버프 - 불길함(부정),Common_Buff_Negative,3,None,0:0:0,Common_Buff_Negative,,,None,0:0:0
+80012,랜덤 미션 버프 - 뜻밖의 재앙(부정),Common_Buff_Negative,3,None,0:0:0,Common_Buff_Negative,,,None,0:0:0
+80013,랜덤 미션 버프 - 행복감(긍정),Common_Buff_Positive,3,None,0:0:0,Common_Buff_Positive,,,None,0:0:0
+7003,공포 이펙트,StressLevel_Fear_Fx,3,None,0:0:0,San_Fear,,,None,0:0:0
+7005,붕괴 낙인,Despair,-1,Head,0:0:0,San_100,,,None,0:0:0
+7201,붕괴 디버프,StressLevel_Despair_Fx,3,None,0:0:0,,,,None,0:0:0
+7202,붕괴 디버프,StressLevel_Despair_Fx,3,None,0:0:0,,,,None,0:0:0
+7203,붕괴 디버프,StressLevel_Despair_Fx,3,None,0:0:0,,,,None,0:0:0
+7204,붕괴 디버프,StressLevel_Despair_Fx,3,None,0:0:0,,,,None,0:0:0
+7205,붕괴 디버프,StressLevel_Despair_Fx,3,None,0:0:0,,,,None,0:0:0
+7206,붕괴 디버프,StressLevel_Despair_Fx,3,None,0:0:0,,,,None,0:0:0
+7207,붕괴 디버프,StressLevel_Despair_Fx,3,None,0:0:0,,,,None,0:0:0
+7208,붕괴 디버프,StressLevel_Despair_Fx,3,None,0:0:0,,,,None,0:0:0
+3102,섹터 외곽 데미지 존(금지구역),,0,None,0:0:0,StatusEffect_Light,StatusEffect_Light2,Damage_Tick_Purify,Body,0:0:0
+7101,오염도 디버프1,CorruptionLevel_1,-1,None,0:0:0,CorruptionLevel1,,,None,0:0:0
+7102,오염도 디버프2,CorruptionLevel_2,-1,None,0:0:0,CorruptionLevel1,,,None,0:0:0
+7103,오염도 디버프3,CorruptionLevel_3,-1,None,0:0:0,CorruptionLevel2,,,None,0:0:0

@@ -1,0 +1,460 @@
+Id,BitFlagIndex,~,SubType,Grade,WeaponSkinName,CharacterId,Level,WeaponType,ElementalType,Atk,CriticalChancePercent,EquipmentSetGroupId,EquipmentEffectIds,IsDefault,SellPrice,ArtifactCategory,SpecifiedArtifactPrefixIds,Worth,Corruption
+int,int,,EGoodsSubType,EGoodsGradeType,string,int,int,EWeaponType,EElementalType,int,float,int,int[],bool,int,EArtifactCategory,int[],int,int
+1001,1,수련용 검,Weapon,Normal,1001,100001,1,Sword,None,100,5,-1,,FALSE,0,None,,0,0
+1003,3,표준형 검,Weapon,Rare,1003,100001,2,Sword,None,112,5,-1,,FALSE,720,None,,720,0
+1005,5,경합금도,Weapon,Elite,1005,100001,3,Sword,None,145,5,-1,,FALSE,2850,None,,2850,0
+1006,6,강합금도,Weapon,Epic,1006,100001,4,Sword,None,165,5,-1,,FALSE,12600,None,,12600,0
+1007,7,암영검,Weapon,Legend,1007,100001,5,Sword,None,190,5,-1,,FALSE,43500,None,,43500,0
+1008,8,열단도,Weapon,Elite,1008,100001,3,Sword,Fire,127,5,-1,,FALSE,3060,None,,3060,0
+1009,9,발열도,Weapon,Epic,1009,100001,4,Sword,Fire,145,5,-1,,FALSE,11700,None,,11700,0
+1010,10,적열도,Weapon,Legend,1010,100001,5,Sword,Fire,166,5,-1,,FALSE,46500,None,,46500,0
+1011,11,습윤검,Weapon,Elite,1011,100001,3,Sword,Water,127,5,-1,,FALSE,2940,None,,2940,0
+1012,12,촉수검,Weapon,Epic,1012,100001,4,Sword,Water,145,5,-1,,FALSE,12300,None,,12300,0
+1013,13,파랑도,Weapon,Legend,1013,100001,5,Sword,Water,166,5,-1,,FALSE,44400,None,,44400,0
+1014,14,풍아검,Weapon,Elite,1014,100001,3,Sword,Wind,127,5,-1,,FALSE,3150,None,,3150,0
+1015,15,선풍검,Weapon,Epic,1015,100001,4,Sword,Wind,145,5,-1,,FALSE,12900,None,,12900,0
+1016,16,폭풍검,Weapon,Legend,1016,100001,5,Sword,Wind,166,5,-1,,FALSE,45600,None,,45600,0
+1101,17,노멀코어 태블릿,Weapon,Normal,1101,100004,1,Phone,None,100,5,-1,,FALSE,0,None,,0,0
+1103,19,에테르 패드,Weapon,Rare,1103,100004,2,Phone,None,112,5,-1,,FALSE,780,None,,780,0
+1105,21,루멘 패드,Weapon,Elite,1105,100004,3,Phone,None,145,5,-1,,FALSE,3240,None,,3240,0
+1106,22,코스믹 패드,Weapon,Epic,1106,100004,4,Phone,None,165,5,-1,,FALSE,13200,None,,13200,0
+1107,23,에니그마 패드,Weapon,Legend,1107,100004,5,Phone,None,190,5,-1,,FALSE,48000,None,,48000,0
+1108,24,인페르노 터치,Weapon,Elite,1108,100004,3,Phone,Fire,127,5,-1,,FALSE,3030,None,,3030,0
+1109,25,플레어 오브 리추얼,Weapon,Epic,1109,100004,4,Phone,Fire,145,5,-1,,FALSE,11550,None,,11550,0
+1110,26,헬파이어 시그널,Weapon,Legend,1110,100004,5,Phone,Fire,166,5,-1,,FALSE,42600,None,,42600,0
+1111,27,아쿠아 스크립트,Weapon,Elite,1111,100004,3,Phone,Water,127,5,-1,,FALSE,2970,None,,2970,0
+1112,28,타이드 오브 위스퍼,Weapon,Epic,1112,100004,4,Phone,Water,145,5,-1,,FALSE,12150,None,,12150,0
+1113,29,오션 오브 에테르,Weapon,Legend,1113,100004,5,Phone,Water,166,5,-1,,FALSE,47400,None,,47400,0
+1114,30,게일 패널,Weapon,Elite,1114,100004,3,Phone,Wind,127,5,-1,,FALSE,3090,None,,3090,0
+1115,31,스톰 오브 세이지,Weapon,Epic,1115,100004,4,Phone,Wind,145,5,-1,,FALSE,12450,None,,12450,0
+1116,32,제피르 오브 디멘션,Weapon,Legend,1116,100004,5,Phone,Wind,166,5,-1,,FALSE,45900,None,,45900,0
+1201,33,헌터 샷건,Weapon,Normal,1201,100003,1,Shotgun,None,100,5,-1,,FALSE,0,None,,0,0
+1203,35,군용 펌프샷건,Weapon,Rare,1203,100003,2,Shotgun,None,112,5,-1,,FALSE,810,None,,810,0
+1205,37,스펙터 샷건,Weapon,Elite,1205,100003,3,Shotgun,None,145,5,-1,,FALSE,3300,None,,3300,0
+1206,38,팬텀 브레이커,Weapon,Epic,1206,100003,4,Shotgun,None,165,5,-1,,FALSE,13500,None,,13500,0
+1207,39,레이스 헌터,Weapon,Legend,1207,100003,5,Shotgun,None,190,5,-1,,FALSE,49500,None,,49500,0
+1208,40,인페르노 브레이커,Weapon,Elite,1208,100003,3,Shotgun,Fire,127,5,-1,,FALSE,3120,None,,3120,0
+1209,41,블레이즈 소버린,Weapon,Epic,1209,100003,4,Shotgun,Fire,145,5,-1,,FALSE,11850,None,,11850,0
+1210,42,헬파이어 캐논,Weapon,Legend,1210,100003,5,Shotgun,Fire,166,5,-1,,FALSE,43800,None,,43800,0
+1211,43,아쿠아 런처,Weapon,Elite,1211,100003,3,Shotgun,Water,127,5,-1,,FALSE,2880,None,,2880,0
+1212,44,타이드 크러셔,Weapon,Epic,1212,100003,4,Shotgun,Water,145,5,-1,,FALSE,12000,None,,12000,0
+1213,45,레비아탄 로어,Weapon,Legend,1213,100003,5,Shotgun,Water,166,5,-1,,FALSE,46500,None,,46500,0
+1214,46,게일 슈터,Weapon,Elite,1214,100003,3,Shotgun,Wind,127,5,-1,,FALSE,3180,None,,3180,0
+1215,47,스톰 브레이커,Weapon,Epic,1215,100003,4,Shotgun,Wind,145,5,-1,,FALSE,12750,None,,12750,0
+1216,48,템페스트 하울러,Weapon,Legend,1216,100003,5,Shotgun,Wind,166,5,-1,,FALSE,45000,None,,45000,0
+20011,49,적혈의 반지,Accessory,Normal,,-1,1,None,None,0,0,-1,20011,FALSE,135,None,,135,0
+20012,50,적혈의 반지,Accessory,Rare,,-1,2,None,None,0,0,-1,20012,FALSE,690,None,,690,0
+20013,51,적혈의 반지,Accessory,Elite,,-1,3,None,None,0,0,-1,20013,FALSE,2760,None,,2760,0
+20014,52,적혈의 반지,Accessory,Epic,,-1,4,None,None,0,0,-1,20014,FALSE,11400,None,,11400,0
+20015,53,적혈의 반지,Accessory,Legend,,-1,5,None,None,0,0,-1,20015,FALSE,42000,None,,42000,0
+20021,54,예지의 반지,Accessory,Normal,,-1,1,None,None,0,0,-1,20061,FALSE,138,None,,138,0
+20022,55,예지의 반지,Accessory,Rare,,-1,2,None,None,0,0,-1,20062,FALSE,705,None,,705,0
+20023,56,예지의 반지,Accessory,Elite,,-1,3,None,None,0,0,-1,20063,FALSE,2820,None,,2820,0
+20024,57,예지의 반지,Accessory,Epic,,-1,4,None,None,0,0,-1,20064,FALSE,11550,None,,11550,0
+20025,58,예지의 반지,Accessory,Legend,,-1,5,None,None,0,0,-1,20065,FALSE,42600,None,,42600,0
+20031,59,참극의 반지,Accessory,Normal,,-1,1,None,None,0,0,-1,20071,FALSE,147,None,,147,0
+20032,60,참극의 반지,Accessory,Rare,,-1,2,None,None,0,0,-1,20072,FALSE,750,None,,750,0
+20033,61,참극의 반지,Accessory,Elite,,-1,3,None,None,0,0,-1,20073,FALSE,3000,None,,3000,0
+20034,62,참극의 반지,Accessory,Epic,,-1,4,None,None,0,0,-1,20074,FALSE,12000,None,,12000,0
+20035,63,참극의 반지,Accessory,Legend,,-1,5,None,None,0,0,-1,20075,FALSE,45000,None,,45000,0
+20041,64,철극의 반지,Accessory,Elite,,-1,3,None,None,0,0,-1,20051,FALSE,3150,None,,3150,0
+20042,65,철극의 반지,Accessory,Epic,,-1,4,None,None,0,0,-1,20052,FALSE,12600,None,,12600,0
+20043,66,철극의 반지,Accessory,Legend,,-1,5,None,None,0,0,-1,20053,FALSE,46500,None,,46500,0
+20051,67,정적의 반지,Accessory,Rare,,-1,2,None,None,0,0,-1,20091,FALSE,720,None,,720,0
+20052,68,정적의 반지,Accessory,Elite,,-1,3,None,None,0,0,-1,20092,FALSE,2880,None,,2880,0
+20053,69,정적의 반지,Accessory,Legend,,-1,5,None,None,0,0,-1,20093,FALSE,43500,None,,43500,0
+20061,70,격동의 반지,Accessory,Rare,,-1,2,None,None,0,0,-1,20101,FALSE,780,None,,780,0
+20062,71,격동의 반지,Accessory,Elite,,-1,3,None,None,0,0,-1,20102,FALSE,3060,None,,3060,0
+20063,72,격동의 반지,Accessory,Legend,,-1,5,None,None,0,0,-1,20103,FALSE,45600,None,,45600,0
+21011,79,수호의 목걸이,Accessory,Normal,,-1,1,None,None,0,0,-1,20031,FALSE,144,None,,144,0
+21012,80,수호의 목걸이,Accessory,Rare,,-1,2,None,None,0,0,-1,20032,FALSE,735,None,,735,0
+21013,81,수호의 목걸이,Accessory,Elite,,-1,3,None,None,0,0,-1,20033,FALSE,2940,None,,2940,0
+21014,82,수호의 목걸이,Accessory,Epic,,-1,4,None,None,0,0,-1,20034,FALSE,11700,None,,11700,0
+21015,83,수호의 목걸이,Accessory,Legend,,-1,5,None,None,0,0,-1,20035,FALSE,44400,None,,44400,0
+21021,84,활력의 목걸이,Accessory,Normal,,-1,1,None,None,0,0,-1,20001,FALSE,141,None,,141,0
+21022,85,활력의 목걸이,Accessory,Rare,,-1,2,None,None,0,0,-1,20002,FALSE,720,None,,720,0
+21023,86,활력의 목걸이,Accessory,Elite,,-1,3,None,None,0,0,-1,20003,FALSE,2850,None,,2850,0
+21024,87,활력의 목걸이,Accessory,Epic,,-1,4,None,None,0,0,-1,20004,FALSE,11400,None,,11400,0
+21025,88,활력의 목걸이,Accessory,Legend,,-1,5,None,None,0,0,-1,20005,FALSE,43500,None,,43500,0
+21031,89,재생의 목걸이,Accessory,Elite,,-1,3,None,None,0,0,-1,20041,FALSE,3240,None,,3240,0
+21032,90,재생의 목걸이,Accessory,Legend,,-1,5,None,None,0,0,-1,20042,FALSE,48000,None,,48000,0
+21041,91,풍요의 목걸이,Accessory,Elite,,-1,3,None,None,0,0,-1,20111,FALSE,3300,None,,3300,0
+21042,92,풍요의 목걸이,Accessory,Epic,,-1,4,None,None,0,0,-1,20112,FALSE,13800,None,,13800,0
+21043,93,풍요의 목걸이,Accessory,Legend,,-1,5,None,None,0,0,-1,20113,FALSE,49500,None,,49500,0
+22011,94,질주의 귀걸이,Accessory,Normal,,-1,1,None,None,0,0,-1,20021,FALSE,150,None,,150,0
+22012,95,질주의 귀걸이,Accessory,Rare,,-1,2,None,None,0,0,-1,20022,FALSE,765,None,,765,0
+22013,96,질주의 귀걸이,Accessory,Elite,,-1,3,None,None,0,0,-1,20023,FALSE,3060,None,,3060,0
+22014,97,질주의 귀걸이,Accessory,Epic,,-1,4,None,None,0,0,-1,20024,FALSE,12300,None,,12300,0
+22015,98,질주의 귀걸이,Accessory,Legend,,-1,5,None,None,0,0,-1,20025,FALSE,45000,None,,45000,0
+23011,99,시간왜곡의 팔찌,Accessory,Elite,,-1,3,None,None,0,0,-1,20081,FALSE,3150,None,,3150,0
+23012,100,시간왜곡의 팔찌,Accessory,Epic,,-1,4,None,None,0,0,-1,20082,FALSE,12900,None,,12900,0
+23013,101,시간왜곡의 팔찌,Accessory,Legend,,-1,5,None,None,0,0,-1,20083,FALSE,47400,None,,47400,0
+23061,114,사냥꾼의 서약,Accessory,Normal,,-1,1,None,None,0,0,-1,20121,FALSE,132,None,,132,0
+23062,115,사냥꾼의 서약,Accessory,Elite,,-1,3,None,None,0,0,-1,20122,FALSE,2700,None,,2700,0
+23063,116,사냥꾼의 서약,Accessory,Legend,,-1,5,None,None,0,0,-1,20123,FALSE,41400,None,,41400,0
+23071,117,성화의 잔재,Accessory,Normal,,-1,1,None,None,0,0,-1,20131,FALSE,138,None,,138,0
+23072,118,성화의 잔재,Accessory,Elite,,-1,3,None,None,0,0,-1,20132,FALSE,2820,None,,2820,0
+23073,119,성화의 잔재,Accessory,Legend,,-1,5,None,None,0,0,-1,20133,FALSE,42600,None,,42600,0
+23081,120,이계의 흔적,Accessory,Normal,,-1,1,None,None,0,0,-1,20141,FALSE,144,None,,144,0
+23082,121,이계의 흔적,Accessory,Elite,,-1,3,None,None,0,0,-1,20142,FALSE,2940,None,,2940,0
+23083,122,이계의 흔적,Accessory,Legend,,-1,5,None,None,0,0,-1,20143,FALSE,44400,None,,44400,0
+23091,123,복수의 송곳니,Accessory,Normal,,-1,1,None,None,0,0,-1,20151,FALSE,135,None,,135,0
+23092,124,복수의 송곳니,Accessory,Elite,,-1,3,None,None,0,0,-1,20152,FALSE,2760,None,,2760,0
+23093,125,복수의 송곳니,Accessory,Legend,,-1,5,None,None,0,0,-1,20153,FALSE,42000,None,,42000,0
+23101,126,개척자의 씨앗,Accessory,Normal,,-1,1,None,None,0,0,-1,20161,FALSE,141,None,,141,0
+23102,127,개척자의 씨앗,Accessory,Elite,,-1,3,None,None,0,0,-1,20162,FALSE,2880,None,,2880,0
+23103,128,개척자의 씨앗,Accessory,Legend,,-1,5,None,None,0,0,-1,20163,FALSE,43500,None,,43500,0
+23111,129,철의 망치,Accessory,Normal,,-1,1,None,None,0,0,-1,20171,FALSE,132,None,,132,0
+23112,130,철의 망치,Accessory,Elite,,-1,3,None,None,0,0,-1,20172,FALSE,2700,None,,2700,0
+23113,131,철의 망치,Accessory,Legend,,-1,5,None,None,0,0,-1,20173,FALSE,41400,None,,41400,0
+23121,132,환상의 눈,Accessory,Normal,,-1,1,None,None,0,0,-1,20181,FALSE,147,None,,147,0
+23122,133,환상의 눈,Accessory,Elite,,-1,3,None,None,0,0,-1,20182,FALSE,3000,None,,3000,0
+23123,134,환상의 눈,Accessory,Legend,,-1,5,None,None,0,0,-1,20183,FALSE,45000,None,,45000,0
+25011,144,홍련 노리개,Accessory,Normal,,-1,1,None,None,0,0,-1,20191,FALSE,135,None,,135,0
+25012,145,홍련 노리개,Accessory,Elite,,-1,3,None,None,0,0,-1,20192,FALSE,2760,None,,2760,0
+25013,146,홍련 노리개,Accessory,Legend,,-1,5,None,None,0,0,-1,20193,FALSE,42000,None,,42000,0
+25021,147,창해 노리개,Accessory,Normal,,-1,1,None,None,0,0,-1,20201,FALSE,135,None,,135,0
+25022,148,창해 노리개,Accessory,Elite,,-1,3,None,None,0,0,-1,20202,FALSE,2760,None,,2760,0
+25023,149,창해 노리개,Accessory,Legend,,-1,5,None,None,0,0,-1,20203,FALSE,42000,None,,42000,0
+25031,150,벽풍 노리개,Accessory,Normal,,-1,1,None,None,0,0,-1,20211,FALSE,135,None,,135,0
+25032,151,벽풍 노리개,Accessory,Elite,,-1,3,None,None,0,0,-1,20212,FALSE,2760,None,,2760,0
+25033,152,벽풍 노리개,Accessory,Legend,,-1,5,None,None,0,0,-1,20213,FALSE,42000,None,,42000,0
+25041,153,잔향 노리개,Accessory,Normal,,-1,1,None,None,0,0,-1,20221,FALSE,138,None,,138,0
+25042,154,잔향 노리개,Accessory,Elite,,-1,3,None,None,0,0,-1,20222,FALSE,2820,None,,2820,0
+25043,155,잔향 노리개,Accessory,Legend,,-1,5,None,None,0,0,-1,20223,FALSE,42600,None,,42600,0
+25051,156,단혈 노리개,Accessory,Normal,,-1,1,None,None,0,0,-1,20231,FALSE,138,None,,138,0
+25052,157,단혈 노리개,Accessory,Elite,,-1,3,None,None,0,0,-1,20232,FALSE,2820,None,,2820,0
+25053,158,단혈 노리개,Accessory,Legend,,-1,5,None,None,0,0,-1,20233,FALSE,42600,None,,42600,0
+25071,162,비취 노리개,Accessory,Normal,,-1,1,None,None,0,0,-1,20241,FALSE,144,None,,144,0
+25072,163,비취 노리개,Accessory,Elite,,-1,3,None,None,0,0,-1,20242,FALSE,2940,None,,2940,0
+25073,164,비취 노리개,Accessory,Legend,,-1,5,None,None,0,0,-1,20243,FALSE,44400,None,,44400,0
+24051,170,인내의 브로치,Accessory,Normal,,-1,1,None,None,0,0,-1,20251,FALSE,141,None,,141,0
+24052,171,인내의 브로치,Accessory,Rare,,-1,2,None,None,0,0,-1,20252,FALSE,720,None,,720,0
+24053,172,인내의 브로치,Accessory,Elite,,-1,3,None,None,0,0,-1,20253,FALSE,2850,None,,2850,0
+24054,173,인내의 브로치,Accessory,Epic,,-1,4,None,None,0,0,-1,20254,FALSE,11400,None,,11400,0
+24055,174,인내의 브로치,Accessory,Legend,,-1,5,None,None,0,0,-1,20255,FALSE,43500,None,,43500,0
+26011,175,세인트 워치,Accessory,Rare,,-1,2,None,None,0,0,-1,30001,FALSE,765,None,,765,0
+26022,176,세라프 워치,Accessory,Epic,,-1,4,None,None,0,0,-1,30002,FALSE,11700,None,,11700,0
+26031,177,발로르 워치,Accessory,Rare,,-1,2,None,None,0,0,-1,30011,FALSE,795,None,,795,0
+26042,178,리전 워치,Accessory,Epic,,-1,4,None,None,0,0,-1,30012,FALSE,12300,None,,12300,0
+26051,179,퀵스텝 워치,Accessory,Rare,,-1,2,None,None,0,0,-1,30021,FALSE,780,None,,780,0
+26062,180,제피르 워치,Accessory,Epic,,-1,4,None,None,0,0,-1,30022,FALSE,12150,None,,12150,0
+26071,181,플러리 워치,Accessory,Elite,,-1,3,None,None,0,0,-1,30031,FALSE,3000,None,,3000,0
+26081,182,실드 워치,Accessory,Rare,,-1,2,None,None,0,0,-1,30041,FALSE,750,None,,750,0
+26082,183,배리어 워치,Accessory,Epic,,-1,4,None,None,0,0,-1,30042,FALSE,11850,None,,11850,0
+100001,184,속삭이는 묵시록,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19500,Books,,19500,30
+100002,185,속삭이는 묵시록,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,78000,Books,,78000,45
+100003,186,허공의 사전,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,600,Books,,600,10
+100004,187,허공의 사전,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,1560,Books,,1560,20
+100005,188,황폐의 전도서,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,570,Books,,570,10
+100006,189,황폐의 전도서,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,1470,Books,,1470,20
+100007,190,황폐의 전도서,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17700,Books,,17700,30
+100008,191,황폐의 전도서,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,73500,Books,,73500,45
+100009,192,심연의 장정록,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,630,Books,,630,10
+100010,193,심연의 장정록,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,1620,Books,,1620,20
+100011,194,심연의 장정록,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18900,Books,,18900,30
+100012,195,심연의 장정록,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,76500,Books,,76500,45
+100013,196,불멸의 교본,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18300,Books,,18300,30
+100014,197,불멸의 교본,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75000,Books,,75000,45
+100015,198,공허의 시집,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,540,Books,,540,10
+100016,199,공허의 시집,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,1410,Books,,1410,20
+100017,200,잊힌 언어 사전,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,615,Books,,615,10
+100018,201,잊힌 언어 사전,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,1590,Books,,1590,20
+100019,202,잊힌 언어 사전,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18600,Books,,18600,30
+100020,203,잊힌 언어 사전,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75600,Books,,75600,45
+100021,204,황혼의 주석집,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,585,Books,,585,10
+100022,205,황혼의 주석집,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,1530,Books,,1530,20
+100023,206,황혼의 주석집,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18000,Books,,18000,30
+100024,207,황혼의 주석집,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,74400,Books,,74400,45
+100025,208,붉은 잉크의 일기,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,555,Books,,555,10
+100026,209,붉은 잉크의 일기,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,1440,Books,,1440,20
+100027,210,붉은 잉크의 일기,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17400,Books,,17400,30
+100028,211,붉은 잉크의 일기,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,72000,Books,,72000,45
+100029,212,황혼 협약서,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,570,Manuscripts,,570,10
+100030,213,황혼 협약서,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4200,Manuscripts,,4200,20
+100031,214,황혼 협약서,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17700,Manuscripts,,17700,30
+100032,215,황혼 협약서,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,73500,Manuscripts,,73500,45
+100033,216,검은 봉인장,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,600,Manuscripts,,600,10
+100034,217,검은 봉인장,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4350,Manuscripts,,4350,20
+100035,218,검은 봉인장,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18300,Manuscripts,,18300,30
+100036,219,검은 봉인장,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75000,Manuscripts,,75000,45
+100037,220,침묵의 명령서,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,555,Manuscripts,,555,10
+100038,221,침묵의 명령서,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4140,Manuscripts,,4140,20
+100039,222,침묵의 명령서,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17400,Manuscripts,,17400,30
+100040,223,침묵의 명령서,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,72000,Manuscripts,,72000,45
+100041,224,잊혀진 영수증,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,540,Manuscripts,,540,10
+100042,225,잊혀진 영수증,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4050,Manuscripts,,4050,20
+100043,226,붉은 계약서,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18150,Manuscripts,,18150,30
+100044,227,붉은 계약서,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,74400,Manuscripts,,74400,45
+100045,228,파괴된 전단,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,555,Manuscripts,,555,10
+100046,229,파괴된 전단,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4140,Manuscripts,,4140,20
+100047,230,의례 참가증,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,570,Manuscripts,,570,10
+100048,231,의례 참가증,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4200,Manuscripts,,4200,20
+100049,232,의례 참가증,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17850,Manuscripts,,17850,30
+100050,233,의례 참가증,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,73800,Manuscripts,,73800,45
+100051,234,불길한 봉인 증서,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17700,Manuscripts,,17700,30
+100052,235,불길한 봉인 증서,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,73500,Manuscripts,,73500,45
+100053,236,차원 세금 고지서,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,585,Manuscripts,,585,10
+100054,237,차원 세금 고지서,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4260,Manuscripts,,4260,20
+100055,238,차원 세금 고지서,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18000,Manuscripts,,18000,30
+100056,239,차원 세금 고지서,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,74100,Manuscripts,,74100,45
+100057,240,균열 연감,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,615,Manuscripts,,615,10
+100058,241,균열 연감,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4410,Manuscripts,,4410,20
+100059,242,균열 연감,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18600,Manuscripts,,18600,30
+100060,243,균열 연감,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75600,Manuscripts,,75600,45
+100061,244,심연 항해도,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,630,Maps,,630,10
+100062,245,심연 항해도,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4620,Maps,,4620,20
+100063,246,심연 항해도,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18450,Maps,,18450,30
+100064,247,심연 항해도,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75300,Maps,,75300,45
+100065,248,염화 통행도,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,600,Maps,,600,10
+100066,249,염화 통행도,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4500,Maps,,4500,20
+100067,250,염화 통행도,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18150,Maps,,18150,30
+100068,251,염화 통행도,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,74700,Maps,,74700,45
+100069,252,잃어버린 왕국의 설계도,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18900,Maps,,18900,30
+100070,253,잃어버린 왕국의 설계도,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,76500,Maps,,76500,45
+100071,254,붉은 구역 지도,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,570,Maps,,570,10
+100072,255,붉은 구역 지도,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4350,Maps,,4350,20
+100073,256,붉은 구역 지도,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17700,Maps,,17700,30
+100074,257,붉은 구역 지도,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,73500,Maps,,73500,45
+100075,258,황혼의 지하도면,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,615,Maps,,615,10
+100076,259,황혼의 지하도면,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4530,Maps,,4530,20
+100077,260,황혼의 지하도면,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18300,Maps,,18300,30
+100078,261,황혼의 지하도면,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75000,Maps,,75000,45
+100079,262,왜곡된 항로 지도,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18750,Maps,,18750,30
+100080,263,왜곡된 항로 지도,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75900,Maps,,75900,45
+100081,264,봉인된 구역 설계도,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,585,Maps,,585,10
+100082,265,봉인된 구역 설계도,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4440,Maps,,4440,20
+100083,266,봉인된 구역 설계도,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18000,Maps,,18000,30
+100084,267,봉인된 구역 설계도,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,74400,Maps,,74400,45
+100085,268,차원 균열 지형도,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,645,Maps,,645,10
+100086,269,차원 균열 지형도,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4680,Maps,,4680,20
+100087,270,차원 균열 지형도,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19050,Maps,,19050,30
+100088,271,차원 균열 지형도,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,76800,Maps,,76800,45
+100089,272,무명의 화폐,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,540,Coins,,540,10
+100090,273,무명의 화폐,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4050,Coins,,4050,20
+100091,274,무명의 화폐,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17400,Coins,,17400,30
+100092,275,무명의 화폐,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,72000,Coins,,72000,45
+100093,276,울음의 주화,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,585,Coins,,585,10
+100094,277,울음의 주화,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4350,Coins,,4350,20
+100095,278,심판의 금화,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18000,Coins,,18000,30
+100096,279,심판의 금화,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,74400,Coins,,74400,45
+100097,280,심연의 은화,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,570,Coins,,570,10
+100098,281,심연의 은화,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4260,Coins,,4260,20
+100099,282,심연의 은화,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17700,Coins,,17700,30
+100100,283,심연의 은화,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,73500,Coins,,73500,45
+100101,284,불멸의 동전,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19200,Coins,,19200,30
+100102,285,불멸의 동전,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,76500,Coins,,76500,45
+100103,286,붉은 인장 토큰,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,555,Coins,,555,10
+100104,287,붉은 인장 토큰,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4140,Coins,,4140,20
+100105,288,붉은 인장 토큰,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17550,Coins,,17550,30
+100106,289,붉은 인장 토큰,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,72600,Coins,,72600,45
+100107,290,잊힌 왕조의 주화,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,600,Coins,,600,10
+100108,291,잊힌 왕조의 주화,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4440,Coins,,4440,20
+100109,292,잊힌 왕조의 주화,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18300,Coins,,18300,30
+100110,293,잊힌 왕조의 주화,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75000,Coins,,75000,45
+100111,294,차원 조폐 패편,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,576,Coins,,576,10
+100112,295,차원 조폐 패편,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4320,Coins,,4320,20
+100113,296,차원 조폐 패편,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18150,Coins,,18150,30
+100114,297,차원 조폐 패편,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,74100,Coins,,74100,45
+100115,298,신성한 기념 주화,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,615,Coins,,615,10
+100116,299,신성한 기념 주화,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4500,Coins,,4500,20
+100117,300,심연의 오팔,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,630,Jewels,,630,10
+100118,301,심연의 오팔,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4650,Jewels,,4650,20
+100119,302,심연의 오팔,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18600,Jewels,,18600,30
+100120,303,심연의 오팔,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75600,Jewels,,75600,45
+100121,304,황혼의 사파이어,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,645,Jewels,,645,10
+100122,305,황혼의 사파이어,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4740,Jewels,,4740,20
+100123,306,황혼의 사파이어,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18900,Jewels,,18900,30
+100124,307,황혼의 사파이어,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,76200,Jewels,,76200,45
+100125,308,파멸의 루비,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19800,Jewels,,19800,30
+100126,309,파멸의 루비,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,78000,Jewels,,78000,45
+100127,310,붉은 수정 결정,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,660,Jewels,,660,10
+100128,311,붉은 수정 결정,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4800,Jewels,,4800,20
+100129,312,붉은 수정 결정,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19200,Jewels,,19200,30
+100130,313,붉은 수정 결정,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,76800,Jewels,,76800,45
+100131,314,번개석,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,615,Jewels,,615,10
+100132,315,번개석,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4560,Jewels,,4560,20
+100133,316,번개석,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18450,Jewels,,18450,30
+100134,317,번개석,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75300,Jewels,,75300,45
+100135,318,잊혀진 눈동자 보석,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,624,Jewels,,624,10
+100136,319,잊혀진 눈동자 보석,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4560,Jewels,,4560,20
+100137,320,불멸의 토파즈,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19500,Jewels,,19500,30
+100138,321,불멸의 토파즈,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,77400,Jewels,,77400,45
+100139,322,균열의 에메랄드,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,636,Jewels,,636,10
+100140,323,균열의 에메랄드,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4620,Jewels,,4620,20
+100141,324,균열의 에메랄드,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18750,Jewels,,18750,30
+100142,325,균열의 에메랄드,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75900,Jewels,,75900,45
+100143,326,어둠의 진주,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,654,Jewels,,654,10
+100144,327,어둠의 진주,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4710,Jewels,,4710,20
+100145,328,어둠의 진주,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19050,Jewels,,19050,30
+100146,329,어둠의 진주,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,76500,Jewels,,76500,45
+100147,330,속삭이는 흉상,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,585,Statues,,585,10
+100148,331,속삭이는 흉상,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4350,Statues,,4350,20
+100149,332,속삭이는 흉상,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17850,Statues,,17850,30
+100150,333,속삭이는 흉상,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,73500,Statues,,73500,45
+100151,334,울고 있는 여인상,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17400,Statues,,17400,30
+100152,335,울고 있는 여인상,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,72000,Statues,,72000,45
+100153,336,검은 아이의 형상,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,555,Statues,,555,10
+100154,337,검은 아이의 형상,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4140,Statues,,4140,20
+100155,338,검은 아이의 형상,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17100,Statues,,17100,30
+100156,339,검은 아이의 형상,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,70500,Statues,,70500,45
+100157,340,금이 간 사제상,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,570,Statues,,570,10
+100158,341,금이 간 사제상,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4200,Statues,,4200,20
+100159,342,붉은 석상의 손,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,576,Statues,,576,10
+100160,343,붉은 석상의 손,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4260,Statues,,4260,20
+100161,344,붉은 석상의 손,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17550,Statues,,17550,30
+100162,345,붉은 석상의 손,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,72600,Statues,,72600,45
+100163,346,균열의 수호상,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18750,Statues,,18750,30
+100164,347,균열의 수호상,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75600,Statues,,75600,45
+100165,348,불멸의 흑상,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,600,Statues,,600,10
+100166,349,불멸의 흑상,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4440,Statues,,4440,20
+100167,350,불멸의 흑상,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18000,Statues,,18000,30
+100168,351,불멸의 흑상,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,74400,Statues,,74400,45
+100169,352,비명 지르는 동상,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,615,Statues,,615,10
+100170,353,비명 지르는 동상,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4500,Statues,,4500,20
+100171,354,비명 지르는 동상,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18300,Statues,,18300,30
+100172,355,비명 지르는 동상,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75000,Statues,,75000,45
+100173,356,잊혀진 왕좌의 조형,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,630,Statues,,630,10
+100174,357,잊혀진 왕좌의 조형,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4560,Statues,,4560,20
+100175,358,미소 짓는 초상화,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,540,Paintings,,540,10
+100176,359,미소 짓는 초상화,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4050,Paintings,,4050,20
+100177,360,미소 짓는 초상화,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17100,Paintings,,17100,30
+100178,361,미소 짓는 초상화,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,70500,Paintings,,70500,45
+100179,362,심연의 풍경화,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18000,Paintings,,18000,30
+100180,363,심연의 풍경화,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,73500,Paintings,,73500,45
+100181,364,역전된 도시,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,585,Paintings,,585,10
+100182,365,역전된 도시,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4260,Paintings,,4260,20
+100183,366,역전된 도시,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17700,Paintings,,17700,30
+100184,367,역전된 도시,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,72600,Paintings,,72600,45
+100185,368,불멸의 가계도,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18000,Paintings,,18000,30
+100186,369,불멸의 가계도,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,74400,Paintings,,74400,45
+100187,370,균열의 추상화,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,615,Paintings,,615,10
+100188,371,균열의 추상화,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4440,Paintings,,4440,20
+100189,372,균열의 추상화,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18450,Paintings,,18450,30
+100190,373,균열의 추상화,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75600,Paintings,,75600,45
+100191,374,검은 잉크 풍경,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,570,Paintings,,570,10
+100192,375,검은 잉크 풍경,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4200,Paintings,,4200,20
+100193,376,황혼의 대형 벽화,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,630,Paintings,,630,10
+100194,377,황혼의 대형 벽화,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4590,Paintings,,4590,20
+100195,378,황혼의 대형 벽화,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18600,Paintings,,18600,30
+100196,379,황혼의 대형 벽화,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,76500,Paintings,,76500,45
+100197,380,잊힌 성인의 초상,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,600,Paintings,,600,10
+100198,381,잊힌 성인의 초상,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4350,Paintings,,4350,20
+100199,382,잊힌 성인의 초상,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18150,Paintings,,18150,30
+100200,383,잊힌 성인의 초상,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75000,Paintings,,75000,45
+100201,384,붉은 하늘의 파노라마,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,624,Paintings,,624,10
+100202,385,붉은 하늘의 파노라마,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4500,Paintings,,4500,20
+100203,386,철의 계산기,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,600,Mechanics,,600,10
+100204,387,철의 계산기,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4380,Mechanics,,4380,20
+100205,388,철의 계산기,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18000,Mechanics,,18000,30
+100206,389,철의 계산기,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,73500,Mechanics,,73500,45
+100207,390,꿈꾸는 자동인형,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19050,Mechanics,,19050,30
+100208,391,꿈꾸는 자동인형,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,77400,Mechanics,,77400,45
+100209,392,소용돌이 바퀴장치,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,570,Mechanics,,570,10
+100210,393,소용돌이 바퀴장치,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4200,Mechanics,,4200,20
+100211,394,소용돌이 바퀴장치,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17400,Mechanics,,17400,30
+100212,395,소용돌이 바퀴장치,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,71400,Mechanics,,71400,45
+100213,396,불멸의 태엽장치,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18600,Mechanics,,18600,30
+100214,397,불멸의 태엽장치,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,76500,Mechanics,,76500,45
+100215,398,균열 진동기,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,585,Mechanics,,585,10
+100216,399,균열 진동기,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4260,Mechanics,,4260,20
+100217,400,균열 진동기,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17700,Mechanics,,17700,30
+100218,401,균열 진동기,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,72600,Mechanics,,72600,45
+100219,402,음향 발생기,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,555,Mechanics,,555,10
+100220,403,음향 발생기,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4140,Mechanics,,4140,20
+100221,404,잊힌 연구소의 기어박스,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,615,Mechanics,,615,10
+100222,405,잊힌 연구소의 기어박스,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4440,Mechanics,,4440,20
+100223,406,잊힌 연구소의 기어박스,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18300,Mechanics,,18300,30
+100224,407,잊힌 연구소의 기어박스,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75000,Mechanics,,75000,45
+100225,408,황혼의 압력기,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,630,Mechanics,,630,10
+100226,409,황혼의 압력기,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4560,Mechanics,,4560,20
+100227,410,황혼의 압력기,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18450,Mechanics,,18450,30
+100228,411,황혼의 압력기,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75600,Mechanics,,75600,45
+100229,412,붉은 톱니 장치,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,594,Mechanics,,594,10
+100230,413,붉은 톱니 장치,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4320,Mechanics,,4320,20
+100231,414,속박의 성배,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18600,Relics,,18600,30
+100232,415,속박의 성배,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,76500,Relics,,76500,45
+100233,416,고통의 묵주,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,645,Relics,,645,10
+100234,417,고통의 묵주,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4770,Relics,,4770,20
+100235,418,고통의 묵주,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19200,Relics,,19200,30
+100236,419,고통의 묵주,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,78000,Relics,,78000,45
+100237,420,울부짖는 성상,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,660,Relics,,660,10
+100238,421,울부짖는 성상,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4830,Relics,,4830,20
+100239,422,울부짖는 성상,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19500,Relics,,19500,30
+100240,423,울부짖는 성상,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,79500,Relics,,79500,45
+100241,424,붉은 성서의 파편,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18300,Relics,,18300,30
+100242,425,붉은 성서의 파편,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75000,Relics,,75000,45
+100243,426,황혼의 제단 장식,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,630,Relics,,630,10
+100244,427,황혼의 제단 장식,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4710,Relics,,4710,20
+100245,428,황혼의 제단 장식,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18900,Relics,,18900,30
+100246,429,황혼의 제단 장식,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,77400,Relics,,77400,45
+100247,430,성스러운 향로,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,615,Relics,,615,10
+100248,431,성스러운 향로,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4650,Relics,,4650,20
+100249,432,저주의 기도서,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,675,Relics,,675,10
+100250,433,저주의 기도서,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4890,Relics,,4890,20
+100251,434,저주의 기도서,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19800,Relics,,19800,30
+100252,435,저주의 기도서,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,80400,Relics,,80400,45
+100253,436,신성의 십자가,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,624,Relics,,624,10
+100254,437,신성의 십자가,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4560,Relics,,4560,20
+100255,438,신성의 십자가,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18750,Relics,,18750,30
+100256,439,신성의 십자가,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,76200,Relics,,76200,45
+100257,440,던전 의례 가면,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,594,Relics,,594,10
+100258,441,던전 의례 가면,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4440,Relics,,4440,20
+100259,442,붉은 디스크,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,585,Media,,585,10
+100260,443,붉은 디스크,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4440,Media,,4440,20
+100261,444,붉은 디스크,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18000,Media,,18000,30
+100262,445,붉은 디스크,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,73500,Media,,73500,45
+100263,446,무한 루프 테이프,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17400,Media,,17400,30
+100264,447,무한 루프 테이프,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,71400,Media,,71400,45
+100265,448,사라지는 메모리 카드,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,615,Media,,615,10
+100266,449,사라지는 메모리 카드,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4530,Media,,4530,20
+100267,450,사라지는 메모리 카드,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18450,Media,,18450,30
+100268,451,사라지는 메모리 카드,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75000,Media,,75000,45
+100269,452,잊혀진 플로피,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,555,Media,,555,10
+100270,453,잊혀진 플로피,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4140,Media,,4140,20
+100271,454,던전의 블루레이,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17700,Media,,17700,30
+100272,455,던전의 블루레이,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,72000,Media,,72000,45
+100273,456,붉은 카세트,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,570,Media,,570,10
+100274,457,붉은 카세트,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4260,Media,,4260,20
+100275,458,붉은 카세트,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17550,Media,,17550,30
+100276,459,붉은 카세트,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,72600,Media,,72600,45
+100277,460,왜곡된 서버 기록,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,600,Media,,600,10
+100278,461,왜곡된 서버 기록,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4350,Media,,4350,20
+100279,462,왜곡된 서버 기록,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18150,Media,,18150,30
+100280,463,왜곡된 서버 기록,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,74400,Media,,74400,45
+100281,464,무음의 데이터 칩,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,576,Media,,576,10
+100282,465,무음의 데이터 칩,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4320,Media,,4320,20
+100283,466,황혼의 홀로그램 필름,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,630,Media,,630,10
+100284,467,황혼의 홀로그램 필름,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4590,Media,,4590,20
+100285,468,황혼의 홀로그램 필름,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18600,Media,,18600,30
+100286,469,황혼의 홀로그램 필름,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,76500,Media,,76500,45
+100287,470,검은 CRT 모니터,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17400,Electronics,,17400,30
+100288,471,검은 CRT 모니터,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,70500,Electronics,,70500,45
+100289,472,속삭이는 휴대전화,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,17850,Electronics,,17850,30
+100290,473,속삭이는 휴대전화,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,72600,Electronics,,72600,45
+100291,474,불길한 드론,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,645,Electronics,,645,10
+100292,475,불길한 드론,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4740,Electronics,,4740,20
+100293,476,불길한 드론,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19200,Electronics,,19200,30
+100294,477,불길한 드론,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,78000,Electronics,,78000,45
+100295,478,붉은 터미널,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,660,Electronics,,660,10
+100296,479,붉은 터미널,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4860,Electronics,,4860,20
+100297,480,붉은 터미널,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19650,Electronics,,19650,30
+100298,481,붉은 터미널,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,79500,Electronics,,79500,45
+100299,482,황혼의 워키토키,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,615,Electronics,,615,10
+100300,483,황혼의 워키토키,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4620,Electronics,,4620,20
+100301,484,황혼의 워키토키,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18600,Electronics,,18600,30
+100302,485,황혼의 워키토키,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75600,Electronics,,75600,45
+100303,486,균열의 휴대용 콘솔,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,20100,Electronics,,20100,30
+100304,487,균열의 휴대용 콘솔,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,81000,Electronics,,81000,45
+100305,488,잊힌 CCTV,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,585,Electronics,,585,10
+100306,489,잊힌 CCTV,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4470,Electronics,,4470,20
+100307,490,무음의 라디오,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,594,Electronics,,594,10
+100308,491,무음의 라디오,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4500,Electronics,,4500,20
+100309,492,차원의 노트북,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,675,Electronics,,675,10
+100310,493,차원의 노트북,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4950,Electronics,,4950,20
+100311,494,차원의 노트북,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,19800,Electronics,,19800,30
+100312,495,차원의 노트북,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,80400,Electronics,,80400,45
+100313,496,은빛 헤드셋,Artifact,Normal,,-1,1,None,None,0,0,-1,,FALSE,600,Electronics,,600,10
+100314,497,은빛 헤드셋,Artifact,Elite,,-1,1,None,None,0,0,-1,,FALSE,4590,Electronics,,4590,20
+100315,498,은빛 헤드셋,Artifact,Epic,,-1,1,None,None,0,0,-1,,FALSE,18450,Electronics,,18450,30
+100316,499,은빛 헤드셋,Artifact,Legend,,-1,1,None,None,0,0,-1,,FALSE,75000,Electronics,,75000,45

@@ -1,0 +1,435 @@
+Id,BitFlagIndex,~Name_Kr_fromLocalize,~Name_design,Category,SubType,Grade,ConsumableType,KeyTypes,NoteType,Cooltime,SellPrice,DefaultCount,InventoryCountMax,SkillId,AddAfterConsumeIds,CanUseFromQuickSlot,CanUseFromInventory,Worth
+int,int,string,string,EItemCategory,EGoodsSubType,EGoodsGradeType,EConsumableType,EKeyItemType[],ENoteType,float,int,long,int,int,int[],bool,bool,int
+2000,1,붕대,붕대,None,Consumable,None,HpRecovery,Medicine,None,2,3,5,10,50002000,,TRUE,TRUE,3
+2001,2,회복 드링크,회복 드링크,None,Consumable,Normal,HpRecovery,Medicine,None,2,33,2,5,50002001,,TRUE,TRUE,33
+2002,3,진정제 앰풀,진정제 앰풀,None,Consumable,Normal,StressRecovery,Medicine,None,2,31,2,5,50002011,,TRUE,TRUE,31
+2003,4,에테르 배터리,에테르 배터리,None,Consumable,Epic,BrightnessRecovery,Medicine,None,2,1230,0,2,50002021,,TRUE,TRUE,1230
+2004,5,강화 화염병,강화 화염병,None,Consumable,Elite,AttackSupport2,None,None,10,360,0,3,50002032,,TRUE,FALSE,360
+2005,6,뾰족한 돌멩이,돌맹이,None,Consumable,None,AttackSupport,None,None,2,0,5,10,50002091,,TRUE,FALSE,0
+2006,7,해독제,해독제,None,Consumable,Rare,ReleaseDebuff,Medicine,None,2,102,2,5,50002101,,TRUE,TRUE,102
+2007,8,지혈 벌레,지혈 벌레,None,Consumable,Rare,ReleaseDebuff,Medicine,None,2,117,2,5,50002111,,TRUE,TRUE,117
+2008,9,화상 연고,화상 연고,None,Consumable,Rare,ReleaseDebuff,Medicine,None,2,105,2,5,50002121,,TRUE,TRUE,105
+2009,10,몽환의 파편병,몽환의 파편병,None,Consumable,Epic,HpRecovery,None,None,2,1525,0,5,50002141,,TRUE,FALSE,1525
+2010,11,곰 덫,곰 덫,None,Consumable,Elite,AttackSupport,None,None,10,345,0,5,50002092,,TRUE,FALSE,345
+2011,12,더미 스태미나 포션,더미 스태미나 포션,None,Consumable,None,StaminaRecovery,None,None,2,0,0,4,50002131,,TRUE,TRUE,0
+2012,13,화염병,화염병,None,Consumable,Rare,AttackSupport2,None,None,10,108,2,5,50002031,,TRUE,FALSE,108
+2013,14,대형 회복 드링크,대형 회복 드링크,None,Consumable,Rare,HpRecovery,Medicine,None,2,114,0,5,50002002,,TRUE,TRUE,114
+2014,15,회복 카트리지,회복 카트리지,None,Consumable,Elite,HpRecovery,Medicine,None,2,375,0,5,50002003,,TRUE,TRUE,375
+2015,16,대형 진정제 앰플,대형 진정제 앰플,None,Consumable,Rare,StressRecovery,Medicine,None,2,111,0,5,50002012,,TRUE,TRUE,111
+2016,17,진정제 카트리지,진정제 카트리지,None,Consumable,Elite,StressRecovery,Medicine,None,2,366,0,5,50002013,,TRUE,TRUE,366
+2017,18,해독제 카트리지,해독제 카트리지,None,Consumable,Elite,ReleaseDebuff,Medicine,None,2,357,0,5,50002102,,TRUE,TRUE,357
+2018,19,지혈 카트리지,지혈 카트리지,None,Consumable,Elite,ReleaseDebuff,Medicine,None,2,384,0,5,50002112,,TRUE,TRUE,384
+2019,20,항생 카트리지,항생 카트리지,None,Consumable,Elite,ReleaseDebuff,Medicine,None,2,372,0,5,50002122,,TRUE,TRUE,372
+2020,21,이계의 회복 드링크,이계의 회복 드링크,None,Consumable,Elite,HpRecovery,None,None,2,405,0,5,50002006,,TRUE,TRUE,405
+2021,22,이계의 진정제 앰플,이계의 진정제 앰풀,None,Consumable,Elite,StressRecovery,None,None,2,396,0,5,50002016,,TRUE,TRUE,396
+2025,26,섬광류탄,섬광류탄,None,Consumable,Rare,AttackSupport2,None,None,10,106,0,5,50002095,,TRUE,FALSE,106
+2026,27,스파이크 샷,압정 폭탄,None,Consumable,Rare,AttackSupport2,None,None,10,103,0,5,50002071,,TRUE,FALSE,103
+2027,28,독가스 수류탄,독가스 수류탄,None,Consumable,Rare,AttackSupport2,None,None,10,109,0,5,50002061,,TRUE,FALSE,109
+2029,30,강화 스파이크 샷,강화 압정 폭탄,None,Consumable,Elite,AttackSupport2,None,None,10,354,0,3,50002072,,TRUE,FALSE,354
+2030,31,강화 독 수류탄,강화 독 수류탄,None,Consumable,Elite,AttackSupport2,None,None,10,363,0,3,50002062,,TRUE,FALSE,363
+2031,32,가솔린 플라스크,가솔린 플라스크,None,Consumable,Rare,AttackSupport,None,None,5,99,0,5,50002096,,TRUE,FALSE,99
+2032,33,액체 질소 텀블러,액체 질소 텀블러,None,Consumable,Rare,AttackSupport2,None,None,10,108,0,5,50002041,,TRUE,FALSE,108
+2033,34,고압 폭풍탄,고압 폭풍탄,None,Consumable,Rare,AttackSupport2,None,None,10,112,0,5,50002051,,TRUE,FALSE,112
+2034,35,강화 액체 질소 텀블러,강화 액체 질소 텀블러,None,Consumable,Elite,AttackSupport2,None,None,10,369,0,3,50002042,,TRUE,FALSE,369
+2035,36,강화 고압 폭풍탄,강화 고압 폭풍탄,None,Consumable,Elite,AttackSupport2,None,None,10,372,0,3,50002052,,TRUE,FALSE,372
+2036,37,몽환의 회복 파편병,몽환(HP),None,Consumable,Rare,HpRecovery,Medicine,None,2,420,0,3,50002141,,TRUE,FALSE,420
+2038,39,몽환의 진정 파편병,몽환(스트레스),None,Consumable,Rare,StressRecovery,Medicine,None,2,414,0,3,50002142,,TRUE,FALSE,414
+2040,41,레플리카 성표,레플리카 성표,None,Consumable,Epic,Buff,None,None,30,1170,0,2,50002094,,TRUE,FALSE,1170
+3000,42,빈 파우치,빈 파우치,None,Misc,Normal,None,None,None,0,40,0,99,0,,FALSE,FALSE,40
+3001,43,빈 앰풀,빈 앰풀,None,Misc,Normal,None,None,None,0,38,0,99,0,,FALSE,FALSE,38
+3002,44,다 쓴 배터리,다 쓴 배터리,None,Misc,Normal,None,None,None,0,42,0,99,0,,FALSE,FALSE,42
+3003,45,빈 병,빈 병,None,Misc,Normal,None,None,None,0,39,0,99,0,,FALSE,FALSE,39
+3004,46,빈 용기,빈 용기,None,Misc,Normal,None,None,None,0,41,0,99,0,,FALSE,FALSE,41
+3006,47,가솔린 통,가솔린 통,None,Misc,Rare,None,None,None,0,450,0,99,0,,FALSE,FALSE,450
+3007,48,트랩 제작 도구,트랩 제작 도구,None,Misc,Rare,None,None,None,0,465,0,99,0,,FALSE,FALSE,465
+3008,49,약초,약초,None,Misc,Normal,None,None,None,0,105,0,99,0,,FALSE,FALSE,105
+3009,50,진정초,진정초,None,Misc,Normal,None,None,None,0,108,0,99,0,,FALSE,FALSE,108
+3010,51,화약 가루,화약 가루,None,Misc,Normal,None,None,None,0,129,0,99,0,,FALSE,FALSE,129
+3011,52,독 주머니,독 주머니,None,Misc,Rare,None,None,None,0,480,0,99,0,,FALSE,FALSE,480
+4001,53,정체불명의 고기 패티,정체불명의 고기 패티,None,Consumable,Rare,Buff,None,None,0,96,0,3,50003001,,TRUE,TRUE,96
+4002,54,3배 카페인 껌,3배 카페인 껌,None,Consumable,Rare,Buff,None,None,0,99,0,3,50003002,,TRUE,TRUE,99
+4003,55,분노의 캡사이신 소스,분노의 캡사이신 소스,None,Consumable,Elite,Buff,None,None,0,330,0,3,50003003,,TRUE,TRUE,330
+4004,56,철분 강화 시리얼,철분 강화 시리얼,None,Consumable,Elite,Buff,None,None,0,345,0,3,50003004,,TRUE,TRUE,345
+4005,57,매의 눈 블루베리 즙,매의 눈 블루베리 즙,None,Consumable,Elite,Buff,None,None,0,354,0,3,50003005,,TRUE,TRUE,354
+4006,58,와사비 폭탄 과자,와사비 폭탄 과자,None,Consumable,Elite,Buff,None,None,0,336,0,3,50003006,,TRUE,TRUE,336
+4007,59,초강력 민트 초코,초강력 민트 초코,None,Consumable,Elite,Buff,None,None,0,342,0,3,50003007,,TRUE,TRUE,342
+4008,60,대용량 실리카 젤리,대용량 실리카 젤리,None,Consumable,Elite,Buff,None,None,0,339,0,3,50003008,,TRUE,TRUE,339
+4009,61,납덩이 도넛,납동이 도넛,None,Consumable,Elite,Buff,None,None,0,348,0,3,50003009,,TRUE,TRUE,348
+4010,62,축성된 소금 카라멜,축성된 소금 카라멜,None,Consumable,Elite,Buff,None,None,0,357,0,3,50003010,,TRUE,TRUE,357
+6001,64,동티켓,동티켓,None,Misc,Rare,None,None,None,0,200,0,10,0,,FALSE,FALSE,200
+6002,65,은티켓,은티켓,None,Misc,Epic,None,None,None,0,1000,0,10,0,,FALSE,FALSE,1000
+6003,66,금티켓,금티켓,None,Misc,Legend,None,None,None,0,2000,0,10,0,,FALSE,FALSE,2000
+7000,67,잡동사니 더미,잡동사니 더미,None,Misc,Normal,None,None,None,0,114,0,100,0,,FALSE,FALSE,114
+7001,68,보석 파편,보석 파편,None,Misc,Rare,None,None,None,0,435,0,30,0,,FALSE,FALSE,435
+7002,69,에테르 용액,에테르 용액,None,Misc,Epic,None,None,None,0,3600,0,30,0,,FALSE,FALSE,2400
+7003,70,금속 고리,금속 고리,None,Misc,Rare,None,None,None,0,405,0,30,0,,FALSE,FALSE,405
+7004,71,보석 세팅편,보석 세팅편,None,Misc,Epic,None,None,None,0,2525,0,30,0,,FALSE,FALSE,2525
+7005,72,세공 합금,세공 합금,None,Misc,Legend,None,None,None,0,10300,0,30,0,,FALSE,FALSE,10300
+7006,73,실끈 조각,실끈 조각,None,Misc,Rare,None,None,None,0,420,0,30,0,,FALSE,FALSE,420
+7007,74,펜던트 베이스,펜던트 베이스,None,Misc,Epic,None,None,None,0,2675,0,30,0,,FALSE,FALSE,2675
+7008,75,세공 체인,세공 체인,None,Misc,Legend,None,None,None,0,10750,0,30,0,,FALSE,FALSE,10750
+7009,76,은제 침편,은제 침편,None,Misc,Rare,None,None,None,0,450,0,30,0,,FALSE,FALSE,450
+7010,77,장식 구슬,장식 구슬,None,Misc,Epic,None,None,None,0,2450,0,30,0,,FALSE,FALSE,2450
+7011,78,세공 후크,세공 후크,None,Misc,Legend,None,None,None,0,10450,0,30,0,,FALSE,FALSE,10450
+7012,79,금속 띠편,금속 띠편,None,Misc,Rare,None,None,None,0,426,0,30,0,,FALSE,FALSE,426
+7013,80,유리 장식편,유리 장식편,None,Misc,Epic,None,None,None,0,2375,0,30,0,,FALSE,FALSE,2375
+7014,81,장식 체결구,장식 체결구,None,Misc,Legend,None,None,None,0,10600,0,30,0,,FALSE,FALSE,10600
+7015,82,문양된 금속판,문양된 금속판,None,Misc,Rare,None,None,None,0,444,0,30,0,,FALSE,FALSE,444
+7016,83,상징 조각,상징 조각,None,Misc,Epic,None,None,None,0,2630,0,30,0,,FALSE,FALSE,2630
+7017,84,세공 인장,세공 인장,None,Misc,Legend,None,None,None,0,10900,0,30,0,,FALSE,FALSE,10900
+7018,85,회로 모듈,회로 모듈,None,Misc,Rare,None,None,None,0,465,0,30,0,,FALSE,FALSE,465
+7019,86,디스플레이 조각,디스플레이 조각,None,Misc,Epic,None,None,None,0,2750,0,30,0,,FALSE,FALSE,2750
+7020,87,동력 코어칩,동력 코어칩,None,Misc,Legend,None,None,None,0,11200,0,30,0,,FALSE,FALSE,11200
+7021,88,매듭끈,매듭끈,None,Misc,Rare,None,None,None,0,414,0,30,0,,FALSE,FALSE,414
+7022,89,자개편,자개편,None,Misc,Epic,None,None,None,0,2570,0,30,0,,FALSE,FALSE,2570
+7023,90,은제 장식구,은제 장식구,None,Misc,Legend,None,None,None,0,11050,0,30,0,,FALSE,FALSE,11050
+7024,91,응축 잔류물,응축 잔류물,None,Misc,Rare,None,None,None,0,480,0,30,0,,FALSE,FALSE,480
+7025,92,심연 침전물,심연 침전물,None,Misc,Rare,None,None,None,0,495,0,30,0,,FALSE,FALSE,495
+7026,93,위상 잔재,위상 잔재,None,Misc,Epic,None,None,None,0,2825,0,30,0,,FALSE,FALSE,2825
+7027,94,허무의 결정,허무의 결정,None,Misc,Epic,None,None,None,0,2900,0,30,0,,FALSE,FALSE,2900
+7028,95,신성의 파편,신성의 파편,None,Misc,Elite,None,None,None,0,1860,0,30,0,,FALSE,FALSE,1860
+7029,96,짐승의 이빨,짐승의 이빨,None,Misc,Elite,None,None,None,0,1740,0,30,0,,FALSE,FALSE,1740
+7030,97,금단의 성서편,금단의 성서편,None,Misc,Elite,None,None,None,0,1920,0,30,0,,FALSE,FALSE,1920
+7031,98,봉인의 인장,봉인의 인장,None,Misc,Elite,None,None,None,0,1890,0,30,0,,FALSE,FALSE,1890
+7032,99,증오의 단도,증오의 단도,None,Misc,Elite,None,None,None,0,1830,0,30,0,,FALSE,FALSE,1830
+7033,100,생명의 싹,생명의 싹,None,Misc,Elite,None,None,None,0,1770,0,30,0,,FALSE,FALSE,1770
+7034,101,톱니 바퀴 조각,톱니 바퀴 조각,None,Misc,Elite,None,None,None,0,1800,0,30,0,,FALSE,FALSE,1800
+7035,102,왜곡된 수정구,왜곡된 수정구,None,Misc,Elite,None,None,None,0,1950,0,30,0,,FALSE,FALSE,1950
+7101,103,부품 더미,부품 더미,None,Misc,Rare,None,None,None,0,456,0,30,0,,FALSE,FALSE,456
+7102,104,마력석,마력석,None,Misc,Epic,None,None,None,0,2720,0,30,0,,FALSE,FALSE,2720
+7211,105,불씨 조각,불씨 조각,None,Misc,Rare,None,None,None,0,435,0,30,0,,FALSE,FALSE,435
+7212,106,화염 수정,화염 수정,None,Misc,Epic,None,None,None,0,2780,0,30,0,,FALSE,FALSE,2780
+7213,107,용암 파편,용암 파편,None,Misc,Epic,None,None,None,0,2870,0,30,0,,FALSE,FALSE,2870
+7214,108,인페르노 코어,인페르노 코어,None,Misc,Legend,None,None,None,0,11500,0,30,0,,FALSE,FALSE,11500
+7215,109,태양화염 심장,태양화염 심장,None,Misc,Legend,None,None,None,0,12250,0,30,0,,FALSE,FALSE,12250
+7221,110,이슬 조각,이슬 조각,None,Misc,Rare,None,None,None,0,435,0,30,0,,FALSE,FALSE,435
+7222,111,파도 수정,파도 수정,None,Misc,Epic,None,None,None,0,2780,0,30,0,,FALSE,FALSE,2780
+7223,112,빙결 파편,빙결 파편,None,Misc,Epic,None,None,None,0,2870,0,30,0,,FALSE,FALSE,2870
+7224,113,대해 코어,대해 코어,None,Misc,Legend,None,None,None,0,11500,0,30,0,,FALSE,FALSE,11500
+7225,114,빙하 심장,빙하 심장,None,Misc,Legend,None,None,None,0,12250,0,30,0,,FALSE,FALSE,12250
+7231,115,산들바람 깃털,산들바람 깃털,None,Misc,Rare,None,None,None,0,435,0,30,0,,FALSE,FALSE,435
+7232,116,질풍 파편,질풍 파편,None,Misc,Epic,None,None,None,0,2780,0,30,0,,FALSE,FALSE,2780
+7233,117,뇌전 수정,뇌전 수정,None,Misc,Epic,None,None,None,0,2870,0,30,0,,FALSE,FALSE,2870
+7234,118,폭풍 코어,폭풍 코어,None,Misc,Legend,None,None,None,0,11500,0,30,0,,FALSE,FALSE,11500
+7235,119,천둥 심장,천둥 심장,None,Misc,Legend,None,None,None,0,12250,0,30,0,,FALSE,FALSE,12250
+7241,120,티타늄 합금,티타늄 합금,None,Misc,Epic,None,None,None,0,2900,0,30,0,,FALSE,FALSE,2900
+7242,121,미스릴 중합금,미스릴 중합금,None,Misc,Legend,None,None,None,0,11800,0,30,0,,FALSE,FALSE,11800
+7311,122,강화 금속괴,강화 금속괴,None,Misc,Rare,None,None,None,0,480,0,30,0,,FALSE,FALSE,480
+7312,123,검신 주형,검신 주형,None,Misc,Epic,None,None,None,0,2675,0,30,0,,FALSE,FALSE,2675
+7321,124,아카나 프리즘,아카나 프리즘,None,Misc,Rare,None,None,None,0,474,0,30,0,,FALSE,FALSE,474
+7322,125,이차원 연산핵,이차원 연산핵,None,Misc,Epic,None,None,None,0,2810,0,30,0,,FALSE,FALSE,2810
+7331,126,강철 약실,강철 약실,None,Misc,Rare,None,None,None,0,486,0,30,0,,FALSE,FALSE,486
+7332,127,폭압 코어,폭압 코어,None,Misc,Epic,None,None,None,0,2720,0,30,0,,FALSE,FALSE,2720
+8000,128,보조 가방,파우치,None,Misc,Rare,None,None,None,0,390,0,30,0,,FALSE,FALSE,390
+8001,129,백팩,백팩,None,Misc,Elite,None,None,None,0,1650,0,30,0,,FALSE,FALSE,1650
+8002,130,등산용 배낭,등산용 배낭,None,Misc,Epic,None,None,None,0,2450,0,30,0,,FALSE,FALSE,2450
+8003,131,천 주머니,천 주머니,None,Misc,Elite,None,None,None,0,1560,0,30,0,,FALSE,FALSE,1560
+8004,132,가죽 주머니,가죽 주머니,None,Misc,Epic,None,None,None,0,2375,0,30,0,,FALSE,FALSE,2375
+8005,133,메신저백,메신저백,None,Misc,Elite,None,None,None,0,1740,0,30,0,,FALSE,FALSE,1740
+8006,134,보스턴백,보스턴백,None,Misc,Epic,None,None,None,0,2600,0,30,0,,FALSE,FALSE,2600
+8007,135,상품 카탈로그 시즌1,상품 카탈로그 시즌1,None,Misc,Rare,None,None,None,0,405,0,30,0,,FALSE,FALSE,405
+8008,136,상품 카탈로그 시즌2,상품 카탈로그 시즌2,None,Misc,Elite,None,None,None,0,1710,0,30,0,,FALSE,FALSE,1710
+8009,137,상품 카탈로그 시즌3,상품 카탈로그 시즌3,None,Misc,Epic,None,None,None,0,2525,0,30,0,,FALSE,FALSE,2525
+8010,138,상품 카탈로그 시즌4,상품 카탈로그 시즌4,None,Misc,Legend,None,None,None,0,9700,0,30,0,,FALSE,FALSE,9700
+8011,139,안티키테라 보고서 vol.1,안티키테라 보고서 vol.1,None,Misc,Rare,None,None,None,0,465,0,30,0,,FALSE,FALSE,465
+8012,140,안티키테라 보고서 vol.2,안티키테라 보고서 vol.2,None,Misc,Elite,None,None,None,0,1830,0,30,0,,FALSE,FALSE,1830
+8013,141,안티키테라 보고서 vol.3,안티키테라 보고서 vol.3,None,Misc,Epic,None,None,None,0,2675,0,30,0,,FALSE,FALSE,2675
+8014,142,LD-10,LD-10,None,Misc,Rare,None,None,None,0,480,0,30,0,,FALSE,FALSE,480
+8015,143,LD-20,LD-20,None,Misc,Elite,None,None,None,0,1920,0,30,0,,FALSE,FALSE,1920
+8016,144,LD-30,LD-30,None,Misc,Epic,None,None,None,0,2750,0,30,0,,FALSE,FALSE,2750
+8017,145,휴대용 배터리,휴대용 배터리,None,Misc,Epic,None,None,None,0,2300,0,30,0,,FALSE,FALSE,2300
+8018,146,에테르 이온 배터리,에테르 이온 배터리,None,Misc,Legend,None,None,None,0,10300,0,30,0,,FALSE,FALSE,10300
+8019,147,발루샤 명함,발루샤 명함,None,Misc,Elite,None,None,None,0,1650,0,30,0,,FALSE,FALSE,1650
+8020,148,광고 전단지,광고 전단지,None,Misc,Epic,None,None,None,0,2225,0,30,0,,FALSE,FALSE,2225
+8021,149,미디어 홍보 계약서,미디어 홍보 계약서,None,Misc,Legend,None,None,None,0,9250,0,30,0,,FALSE,FALSE,9250
+8022,150,자기 계발서,자기 계발서,None,Misc,Epic,None,None,None,0,3300,0,30,0,,FALSE,FALSE,3300
+8023,151,전술 연구 데이터,전술 연구 데이터,None,Misc,Legend,None,None,None,0,10750,0,30,0,,FALSE,FALSE,10750
+8024,152,플라스틱 머그컵,플라스틱 머그컵,None,Misc,Normal,None,None,None,0,404,0,30,0,,FALSE,FALSE,404
+8025,153,보급형 이어폰,보급형 이어폰,None,Misc,Normal,None,None,None,0,411,0,30,0,,FALSE,FALSE,411
+8026,154,스테이플러 세트,스테이플러 세트,None,Misc,Normal,None,None,None,0,432,0,30,0,,FALSE,FALSE,432
+8027,155,손목 시계,손목 시계,None,Misc,Normal,None,None,None,0,452,0,30,0,,FALSE,FALSE,452
+8028,156,메모패드,메모패드,None,Misc,Normal,None,None,None,0,424,0,30,0,,FALSE,FALSE,424
+8029,157,보급형 전자계산기,보급형 전자계산기,None,Misc,Normal,None,None,None,0,443,0,30,0,,FALSE,FALSE,443
+8030,158,플라스틱 머리빗,플라스틱 머리빗,None,Misc,Normal,None,None,None,0,406,0,30,0,,FALSE,FALSE,406
+8031,159,보조 충전 케이블,보조 충전 케이블,None,Misc,Normal,None,None,None,0,438,0,30,0,,FALSE,FALSE,438
+8032,160,접이식 우산,접이식 우산,None,Misc,Normal,None,None,None,0,413,0,30,0,,FALSE,FALSE,413
+8033,161,A5 스케치북,A5 스케치북,None,Misc,Normal,None,None,None,0,407,0,30,0,,FALSE,FALSE,407
+8034,162,메탈 볼펜,메탈 볼펜,None,Misc,Rare,None,None,None,0,952,0,30,0,,FALSE,FALSE,952
+8035,163,유리 물병 세트,유리 물병 세트,None,Misc,Rare,None,None,None,0,910,0,30,0,,FALSE,FALSE,910
+8036,164,가죽 키링,가죽 키링,None,Misc,Rare,None,None,None,0,941,0,30,0,,FALSE,FALSE,941
+8037,165,강화 플라스틱 케이스,강화 플라스틱 케이스,None,Misc,Rare,None,None,None,0,939,0,30,0,,FALSE,FALSE,939
+8038,166,폴더형 다이어리,폴더형 다이어리,None,Misc,Rare,None,None,None,0,973,0,30,0,,FALSE,FALSE,973
+8039,167,은장 만년필,은장 만년필,None,Misc,Elite,None,None,None,0,1860,0,30,0,,FALSE,FALSE,1860
+8040,168,고급 손목시계,고급 손목시계,None,Misc,Elite,None,None,None,0,2040,0,30,0,,FALSE,FALSE,2040
+8041,169,크리스털 유리컵,크리스털 유리컵,None,Misc,Elite,None,None,None,0,1770,0,30,0,,FALSE,FALSE,1770
+8042,170,금장 카드지갑,금장 카드지갑,None,Misc,Elite,None,None,None,0,1950,0,30,0,,FALSE,FALSE,1950
+8043,171,세공 라이터,세공 라이터,None,Misc,Elite,None,None,None,0,1890,0,30,0,,FALSE,FALSE,1890
+8044,172,금도금 볼펜,금도금 볼펜,None,Misc,Epic,None,None,None,0,7200,0,30,0,,FALSE,FALSE,7200
+8045,173,백금 코팅 라이터,백금 코팅 라이터,None,Misc,Epic,None,None,None,0,7350,0,30,0,,FALSE,FALSE,7350
+8046,174,순은 목걸이,순은 목걸이,None,Misc,Epic,None,None,None,0,7650,0,30,0,,FALSE,FALSE,7650
+8047,175,루비 인레이 반지,루비 인레이 반지,None,Misc,Epic,None,None,None,0,7800,0,30,0,,FALSE,FALSE,7800
+8048,176,골드 림 와인잔,골드 림 와인잔,None,Misc,Epic,None,None,None,0,7140,0,30,0,,FALSE,FALSE,7140
+8049,177,금괴,금괴,None,Misc,Legend,None,None,None,0,33000,0,30,0,,FALSE,FALSE,33000
+8050,178,백금 반지 세트,백금 반지 세트,None,Misc,Legend,None,None,None,0,28500,0,30,0,,FALSE,FALSE,28500
+8051,179,푸른 다이아 목걸이,푸른 다이아 목걸이,None,Misc,Legend,None,None,None,0,31500,0,30,0,,FALSE,FALSE,31500
+8052,180,에메랄드 브로치,에메랄드 브로치,None,Misc,Legend,None,None,None,0,29400,0,30,0,,FALSE,FALSE,29400
+8053,181,로듐 결정,로듐 결정,None,Misc,Legend,None,None,None,0,36000,0,30,0,,FALSE,FALSE,36000
+9001,182,단서 기록물,단서 기록물,None,Misc,Rare,None,None,None,0,10,0,10,0,,FALSE,TRUE,10
+9002,183,단서 기록물,단서 기록물,None,Misc,Rare,None,None,None,0,10,0,10,0,,FALSE,TRUE,10
+9011,184,군청색 열쇠,군청색 열쇠,Quest,Misc,Rare,None,Door,None,0,10,0,10,0,,FALSE,FALSE,10
+9012,185,금고 열쇠,금고 열쇠,None,Misc,Rare,None,Key,None,0,300,0,10,0,,FALSE,FALSE,300
+9013,186,잠긴 무기 상자 열쇠,봉인된 무기함 열쇠,None,Misc,Rare,None,Key,None,0,300,0,10,0,,FALSE,FALSE,300
+9014,187,잠긴 장신구 상자 열쇠,봉인된 장신구함 열쇠,None,Misc,Rare,None,Key,None,0,300,0,10,0,,FALSE,FALSE,300
+9015,188,의식용 상자 열쇠,의식용 상자 열쇠,None,Misc,Rare,None,Key,None,0,600,0,10,0,,FALSE,FALSE,600
+9016,189,비밀 열쇠 - 귀신 들린 사무실,귀신들린 사무실 열쇠,None,Misc,Elite,None,Key,None,0,2000,0,10,0,,FALSE,FALSE,2000
+9017,190,비밀 열쇠 - 기묘한 가전매장,기묘한 가전매장 열쇠,None,Misc,Elite,None,Key,None,0,2000,0,10,0,,FALSE,FALSE,2000
+9018,191,비밀 열쇠 - 축축한 물류창고,축축한 물류창고 열쇠,None,Misc,Elite,None,Key,None,0,2000,0,10,0,,FALSE,FALSE,2000
+9019,192,비밀 열쇠 - 저주받은 매장,저주받은 매장 열쇠,None,Misc,Elite,None,Key,None,0,2000,0,10,0,,FALSE,FALSE,2000
+9020,193,비밀 열쇠 - 무너진 곳,무너진 곳 열쇠,None,Misc,Elite,None,Key,None,0,2000,0,10,0,,FALSE,FALSE,2000
+10001,194,이계의 주화,이계의 주화,None,Misc,Rare,None,None,None,0,10,0,99,0,,FALSE,FALSE,10
+10002,195,농축된 이상현상 핵,농축된 이상현상 핵,Quest,Misc,Rare,None,None,None,0,10,0,99,0,,FALSE,FALSE,10
+10003,196,희미한 이상현상 잔해,희미한 이상현상 잔해,None,Misc,Rare,None,None,None,0,10,0,99,0,,FALSE,FALSE,10
+11001,197,임시 쪽지,임시 쪽지,None,Note,Normal,None,None,Note,0,1,0,1,0,,TRUE,TRUE,1
+11002,198,경찰서 최후의 기록: 검은 개,경찰서 최후의 기록: 검은 개,None,Note,Normal,None,None,Note,0,1,0,1,0,,TRUE,TRUE,1
+11003,199,환상적인 타코야키 레시피,환상적인 타코야키 레시피,None,Note,Normal,None,None,Note,0,1,0,1,0,,TRUE,TRUE,1
+11004,200,경찰서장의 일기: 무형의 환희,경찰서장의 일기: 무형의 환희,None,Note,Normal,None,None,Note,0,1,0,1,0,,TRUE,TRUE,1
+11005,201,아서 앨런의 계획: 발루샤라는 변수,아서 앨런의 계획: 발루샤라는 변수,None,Note,Normal,None,None,Note,0,1,0,1,0,,TRUE,TRUE,1
+11006,202,저주받은 게임 개발일지: 살려줘,저주받은 게임 개발일지: 살려줘,None,Note,Normal,None,None,Note,0,1,0,1,0,,TRUE,TRUE,1
+11007,203,불타는 소방일지: 분노의 역류,불타는 소방일지: 분노의 역류,None,Note,Normal,None,None,Note,0,1,0,1,0,,TRUE,TRUE,1
+11008,204,어느 아이의 일기장: 포…,어느 아이의 일기장: 포…,None,Note,Normal,None,None,Note,0,1,0,1,0,,TRUE,TRUE,1
+11101,205,낡은 다이버 일지,낡은 다이버 일지,None,Note,Normal,None,None,SpringNote,0,1,0,1,0,,TRUE,TRUE,1
+11102,206,유물에 관한 쪽지,유물에 관한 쪽지,None,Note,Normal,None,None,Memo,0,1,0,1,0,,TRUE,TRUE,1
+11103,207,소문이 적힌 메모,소문이 적힌 메모,None,Note,Normal,None,None,Memo,0,1,0,1,0,,TRUE,TRUE,1
+11104,208,연구원 AA의 비망록,연구원 AA의 비망록,None,Note,Normal,None,None,SpringNote,0,1,0,1,0,,TRUE,TRUE,1
+11105,209,연구원 인사 평가서,연구원 인사 평가서,None,Note,Normal,None,None,A4,0,1,0,1,0,,TRUE,TRUE,1
+11106,210,별의 지도가 그려진 양피지,별의 지도가 그려진 양피지,None,Note,Normal,None,None,Parchment,0,1,0,1,0,,TRUE,TRUE,1
+11107,211,입단 서약서: 영혼의 모르타르,입단 서약서: 영혼의 모르타르,None,Note,Normal,None,None,Parchment,0,1,0,1,0,,TRUE,TRUE,1
+11108,212,구겨진 연구 노트: 경고했잖아.,구겨진 연구 노트: 경고했잖아.,None,Note,Normal,None,None,A4,0,1,0,1,0,,TRUE,TRUE,1
+11109,213,피 묻은 전술 일지: 울프스덴,피 묻은 전술 일지: 울프스덴,None,Note,Normal,None,None,Note,0,1,0,1,0,,TRUE,TRUE,1
+11110,214,눈물 젖은 쇼핑 리스트,눈물 젖은 쇼핑 리스트,None,Note,Normal,None,None,Memo,0,1,0,1,0,,TRUE,TRUE,1
+11111,215,최초의 목격자 : 해방의 시작,최초의 목격자 : 해방의 시작,None,Note,Normal,None,None,Note,0,1,0,1,0,,TRUE,TRUE,1
+11112,216,구겨진 무전 기록지,구겨진 무전 기록지,None,Note,Normal,None,None,VoiceRecord,0,1,0,1,0,,TRUE,TRUE,1
+11113,217,평범한 여고생의 일기장,평범한 여고생의 일기장,None,Note,Normal,None,None,Note,0,1,0,1,0,,TRUE,TRUE,1
+11114,218,투덜거리는 경찰의 순찰 일지,투덜거리는 경찰의 순찰 일지,None,Note,Normal,None,None,SpringNote,0,1,0,1,0,,TRUE,TRUE,1
+11115,219,블로그 출력물,블로그 출력물,None,Note,Normal,None,None,A4,0,1,0,1,0,,TRUE,TRUE,1
+11116,220,낡은 음성 기록물,낡은 음성 기록물,None,Note,Normal,None,None,VoiceRecord,0,1,0,1,0,,TRUE,TRUE,1
+300001,221,저주받은 석상,저주받은 석상,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300002,222,말라붙은 적갈색 잉크병,말라붙은 적갈색 잉크병,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300003,223,사이코패스 교화법,사이코패스 교화법,None,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300004,224,녹슨 워크맨,녹슨 워크맨,None,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300005,225,비명 테이프,비명 테이프,None,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300006,226,금언의 마스크,금언의 마스크,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300007,227,녹슨 회중시계,녹슨 회중시계,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300008,228,훔쳐본 자의 눈,부패 형사의 안구,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300009,229,부패 형사의 수첩,부패 형사의 수첩,None,Misc,None,None,Key,None,0,10,0,10,0,,FALSE,FALSE,10
+300010,230,흩어진 수사기록,흩어진 수사기록,None,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300011,231,무형의 지평선,무형의 지평선,None,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300012,232,봉인된 교전,봉인된 경전,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300013,233,교전 열쇠,교전 열쇠,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300014,234,소울 콜렉터의 낫,소울 콜렉터의 낫,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300015,235,증거품 압수 서류,증거품 압수 서류,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+300016,236,도서관 출입증,도서관 출입증,None,Misc,None,None,Key,None,0,10,0,10,0,,FALSE,FALSE,10
+301001,237,말라붙은 적갈색 잉크병,말라붙은 적갈색 잉크병,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+301002,238,비밀 경전,비밀 경전,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+301003,239,고대의 부품,고대의 부품,Quest,Misc,None,None,None,None,0,10,0,99,0,,FALSE,FALSE,10
+301004,240,거대한 들개 송곳니,거대한 들개 송곳니,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+301005,241,좀비 손가락,좀비 손가락,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+301006,242,좀비 안구,좀비 안구,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+301007,243,빨간마스크 사진,빨간마스크 사진,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+301008,244,이상한 상징,이상한 상징,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+301009,245,광신도의 경전,광신도의 경전,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+301010,246,저주받은 모니터,저주받은 모니터,Quest,Misc,None,None,None,None,0,10,0,10,0,,FALSE,FALSE,10
+301011,247,메모리칩,메모리칩,Quest,Misc,None,None,None,None,0,10,0,99,0,,FALSE,FALSE,10
+91011,248,고철더미,고철더미,Quest,Misc,Normal,None,None,None,0,100,0,30,0,,FALSE,FALSE,100
+91012,249,기판더미,기판더미,Quest,Misc,Normal,None,None,None,0,100,0,30,0,,FALSE,FALSE,100
+300000,250,국방색 열쇠,국방색 열쇠,None,Misc,None,None,Key,None,0,10,0,10,0,,FALSE,FALSE,10
+302001,251,숙성된 공허 요구르트,숙성된 공허 요구르트,Quest,Misc,Normal,None,None,None,0,100,0,1,0,,FALSE,FALSE,100
+302002,252,흠집있는 유물 상자,흠집있는 유물 상자,Quest,Misc,Normal,None,None,None,0,100,0,1,0,,FALSE,FALSE,100
+302003,253,공허 유충,공허 유충,Quest,Misc,Normal,None,None,None,0,100,0,1,0,,FALSE,FALSE,100
+302004,254,흠집있는 유물 상자,흠집있는 유물 상자,Quest,Misc,Normal,None,None,None,0,100,0,1,0,,FALSE,FALSE,100
+302005,255,흠집있는 유물 상자,흠집있는 유물 상자,Quest,Misc,Normal,None,None,None,0,100,0,1,0,,FALSE,FALSE,100
+302006,256,무언가 녹화된 테이프,무언가 녹화된 테이프,Quest,Misc,Normal,None,None,None,0,100,0,1,0,,FALSE,FALSE,100
+302007,257,부서진 비석 조각,부서진 비석 조각,Quest,Misc,Normal,None,None,None,0,100,0,1,0,,FALSE,FALSE,100
+302008,258,정체모를 고깃덩어리,정체모를 고깃덩어리,Quest,Misc,Normal,None,None,None,0,100,0,1,0,,FALSE,FALSE,100
+302009,259,예비용 드론,예비용 드론,Quest,Misc,Normal,None,None,None,0,100,0,1,0,,FALSE,FALSE,100
+12001,260,더미 도면,더미용 레시피1,None,Blueprint,Normal,None,None,None,0,100,0,1,0,,FALSE,TRUE,100
+12002,261,더미 도면,더미용 레시피2,None,Blueprint,Normal,None,None,None,0,100,0,1,0,,FALSE,TRUE,100
+12003,262,더미 도면,더미용 레시피3,None,Blueprint,Normal,None,None,None,0,100,0,1,0,,FALSE,TRUE,100
+12004,263,더미 도면,더미용 레시피4,None,Blueprint,Normal,None,None,None,0,100,0,1,0,,FALSE,TRUE,100
+12005,264,더미 도면,더미용 레시피5,None,Blueprint,Normal,None,None,None,0,100,0,1,0,,FALSE,TRUE,100
+12006,265,더미 도면,더미용 레시피6,None,Blueprint,Normal,None,None,None,0,100,0,1,0,,FALSE,TRUE,100
+12007,266,더미 도면,더미용 레시피7,None,Blueprint,Normal,None,None,None,0,100,0,1,0,,FALSE,TRUE,100
+12008,267,더미 도면,더미용 레시피8,None,Blueprint,Normal,None,None,None,0,100,0,1,0,,FALSE,TRUE,100
+12009,268,더미 도면,더미용 레시피9,None,Blueprint,Normal,None,None,None,0,100,0,1,0,,FALSE,TRUE,100
+12010,269,더미 도면,더미용 레시피10,None,Blueprint,Normal,None,None,None,0,100,0,1,0,,FALSE,TRUE,100
+102001,270,회복 드링크 제작 도면,회복 드링크 제작 도면,None,Blueprint,Normal,None,None,None,0,42,0,1,0,,FALSE,TRUE,42
+102002,271,진정제 앰풀 제작 도면,진정제 앰풀 제작 도면,None,Blueprint,Normal,None,None,None,0,48,0,1,0,,FALSE,TRUE,48
+102013,272,대형 회복 드링크 제작 도면,대형 회복 드링크 제작 도면,None,Blueprint,Rare,None,None,None,0,234,0,1,0,,FALSE,TRUE,234
+102015,273,대형 진정제 앰플 제작 도면,대형 진정제 앰플 제작 도면,None,Blueprint,Rare,None,None,None,0,246,0,1,0,,FALSE,TRUE,246
+102006,274,해독제 제작 도면,해독제 제작 도면,None,Blueprint,Rare,None,None,None,0,225,0,1,0,,FALSE,TRUE,225
+102007,275,지혈 벌레 제작 도면,지혈 벌레 제작 도면,None,Blueprint,Rare,None,None,None,0,255,0,1,0,,FALSE,TRUE,255
+102008,276,화상 연고 제작 도면,화상 연고 제작 도면,None,Blueprint,Rare,None,None,None,0,237,0,1,0,,FALSE,TRUE,237
+102014,277,회복 카트리지 제작 도면,회복 카트리지 제작 도면,None,Blueprint,Elite,None,None,None,0,930,0,1,0,,FALSE,TRUE,930
+102016,278,진정제 카트리지 제작 도면,진정제 카트리지 제작 도면,None,Blueprint,Elite,None,None,None,0,870,0,1,0,,FALSE,TRUE,870
+102017,279,해독제 카트리지 제작 도면,해독제 카트리지 제작 도면,None,Blueprint,Elite,None,None,None,0,840,0,1,0,,FALSE,TRUE,840
+102018,280,지혈 카트리지 제작 도면,지혈 카트리지 제작 도면,None,Blueprint,Elite,None,None,None,0,960,0,1,0,,FALSE,TRUE,960
+102019,281,항생 카트리지 제작 도면,항생 카트리지 제작 도면,None,Blueprint,Elite,None,None,None,0,900,0,1,0,,FALSE,TRUE,900
+102025,282,섬광류탄 제작 도면,섬광류탄 제작 도면,None,Blueprint,Rare,None,None,None,0,264,0,1,0,,FALSE,TRUE,264
+102026,283,스파이크 샷 제작 도면,압정 폭탄 제작 도면,None,Blueprint,Rare,None,None,None,0,228,0,1,0,,FALSE,TRUE,228
+102027,284,독가스 수류탄 제작 도면,독가스 수류탄 제작 도면,None,Blueprint,Rare,None,None,None,0,243,0,1,0,,FALSE,TRUE,243
+102031,285,가솔린 플라스크 제작 도면,가솔린 플라스크 제작 도면,None,Blueprint,Rare,None,None,None,0,222,0,1,0,,FALSE,TRUE,222
+102010,286,곰 덫 제작 도면,곰 덫 제작 도면,None,Blueprint,Elite,None,None,None,0,990,0,1,0,,FALSE,TRUE,990
+102012,287,화염병 제작 도면,화염병 제작 도면,None,Blueprint,Rare,None,None,None,0,249,0,1,0,,FALSE,TRUE,249
+102032,288,액체 질소 텀블러 제작 도면,액체 질소 텀블러 제작 도면,None,Blueprint,Rare,None,None,None,0,231,0,1,0,,FALSE,TRUE,231
+102033,289,고압 폭풍탄 제작 도면,고압 폭풍탄 제작 도면,None,Blueprint,Rare,None,None,None,0,240,0,1,0,,FALSE,TRUE,240
+102036,290,몽환의 회복 파편병 제작 도면,몽환의 회복 파편병 제작 도면,None,Blueprint,Rare,None,None,None,0,270,0,1,0,,FALSE,TRUE,270
+102038,291,몽환의 진정 파편병 제작 도면,몽환의 진정 파편병 제작 도면,None,Blueprint,Rare,None,None,None,0,270,0,1,0,,FALSE,TRUE,270
+102040,292,레플리카 성표 제작 도면,레플리카 성표 제작 도면,None,Blueprint,Epic,None,None,None,0,3450,0,1,0,,FALSE,TRUE,3450
+102004,293,강화 화염병 제작 도면,강화 화염병 제작 도면,None,Blueprint,Elite,None,None,None,0,810,0,1,0,,FALSE,TRUE,810
+102029,294,강화 스파이크 샷 제작 도면,강화 압정 폭탄 제작 도면,None,Blueprint,Elite,None,None,None,0,780,0,1,0,,FALSE,TRUE,780
+102030,295,강화 독 수류탄 제작 도면,강화 독 수류탄 제작 도면,None,Blueprint,Elite,None,None,None,0,855,0,1,0,,FALSE,TRUE,855
+102034,296,강화 액체 질소 텀블러 제작 도면,강화 액체 질소 텀블러 제작 도면,None,Blueprint,Elite,None,None,None,0,930,0,1,0,,FALSE,TRUE,930
+102035,297,강화 고압 폭풍탄 제작 도면,강화 고압 폭풍탄 제작 도면,None,Blueprint,Elite,None,None,None,0,960,0,1,0,,FALSE,TRUE,960
+102003,298,에테르 배터리 제작 도면,에테르 배터리 제작 도면,None,Blueprint,Epic,None,None,None,0,3840,0,1,0,,FALSE,TRUE,3840
+201001,299,수련용 검 제작 도면,수련용 검 제작 도면,None,Blueprint,Normal,None,None,None,0,39,0,1,0,,FALSE,TRUE,39
+201003,300,표준형 검 제작 도면,표준형 검 제작 도면,None,Blueprint,Rare,None,None,None,0,216,0,1,0,,FALSE,TRUE,216
+201005,301,경합금도 제작 도면,경합금도 제작 도면,None,Blueprint,Elite,None,None,None,0,1020,0,1,0,,FALSE,TRUE,1020
+201006,302,강합금도 제작 도면,강합금도 제작 도면,None,Blueprint,Epic,None,None,None,0,3960,0,1,0,,FALSE,TRUE,3960
+201007,303,암영검 제작 도면,암영검 제작 도면,None,Blueprint,Legend,None,None,None,0,15600,0,1,0,,FALSE,TRUE,15600
+201008,304,열단도 제작 도면,열단도 제작 도면,None,Blueprint,Elite,None,None,None,0,930,0,1,0,,FALSE,TRUE,930
+201009,305,발열도 제작 도면,발열도 제작 도면,None,Blueprint,Epic,None,None,None,0,3540,0,1,0,,FALSE,TRUE,3540
+201010,306,적열도 제작 도면,적열도 제작 도면,None,Blueprint,Legend,None,None,None,0,14400,0,1,0,,FALSE,TRUE,14400
+201011,307,습윤검 제작 도면,습윤검 제작 도면,None,Blueprint,Elite,None,None,None,0,870,0,1,0,,FALSE,TRUE,870
+201012,308,촉수검 제작 도면,촉수검 제작 도면,None,Blueprint,Epic,None,None,None,0,3750,0,1,0,,FALSE,TRUE,3750
+201013,309,파랑도 제작 도면,파랑도 제작 도면,None,Blueprint,Legend,None,None,None,0,16500,0,1,0,,FALSE,TRUE,16500
+201014,310,풍아검 제작 도면,풍아검 제작 도면,None,Blueprint,Elite,None,None,None,0,900,0,1,0,,FALSE,TRUE,900
+201015,311,선풍검 제작 도면,선풍검 제작 도면,None,Blueprint,Epic,None,None,None,0,3600,0,1,0,,FALSE,TRUE,3600
+201016,312,폭풍검 제작 도면,폭풍검 제작 도면,None,Blueprint,Legend,None,None,None,0,14850,0,1,0,,FALSE,TRUE,14850
+201101,313,노멀코어 태블릿 제작 도면,노멀코어 태블릿 제작 도면,None,Blueprint,Normal,None,None,None,0,45,0,1,0,,FALSE,TRUE,45
+201103,314,에테르 패드 제작 도면,에테르 패드 제작 도면,None,Blueprint,Rare,None,None,None,0,255,0,1,0,,FALSE,TRUE,255
+201105,315,루멘 패드 제작 도면,루멘 패드 제작 도면,None,Blueprint,Elite,None,None,None,0,960,0,1,0,,FALSE,TRUE,960
+201106,316,코스믹 패드 제작 도면,코스믹 패드 제작 도면,None,Blueprint,Epic,None,None,None,0,4050,0,1,0,,FALSE,TRUE,4050
+201107,317,에니그마 패드 제작 도면,에니그마 패드 제작 도면,None,Blueprint,Legend,None,None,None,0,17400,0,1,0,,FALSE,TRUE,17400
+201108,318,인페르노 터치 제작 도면,인페르노 터치 제작 도면,None,Blueprint,Elite,None,None,None,0,840,0,1,0,,FALSE,TRUE,840
+201109,319,플레어 오브 리추얼 제작 도면,플레어 오브 리추얼 제작 도면,None,Blueprint,Epic,None,None,None,0,3360,0,1,0,,FALSE,TRUE,3360
+201110,320,헬파이어 시그널 제작 도면,헬파이어 시그널 제작 도면,None,Blueprint,Legend,None,None,None,0,13800,0,1,0,,FALSE,TRUE,13800
+201111,321,아쿠아 스크립트 제작 도면,아쿠아 스크립트 제작 도면,None,Blueprint,Elite,None,None,None,0,870,0,1,0,,FALSE,TRUE,870
+201112,322,타이드 오브 위스퍼 제작 도면,타이드 오브 위스퍼 제작 도면,None,Blueprint,Epic,None,None,None,0,3690,0,1,0,,FALSE,TRUE,3690
+201113,323,오션 오브 에테르 제작 도면,오션 오브 에테르 제작 도면,None,Blueprint,Legend,None,None,None,0,15300,0,1,0,,FALSE,TRUE,15300
+201114,324,게일 패널 제작 도면,게일 패널 제작 도면,None,Blueprint,Elite,None,None,None,0,900,0,1,0,,FALSE,TRUE,900
+201115,325,스톰 오브 세이지 제작 도면,스톰 오브 세이지 제작 도면,None,Blueprint,Epic,None,None,None,0,3840,0,1,0,,FALSE,TRUE,3840
+201116,326,제피르 오브 디멘션 제작 도면,제피르 오브 디멘션 제작 도면,None,Blueprint,Legend,None,None,None,0,15900,0,1,0,,FALSE,TRUE,15900
+201201,327,헌터 샷건 제작 도면,헌터 샷건 제작 도면,None,Blueprint,Normal,None,None,None,0,51,0,1,0,,FALSE,TRUE,51
+201203,328,군용 펌프샷건 제작 도면,군용 펌프샷건 제작 도면,None,Blueprint,Rare,None,None,None,0,264,0,1,0,,FALSE,TRUE,264
+201205,329,스펙터 샷건 제작 도면,스펙터 샷건 제작 도면,None,Blueprint,Elite,None,None,None,0,1050,0,1,0,,FALSE,TRUE,1050
+201206,330,팬텀 브레이커 제작 도면,팬텀 브레이커 제작 도면,None,Blueprint,Epic,None,None,None,0,4200,0,1,0,,FALSE,TRUE,4200
+201207,331,레이스 헌터 제작 도면,레이스 헌터 제작 도면,None,Blueprint,Legend,None,None,None,0,16800,0,1,0,,FALSE,TRUE,16800
+201208,332,인페르노 브레이커 제작 도면,인페르노 브레이커 제작 도면,None,Blueprint,Elite,None,None,None,0,930,0,1,0,,FALSE,TRUE,930
+201209,333,블레이즈 소버린 제작 도면,블레이즈 소버린 제작 도면,None,Blueprint,Epic,None,None,None,0,3570,0,1,0,,FALSE,TRUE,3570
+201210,334,헬파이어 캐논 제작 도면,헬파이어 캐논 제작 도면,None,Blueprint,Legend,None,None,None,0,14700,0,1,0,,FALSE,TRUE,14700
+201211,335,아쿠아 런처 제작 도면,아쿠아 런처 제작 도면,None,Blueprint,Elite,None,None,None,0,810,0,1,0,,FALSE,TRUE,810
+201212,336,타이드 크러셔 제작 도면,타이드 크러셔 제작 도면,None,Blueprint,Epic,None,None,None,0,3630,0,1,0,,FALSE,TRUE,3630
+201213,337,레비아탄 로어 제작 도면,레비아탄 로어 제작 도면,None,Blueprint,Legend,None,None,None,0,16200,0,1,0,,FALSE,TRUE,16200
+201214,338,게일 슈터 제작 도면,게일 슈터 제작 도면,None,Blueprint,Elite,None,None,None,0,990,0,1,0,,FALSE,TRUE,990
+201215,339,스톰 브레이커 제작 도면,스톰 브레이커 제작 도면,None,Blueprint,Epic,None,None,None,0,3900,0,1,0,,FALSE,TRUE,3900
+201216,340,템페스트 하울러 제작 도면,템페스트 하울러 제작 도면,None,Blueprint,Legend,None,None,None,0,15000,0,1,0,,FALSE,TRUE,15000
+220011,341,적혈의 반지 (Normal) 제작 도면,적혈의 반지 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,42,0,1,0,,FALSE,TRUE,42
+220012,342,적혈의 반지 (Rare) 제작 도면,적혈의 반지 (Rare) 제작 도면,None,Blueprint,Rare,None,None,None,0,228,0,1,0,,FALSE,TRUE,228
+220013,343,적혈의 반지 (Elite) 제작 도면,적혈의 반지 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,840,0,1,0,,FALSE,TRUE,840
+220014,344,적혈의 반지 (Epic) 제작 도면,적혈의 반지 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,3450,0,1,0,,FALSE,TRUE,3450
+220015,345,적혈의 반지 (Legend) 제작 도면,적혈의 반지 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,13500,0,1,0,,FALSE,TRUE,13500
+220021,346,예지의 반지 (Normal) 제작 도면,예지의 반지 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,39,0,1,0,,FALSE,TRUE,39
+220022,347,예지의 반지 (Rare) 제작 도면,예지의 반지 (Rare) 제작 도면,None,Blueprint,Rare,None,None,None,0,234,0,1,0,,FALSE,TRUE,234
+220023,348,예지의 반지 (Elite) 제작 도면,예지의 반지 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,870,0,1,0,,FALSE,TRUE,870
+220024,349,예지의 반지 (Epic) 제작 도면,예지의 반지 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,3540,0,1,0,,FALSE,TRUE,3540
+220025,350,예지의 반지 (Legend) 제작 도면,예지의 반지 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,14100,0,1,0,,FALSE,TRUE,14100
+220031,351,참극의 반지 (Normal) 제작 도면,참극의 반지 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,48,0,1,0,,FALSE,TRUE,48
+220032,352,참극의 반지 (Rare) 제작 도면,참극의 반지 (Rare) 제작 도면,None,Blueprint,Rare,None,None,None,0,255,0,1,0,,FALSE,TRUE,255
+220033,353,참극의 반지 (Elite) 제작 도면,참극의 반지 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,930,0,1,0,,FALSE,TRUE,930
+220034,354,참극의 반지 (Epic) 제작 도면,참극의 반지 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,3750,0,1,0,,FALSE,TRUE,3750
+220035,355,참극의 반지 (Legend) 제작 도면,참극의 반지 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,15600,0,1,0,,FALSE,TRUE,15600
+220041,356,철극의 반지 (Elite) 제작 도면,철극의 반지 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,990,0,1,0,,FALSE,TRUE,990
+220042,357,철극의 반지 (Epic) 제작 도면,철극의 반지 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,3960,0,1,0,,FALSE,TRUE,3960
+220043,358,철극의 반지 (Legend) 제작 도면,철극의 반지 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,16500,0,1,0,,FALSE,TRUE,16500
+220051,359,정적의 반지 (Rare) 제작 도면,정적의 반지 (Rare) 제작 도면,None,Blueprint,Rare,None,None,None,0,243,0,1,0,,FALSE,TRUE,243
+220052,360,정적의 반지 (Elite) 제작 도면,정적의 반지 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,900,0,1,0,,FALSE,TRUE,900
+220053,361,정적의 반지 (Legend) 제작 도면,정적의 반지 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,14400,0,1,0,,FALSE,TRUE,14400
+220061,362,격동의 반지 (Rare) 제작 도면,격동의 반지 (Rare) 제작 도면,None,Blueprint,Rare,None,None,None,0,249,0,1,0,,FALSE,TRUE,249
+220062,363,격동의 반지 (Elite) 제작 도면,격동의 반지 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,960,0,1,0,,FALSE,TRUE,960
+220063,364,격동의 반지 (Legend) 제작 도면,격동의 반지 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,15300,0,1,0,,FALSE,TRUE,15300
+221011,365,수호의 목걸이 (Normal) 제작 도면,수호의 목걸이 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,45,0,1,0,,FALSE,TRUE,45
+221012,366,수호의 목걸이 (Rare) 제작 도면,수호의 목걸이 (Rare) 제작 도면,None,Blueprint,Rare,None,None,None,0,237,0,1,0,,FALSE,TRUE,237
+221013,367,수호의 목걸이 (Elite) 제작 도면,수호의 목걸이 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,855,0,1,0,,FALSE,TRUE,855
+221014,368,수호의 목걸이 (Epic) 제작 도면,수호의 목걸이 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,3480,0,1,0,,FALSE,TRUE,3480
+221015,369,수호의 목걸이 (Legend) 제작 도면,수호의 목걸이 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,13950,0,1,0,,FALSE,TRUE,13950
+221021,370,활력의 목걸이 (Normal) 제작 도면,활력의 목걸이 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,42,0,1,0,,FALSE,TRUE,42
+221022,371,활력의 목걸이 (Rare) 제작 도면,활력의 목걸이 (Rare) 제작 도면,None,Blueprint,Rare,None,None,None,0,231,0,1,0,,FALSE,TRUE,231
+221023,372,활력의 목걸이 (Elite) 제작 도면,활력의 목걸이 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,885,0,1,0,,FALSE,TRUE,885
+221024,373,활력의 목걸이 (Epic) 제작 도면,활력의 목걸이 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,3630,0,1,0,,FALSE,TRUE,3630
+221025,374,활력의 목걸이 (Legend) 제작 도면,활력의 목걸이 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,14700,0,1,0,,FALSE,TRUE,14700
+221031,375,재생의 목걸이 (Elite) 제작 도면,재생의 목걸이 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,1020,0,1,0,,FALSE,TRUE,1020
+221032,376,재생의 목걸이 (Legend) 제작 도면,재생의 목걸이 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,16200,0,1,0,,FALSE,TRUE,16200
+221041,377,풍요의 목걸이 (Elite) 제작 도면,풍요의 목걸이 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,1050,0,1,0,,FALSE,TRUE,1050
+221042,378,풍요의 목걸이 (Epic) 제작 도면,풍요의 목걸이 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,4140,0,1,0,,FALSE,TRUE,4140
+221043,379,풍요의 목걸이 (Legend) 제작 도면,풍요의 목걸이 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,17400,0,1,0,,FALSE,TRUE,17400
+222011,380,질주의 귀걸이 (Normal) 제작 도면,질주의 귀걸이 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,51,0,1,0,,FALSE,TRUE,51
+222012,381,질주의 귀걸이 (Rare) 제작 도면,질주의 귀걸이 (Rare) 제작 도면,None,Blueprint,Rare,None,None,None,0,264,0,1,0,,FALSE,TRUE,264
+222013,382,질주의 귀걸이 (Elite) 제작 도면,질주의 귀걸이 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,930,0,1,0,,FALSE,TRUE,930
+222014,383,질주의 귀걸이 (Epic) 제작 도면,질주의 귀걸이 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,3720,0,1,0,,FALSE,TRUE,3720
+222015,384,질주의 귀걸이 (Legend) 제작 도면,질주의 귀걸이 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,15000,0,1,0,,FALSE,TRUE,15000
+223011,385,시간왜곡의 팔찌 (Elite) 제작 도면,시간왜곡의 팔찌 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,975,0,1,0,,FALSE,TRUE,975
+223012,386,시간왜곡의 팔찌 (Epic) 제작 도면,시간왜곡의 팔찌 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,3930,0,1,0,,FALSE,TRUE,3930
+223013,387,시간왜곡의 팔찌 (Legend) 제작 도면,시간왜곡의 팔찌 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,16800,0,1,0,,FALSE,TRUE,16800
+223061,388,사냥꾼의 서약 (Normal) 제작 도면,사냥꾼의 서약 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,39,0,1,0,,FALSE,TRUE,39
+223062,389,사냥꾼의 서약 (Elite) 제작 도면,사냥꾼의 서약 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,810,0,1,0,,FALSE,TRUE,810
+223063,390,사냥꾼의 서약 (Legend) 제작 도면,사냥꾼의 서약 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,13200,0,1,0,,FALSE,TRUE,13200
+223071,391,성화의 잔재 (Normal) 제작 도면,성화의 잔재 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,45,0,1,0,,FALSE,TRUE,45
+223072,392,성화의 잔재 (Elite) 제작 도면,성화의 잔재 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,870,0,1,0,,FALSE,TRUE,870
+223073,393,성화의 잔재 (Legend) 제작 도면,성화의 잔재 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,14550,0,1,0,,FALSE,TRUE,14550
+223081,394,이계의 흔적 (Normal) 제작 도면,이계의 흔적 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,48,0,1,0,,FALSE,TRUE,48
+223082,395,이계의 흔적 (Elite) 제작 도면,이계의 흔적 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,900,0,1,0,,FALSE,TRUE,900
+223083,396,이계의 흔적 (Legend) 제작 도면,이계의 흔적 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,15300,0,1,0,,FALSE,TRUE,15300
+223091,397,복수의 송곳니 (Normal) 제작 도면,복수의 송곳니 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,42,0,1,0,,FALSE,TRUE,42
+223092,398,복수의 송곳니 (Elite) 제작 도면,복수의 송곳니 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,840,0,1,0,,FALSE,TRUE,840
+223093,399,복수의 송곳니 (Legend) 제작 도면,복수의 송곳니 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,14100,0,1,0,,FALSE,TRUE,14100
+223101,400,개척자의 씨앗 (Normal) 제작 도면,개척자의 씨앗 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,45,0,1,0,,FALSE,TRUE,45
+223102,401,개척자의 씨앗 (Elite) 제작 도면,개척자의 씨앗 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,930,0,1,0,,FALSE,TRUE,930
+223103,402,개척자의 씨앗 (Legend) 제작 도면,개척자의 씨앗 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,15600,0,1,0,,FALSE,TRUE,15600
+223111,403,철의 망치 (Normal) 제작 도면,철의 망치 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,39,0,1,0,,FALSE,TRUE,39
+223112,404,철의 망치 (Elite) 제작 도면,철의 망치 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,825,0,1,0,,FALSE,TRUE,825
+223113,405,철의 망치 (Legend) 제작 도면,철의 망치 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,13650,0,1,0,,FALSE,TRUE,13650
+223121,406,환상의 눈 (Normal) 제작 도면,환상의 눈 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,48,0,1,0,,FALSE,TRUE,48
+223122,407,환상의 눈 (Elite) 제작 도면,환상의 눈 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,990,0,1,0,,FALSE,TRUE,990
+223123,408,환상의 눈 (Legend) 제작 도면,환상의 눈 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,16500,0,1,0,,FALSE,TRUE,16500
+225011,409,홍련 노리개 (Normal) 제작 도면,홍련 노리개 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,42,0,1,0,,FALSE,TRUE,42
+225012,410,홍련 노리개 (Elite) 제작 도면,홍련 노리개 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,840,0,1,0,,FALSE,TRUE,840
+225013,411,홍련 노리개 (Legend) 제작 도면,홍련 노리개 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,13800,0,1,0,,FALSE,TRUE,13800
+225021,412,창해 노리개 (Normal) 제작 도면,창해 노리개 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,42,0,1,0,,FALSE,TRUE,42
+225022,413,창해 노리개 (Elite) 제작 도면,창해 노리개 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,840,0,1,0,,FALSE,TRUE,840
+225023,414,창해 노리개 (Legend) 제작 도면,창해 노리개 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,13800,0,1,0,,FALSE,TRUE,13800
+225031,415,벽풍 노리개 (Normal) 제작 도면,벽풍 노리개 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,42,0,1,0,,FALSE,TRUE,42
+225032,416,벽풍 노리개 (Elite) 제작 도면,벽풍 노리개 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,840,0,1,0,,FALSE,TRUE,840
+225033,417,벽풍 노리개 (Legend) 제작 도면,벽풍 노리개 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,13800,0,1,0,,FALSE,TRUE,13800
+225041,418,잔향 노리개 (Normal) 제작 도면,잔향 노리개 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,45,0,1,0,,FALSE,TRUE,45
+225042,419,잔향 노리개 (Elite) 제작 도면,잔향 노리개 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,870,0,1,0,,FALSE,TRUE,870
+225043,420,잔향 노리개 (Legend) 제작 도면,잔향 노리개 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,14400,0,1,0,,FALSE,TRUE,14400
+225051,421,단혈 노리개 (Normal) 제작 도면,단혈 노리개 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,45,0,1,0,,FALSE,TRUE,45
+225052,422,단혈 노리개 (Elite) 제작 도면,단혈 노리개 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,870,0,1,0,,FALSE,TRUE,870
+225053,423,단혈 노리개 (Legend) 제작 도면,단혈 노리개 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,14400,0,1,0,,FALSE,TRUE,14400
+225071,424,비취 노리개 (Normal) 제작 도면,비취 노리개 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,48,0,1,0,,FALSE,TRUE,48
+225072,425,비취 노리개 (Elite) 제작 도면,비취 노리개 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,900,0,1,0,,FALSE,TRUE,900
+225073,426,비취 노리개 (Legend) 제작 도면,비취 노리개 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,15000,0,1,0,,FALSE,TRUE,15000
+224051,427,인내의 브로치 (Normal) 제작 도면,인내의 브로치 (Normal) 제작 도면,None,Blueprint,Normal,None,None,None,0,39,0,1,0,,FALSE,TRUE,39
+224052,428,인내의 브로치 (Rare) 제작 도면,인내의 브로치 (Rare) 제작 도면,None,Blueprint,Rare,None,None,None,0,225,0,1,0,,FALSE,TRUE,225
+224053,429,인내의 브로치 (Elite) 제작 도면,인내의 브로치 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,810,0,1,0,,FALSE,TRUE,810
+224054,430,인내의 브로치 (Epic) 제작 도면,인내의 브로치 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,3300,0,1,0,,FALSE,TRUE,3300
+224055,431,인내의 브로치 (Legend) 제작 도면,인내의 브로치 (Legend) 제작 도면,None,Blueprint,Legend,None,None,None,0,13200,0,1,0,,FALSE,TRUE,13200
+226011,432,세인트 워치 (Rare) 제작 도면,세인트 워치 (Rare) 제작 도면,None,Blueprint,Rare,None,None,None,0,246,0,1,0,,FALSE,TRUE,246
+226022,433,세라프 워치 (Epic) 제작 도면,세라프 워치 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,3780,0,1,0,,FALSE,TRUE,3780
+226031,434,발로르 워치 (Rare) 제작 도면,발로르 워치 (Rare) 제작 도면,None,Blueprint,Rare,None,None,None,0,255,0,1,0,,FALSE,TRUE,255
+226042,435,리전 워치 (Epic) 제작 도면,리전 워치 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,3900,0,1,0,,FALSE,TRUE,3900
+226051,436,퀵스텝 워치 (Rare) 제작 도면,퀵스텝 워치 (Rare) 제작 도면,None,Blueprint,Rare,None,None,None,0,252,0,1,0,,FALSE,TRUE,252
+226062,437,제피르 워치 (Epic) 제작 도면,제피르 워치 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,3870,0,1,0,,FALSE,TRUE,3870
+226071,438,플러리 워치 (Elite) 제작 도면,플러리 워치 (Elite) 제작 도면,None,Blueprint,Elite,None,None,None,0,930,0,1,0,,FALSE,TRUE,930
+226081,439,실드 워치 (Rare) 제작 도면,실드 워치 (Rare) 제작 도면,None,Blueprint,Rare,None,None,None,0,249,0,1,0,,FALSE,TRUE,249
+226082,440,배리어 워치 (Epic) 제작 도면,배리어 워치 (Epic) 제작 도면,None,Blueprint,Epic,None,None,None,0,3810,0,1,0,,FALSE,TRUE,3810

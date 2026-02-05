@@ -1,0 +1,6 @@
+State,Threshold,DebuffIds,StressDamageIntervalTime,StressDamageAmount
+ECorruptionState,int,int[],float,float
+Safe,0,,10,0
+Caution,1,7101,9,1
+Alert,26,7102,4,1
+Serious,61,7103,1.5,1

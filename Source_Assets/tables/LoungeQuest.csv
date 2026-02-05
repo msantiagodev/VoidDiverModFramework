@@ -1,0 +1,63 @@
+Id,BitFlagIndex,Category,~비고,UnlockConditions,StartNpcId,CompleteNpcId,GoalCondition,GoalValue,Rewards,SkipSelectionPopupStart,SkipSelectionPopupComplete
+int,int,ELoungeQuestCategory,~비고,EventCondition[],int,int,EventCondition,long,Goods[],bool,bool
+80100,1,Main,"오너, 첫번째 임무 완료, 평판레벨 설명, 아이템 팔고 오기",LoungeQuestCleared:80201,700005,700005,UserLevel:2,1,,TRUE,TRUE
+80101,2,Main,"레벨2 달성시, 엘라라, 일반스토리캠페인 설명, ",LoungeQuestCleared:80100,700000,700000,None,0,,TRUE,TRUE
+80102,3,Main,"레벨3 달성시, 펠릭스, 던전 내 조직에 대한 설명",LoungeQuestCleared:80101,700008,700008,UserLevel:3,1,,TRUE,TRUE
+80103,4,Main,"레벨4 달성시, 핌, 서장에 대한 설명",LoungeQuestCleared:80102,700015,700015,UserLevel:4,1,,TRUE,TRUE
+80104,5,Main,"레벨5, 달성시, 오너, 아서 알런에 대한 자료 넘겨준다",LoungeQuestCleared:80103,700005,700005,UserLevel:5,1,,TRUE,TRUE
+80105,6,Main,"레벨6 달성시, 데모는 여기까지",LoungeQuestCleared:80205,700005,700005,None,0,,TRUE,TRUE
+80200,7,Main,엘라라대화 둘러봐,CampaignCleared:1100,700000,700000,None,0,,TRUE,TRUE
+80201,8,Main,점장실대화,CampaignCleared:1101,700102,700102,None,0,,TRUE,TRUE
+80202,9,Main,점장실대화2,CampaignCleared:1102,700102,700102,None,0,,TRUE,TRUE
+80203,10,Main,점장실대화3,CampaignCleared:1103,700102,700102,None,0,,TRUE,TRUE
+80204,11,Main,점장실대화4,CampaignCleared:1104,700102,700102,None,0,,TRUE,TRUE
+80205,12,Main,점장실대화5,CampaignCleared:1105,700102,700102,None,0,,TRUE,TRUE
+81101,13,Main,캠페인 1완료하기,LoungeQuestCleared:80200,700000,700000,CampaignCleared:1101,1,,TRUE,TRUE
+81102,14,Main,캠페인 2완료하기,UserLevel:2|LoungeQuestCleared:80201,700000,700000,CampaignCleared:1102,1,,TRUE,TRUE
+81103,15,Main,캠페인 3완료하기,UserLevel:3|LoungeQuestCleared:80202,700000,700000,CampaignCleared:1103,1,,TRUE,TRUE
+81104,16,Main,캠페인 4완료하기,UserLevel:4|LoungeQuestCleared:80203,700000,700000,CampaignCleared:1104,1,,TRUE,TRUE
+81105,17,Main,캠페인 5완료하기,UserLevel:5|LoungeQuestCleared:80204,700000,700000,CampaignCleared:1105,1,,TRUE,TRUE
+890000,18,Talk,엘라라 소개,,700000,700000,None,0,,FALSE,FALSE
+890001,19,Talk,10년 전 사태,,700000,700000,None,0,,FALSE,FALSE
+890002,20,Talk,엘라라의 정체,UserLevel:2,700000,700000,None,0,,FALSE,FALSE
+890003,21,Talk,오너에 대하여,UserLevel:2,700000,700000,None,0,,FALSE,FALSE
+890004,22,Talk,정부 단속에 대하여,UserLevel:3,700000,700000,None,0,,FALSE,FALSE
+890005,23,Talk,긴급 송환 실패 시,UserLevel:3,700000,700000,None,0,,FALSE,FALSE
+890006,24,Talk,위험한 손님,UserLevel:4,700000,700000,None,0,,FALSE,FALSE
+890100,25,Talk,루카스 소개,,700001,700001,None,0,,FALSE,FALSE
+890101,26,Talk,10년 전 사태,,700001,700001,None,0,,FALSE,FALSE
+890102,27,Talk,옷차림,UserLevel:2,700001,700001,None,0,,FALSE,FALSE
+890103,28,Talk,공포영화,UserLevel:2,700001,700001,None,0,,FALSE,FALSE
+890104,29,Talk,도시 분위기,UserLevel:3,700001,700001,None,0,,FALSE,FALSE
+890200,30,Talk,안티키테라,,700002,700002,None,0,,FALSE,FALSE
+890300,31,Talk,에블린 소개,,700003,700003,None,0,,FALSE,FALSE
+890301,32,Talk,10년 전 사태,,700003,700003,None,0,,FALSE,FALSE
+890302,33,Talk,인생 음식,UserLevel:2,700003,700003,None,0,,FALSE,FALSE
+890303,34,Talk,손님에 대해,UserLevel:3,700003,700003,None,0,,FALSE,FALSE
+890304,35,Talk,손님 상대 시 주의점,UserLevel:3,700003,700003,None,0,,FALSE,FALSE
+890400,36,Talk,쇼거스 소파,,700004,700004,None,0,,FALSE,FALSE
+890500,37,Talk,오너 소개,,700005,700005,None,0,,FALSE,FALSE
+890501,38,Talk,10년 전 사태,,700005,700005,None,0,,FALSE,FALSE
+890600,39,Talk,에드먼 소개,,700006,700006,None,0,,FALSE,FALSE
+890601,40,Talk,정체,,700006,700006,None,0,,FALSE,FALSE
+890800,41,Talk,펠릭스,,700008,700008,None,0,,FALSE,FALSE
+890801,42,Talk,10년 전 사태,,700008,700008,None,0,,FALSE,FALSE
+890802,43,Talk,해방의 목소리,UserLevel:2,700008,700008,None,0,,FALSE,FALSE
+890803,44,Talk,손님 정체,UserLevel:3,700008,700008,None,0,,FALSE,FALSE
+890804,45,Talk,손님 주의점,UserLevel:3,700008,700008,None,0,,FALSE,FALSE
+890805,46,Talk,정부 단속에 대하여,UserLevel:4,700008,700008,None,0,,FALSE,FALSE
+891100,47,Talk,올드리(위험도 변경),,700011,700011,None,0,,FALSE,FALSE
+891200,48,Talk,게이트키퍼(멀티),,700012,700012,None,0,,FALSE,FALSE
+891300,49,Talk,나르시스(캐릭터변경),,700013,700013,None,0,,FALSE,FALSE
+891400,50,Talk,더스터(보상/유실물),,700014,700014,None,0,,FALSE,FALSE
+891500,51,Talk,핌(유물) 소개,,700015,700015,None,0,,FALSE,FALSE
+891501,52,Talk,10년 전 사태,,700015,700015,None,0,,FALSE,FALSE
+891502,53,Talk,유물상이 된 이유,UserLevel:3,700015,700015,None,0,,FALSE,FALSE
+891503,54,Talk,불법적인 일,UserLevel:4,700015,700015,None,0,,FALSE,FALSE
+810100,55,Sub,좀비 타입 강력한 변종 몬스터,LoungeQuestCleared:80204,700001,700001,MyItemCountTotal:300003,2,,TRUE,TRUE
+810101,56,Sub,게걸스러운 토비 - 최후의 경찰서,LoungeQuestCleared:810100,700001,700001,MyItemCountTotal:300005,2,,TRUE,TRUE
+810102,57,Sub,제작 기계 수리,LoungeQuestCleared:80200,700001,700001,MyItemCountTotal:7000,10,,TRUE,TRUE
+810800,58,Sub,팔척귀신 - 저주받은 공터,LoungeQuestCleared:80202,700008,700008,MyItemCountTotal:300016,2,,TRUE,TRUE
+810801,59,Sub,소울콜렉터 엘드리스 - 불길한 성역,LoungeQuestCleared:80205,700008,700008,MyItemCountTotal:300004,2,,TRUE,TRUE
+811500,60,Sub,강력한 변종 몬스터,UserLevel:2,700015,700015,MyItemCountTotal:10003,5,,TRUE,TRUE
+811501,61,Sub,경찰 서장 도노반 - 잊혀진 미술관,LoungeQuestCleared:80203,700015,700015,MyItemCountTotal:300011,2,,TRUE,TRUE

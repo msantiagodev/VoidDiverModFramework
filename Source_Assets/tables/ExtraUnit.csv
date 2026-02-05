@@ -1,0 +1,5 @@
+Id,~이름,~전투력계산,ExtraUnitType,MonsterCategories,ActiveSkillIds,PassiveSkillIds,Atk,Def,AtkSpeed,MoveSpeed,Hp,HpRegen,FireResistancePercent,WaterResistancePercent,LightningResistancePercent,AttackRange,AttackSkillId,ActionSkillId,DropRewardGroupId,DetectRange,FleeHpPercent,FleeDuration,GlobalSkillCoolTime,PauseStatePercent,PauseStateDuration,AvoidStatePercent,AvoidStateDuration,DyingSfx,RespawnTime,SightAngle,SightRange,SightBackRange,WanderRangeMin,WanderRangeMax,BackAttackAngle
+int,참조,참조,EExtraUnitType ,EMonsterCategory[],int[],int[],int,int,float,float,int,float,float,float,float,float,int,int,int,float,float,float,float,float,float,float,float,string,int,float,float,float,float,float,float
+10001,WaveExecutor,,StaticUnit,None,,40010001,100,0,1,0,3000,0,0,0,0,1.5,0,0,-1,6,90,0.6,0.6,0,0,90,0.5,,-1,360,6,3,3,6,0
+10002,캐스터 폭발인형 노멀,,StationaryUnit,None,,10011310|10011320|10011330|10011332|10011333,100,50,1,0,300,0,0,0,0,1.5,0,0,-1,6,90,0.6,0.6,0,0,90,0.5,,-1,360,6,3,3,6,0
+10003,캐스터 폭발인형 슈퍼,,StationaryUnit,None,,10011311|10011321|10011331|10011332|10011334,100,50,1,0,300,0,0,0,0,1.5,0,0,-1,6,90,0.6,0.6,0,0,90,0.5,,-1,360,6,3,3,6,0
