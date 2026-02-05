@@ -1,628 +1,251 @@
 # VOID DIVER Security Analysis & Modding Framework
 
-Security research documentation for **VOID DIVER: Escape from the Abyss Demo**.
+**By Moises Santiago** | Cybersecurity Researcher | Game Hacking Hobbyist
 
-This repository documents the game's asset protection, encryption schemes, anti-cheat measures, and resource extraction methods for educational and modding purposes.
+Hey there! I'm Moises, and I spend my day job doing cybersecurity work - pentesting, vulnerability research, the usual. But when I clock out, I like to unwind by poking at games. There's something satisfying about reverse engineering a game's protection and understanding how it all fits together.
+
+This repo documents my findings from digging into **VOID DIVER: Escape from the Abyss Demo**. I figured I'd share what I learned in case other security enthusiasts or modders find it useful.
 
 ---
 
-## CRITICAL DISCLAIMERS
+## Before We Go Any Further...
 
-### Demo Version Only
+### This Is Demo-Only Research
 
-**This documentation applies ONLY to the VOID DIVER Demo.**
+Look, I want to be crystal clear here: **everything in this repo applies to the free demo only**.
 
-The full game release will likely have:
-- Different/stronger encryption keys
-- Additional obfuscation layers
+The full game will almost certainly have different protection. Game devs aren't dumb - they ship demos with minimal security because, well, it's a demo. The full release will likely have:
+
+- Proper encryption (not single-byte XOR, lol)
+- Active anti-cheat that actually does something
 - Server-side validation
-- Enhanced anti-tamper measures
-- Runtime integrity checks
+- Maybe even IL2CPP compilation
 
-**Do not expect any of these techniques to work on the full release.**
+So if you're reading this after the full game drops and wondering why nothing works - that's why.
 
-### Security Will Change
+### The Usual Legal Stuff
 
-The demo uses minimal protection suitable for a free demo. The full release will almost certainly implement:
-
-| Demo (Current) | Full Release (Expected) |
-|----------------|------------------------|
-| Single-byte XOR encryption | Multi-key or AES encryption |
-| Static encryption keys | Dynamic/derived keys |
-| Client-side validation only | Server-side validation |
-| Minimal anti-cheat | Full ACTk integration |
-| No code obfuscation | IL obfuscation possible |
-
-### Legal Notice
-
-This documentation is for **educational purposes only**. Reverse engineering may violate terms of service. Use responsibly and only on software you own.
+This is educational security research. I own the game, I'm analyzing software on my own machine, and I'm sharing knowledge - not exploits for malicious use. If you use this info to do something stupid, that's on you.
 
 ---
 
-## Game Architecture Overview
+## What I Found (TL;DR)
 
-### File Structure
+Here's the quick rundown for those who don't want to read my rambling:
 
-```
-VOID DIVER Escape from the Abyss Demo/
-  VOID DIVER.exe                    -- Unity player (IL2CPP: No, Mono: Yes)
-  VOID DIVER_Data/
-    Managed/                        -- .NET assemblies
-      Assembly-CSharp.dll           -- Stub only (7KB) - NOT main game code
-      De.Base.dll                   -- Core types, User data (1.5MB)
-      De.InGame.dll                 -- Game logic, combat, AI (1.1MB)
-      De.Lua.dll                    -- Lua runner, LuaApi
-      De.Scenes.dll                 -- Scene management
-      NemoLib.dll                   -- Framework utilities
-      MoonSharp.Interpreter.dll     -- Lua 5.2 interpreter
-      CodeStage.AntiCheat.*.dll     -- ACTk anti-cheat libraries
-      VContainer.dll                -- Dependency injection
-    StreamingAssets/
-      LuaEncrypted/                 -- XOR-encrypted Lua scripts (.bytes)
-      TableEncrypted/               -- XOR-encrypted CSV data (.bytes)
-      AppSetting/                   -- Configuration JSON files
-    boot.config                     -- Unity boot configuration
-```
+| Protection | Implementation | My Assessment |
+|------------|----------------|---------------|
+| Asset Encryption | Single-byte XOR | Laughably weak |
+| Anti-Cheat | ACTk present but inactive | Paper tiger |
+| Code Obfuscation | None | Wide open |
+| Integrity Checks | None observed | Non-existent |
 
-### Key Observation
-
-The game does **NOT** use `Assembly-CSharp.dll` for game logic. Instead, all code is in custom assemblies (`De.*.dll`). This is an intentional separation that makes the codebase harder to find for casual modders.
+Basically, the demo is completely unprotected. Which makes sense - it's a demo. But it was still fun to tear apart.
 
 ---
 
-## Asset Encryption Analysis
+## The Game's Architecture
 
-### Encryption Scheme: Single-Byte XOR
+First thing I noticed when I opened the Managed folder: `Assembly-CSharp.dll` is only 7KB. That's a stub. The actual game code lives in custom DLLs:
 
-The demo uses trivial XOR encryption for script and data assets.
+```
+VOID DIVER_Data/Managed/
+  Assembly-CSharp.dll     ← Empty decoy (7KB)
+  De.Base.dll             ← The real stuff (1.5MB)
+  De.InGame.dll           ← Combat, AI, game logic (1.1MB)
+  De.Lua.dll              ← Lua scripting engine
+  De.Scenes.dll           ← Scene management
+  NemoLib.dll             ← Custom framework
+  MoonSharp.Interpreter.dll ← Lua 5.2 interpreter
+  CodeStage.AntiCheat.*.dll ← ACTk (dormant)
+```
 
-#### Lua Scripts
-- **Location**: `StreamingAssets/LuaEncrypted/*.bytes`
-- **Key**: `0xD2` (or `0xF4` after XOR transformation with `0x26`)
-- **Algorithm**: `decrypted[i] = encrypted[i] XOR 0xD2`
+Smart move by the devs - most script kiddies would open Assembly-CSharp, see nothing, and give up. But anyone who's done this before knows to check file sizes.
 
-#### Data Tables (CSV)
-- **Location**: `StreamingAssets/TableEncrypted/*.bytes`
-- **Key**: `0xEA` (derivable from known plaintext)
-- **Algorithm**: `decrypted[i] = encrypted[i] XOR key`
+---
 
-### Why This Is Weak
+## The "Encryption" (Air Quotes Intentional)
 
-1. **Single-byte XOR is trivially breakable**
-   - Known plaintext attack: If you know the file starts with "Id," (CSV header), XOR first byte with 'I' (0x49) to get key
-   - Frequency analysis works on larger files
+Okay, so the game encrypts its Lua scripts and data tables. Cool. Let's see what we're working with...
 
-2. **Static keys embedded in code**
-   - Keys are constants in `De.Base.dll`
-   - No key derivation or rotation
+### Lua Scripts
 
-3. **No integrity verification**
-   - Modified files are loaded without validation
-   - No checksums or signatures
+**Location**: `StreamingAssets/LuaEncrypted/*.bytes`
 
-### Decryption Script
+I grabbed a file, threw it in a hex editor, and immediately recognized the pattern. Single-byte XOR. Classic.
+
+**Key**: `0xD2`
+
+That's it. That's the encryption. Every byte XOR'd with `0xD2`.
 
 ```powershell
-# Decrypt Lua files
-$LUA_KEY = [byte]0xD2
-
-foreach ($file in Get-ChildItem "LuaEncrypted" -Recurse -Filter "*.bytes") {
-    $bytes = [System.IO.File]::ReadAllBytes($file.FullName)
-    $decrypted = New-Object byte[] $bytes.Length
-    for ($i = 0; $i -lt $bytes.Length; $i++) {
-        $decrypted[$i] = $bytes[$i] -bxor $LUA_KEY
-    }
-    # Save as .lua
-    $outPath = $file.FullName -replace '\.bytes$', '.lua'
-    [System.IO.File]::WriteAllBytes($outPath, $decrypted)
+# This is literally all it takes to decrypt
+$bytes = [System.IO.File]::ReadAllBytes("encrypted.bytes")
+for ($i = 0; $i -lt $bytes.Length; $i++) {
+    $bytes[$i] = $bytes[$i] -bxor 0xD2
 }
+# Congrats, you have plaintext Lua
 ```
+
+### Data Tables
+
+**Location**: `StreamingAssets/TableEncrypted/*.bytes`
+
+Same deal, different key. But here's the fun part - I didn't even need to find the key in the binary. I just knew the CSV files start with "Id," so:
 
 ```powershell
-# Decrypt Table files (derive key from known plaintext)
-$firstByte = [System.IO.File]::ReadAllBytes("TableEncrypted/Monster.bytes")[0]
-$TABLE_KEY = $firstByte -bxor [byte][char]'I'  # Tables start with "Id,"
-
-foreach ($file in Get-ChildItem "TableEncrypted" -Filter "*.bytes") {
-    $bytes = [System.IO.File]::ReadAllBytes($file.FullName)
-    $decrypted = New-Object byte[] $bytes.Length
-    for ($i = 0; $i -lt $bytes.Length; $i++) {
-        $decrypted[$i] = $bytes[$i] -bxor $TABLE_KEY
-    }
-    $outPath = $file.FullName -replace '\.bytes$', '.csv'
-    [System.IO.File]::WriteAllBytes($outPath, $decrypted)
-}
+$firstByte = $encryptedBytes[0]
+$key = $firstByte -bxor [byte][char]'I'  # Known plaintext attack, baby
 ```
+
+Boom. Key derived in one line.
+
+### Why This Is Basically Useless Protection
+
+1. **Single-byte XOR is a joke** - Any crypto 101 student can break it
+2. **Keys are static** - Same key for every file, forever
+3. **No integrity checks** - I can modify files and the game happily loads them
+4. **Known plaintext everywhere** - Lua files start with `function` or `--`, CSVs start with `Id,`
+
+I'm not dunking on the devs here - this is fine for a demo. Just don't expect this in the full release.
 
 ---
 
-## Anti-Cheat Analysis
+## The Anti-Cheat Situation
 
-### ACTk (Anti-Cheat Toolkit)
-
-The game includes CodeStage Anti-Cheat Toolkit libraries:
+The game includes CodeStage Anti-Cheat Toolkit (ACTk). I see these DLLs:
 
 ```
-CodeStage.AntiCheat.Common.Runtime.dll
 CodeStage.AntiCheat.Detectors.Runtime.dll
 CodeStage.AntiCheat.ObscuredTypes.Runtime.dll
-CodeStage.AntiCheat.Storage.Runtime.dll
 CodeStage.AntiCheat.Genuine.dll
-ACTk.Examples.Genuine.Runtime.dll
 ```
 
-### Detectors Present (Demo Status)
+Looks scary, right? Let me show you what's actually happening:
 
-| Detector | Purpose | Demo Status |
-|----------|---------|-------------|
-| SpeedHackDetector | Detect time manipulation | Minimal/Inactive |
-| InjectionDetector | Detect DLL injection | Not blocking BepInEx |
-| WallHackDetector | Detect rendering exploits | Not implemented |
-| ObscuredCheatingDetector | Detect memory editing | Present but weak |
+### Detectors: Present But Sleeping
 
-### ObscuredTypes
+| Detector | What It Should Do | What It Actually Does |
+|----------|-------------------|----------------------|
+| SpeedHackDetector | Catch time manipulation | Nothing (not initialized) |
+| InjectionDetector | Block DLL injection | Nothing (BepInEx works fine) |
+| WallHackDetector | Detect rendering hacks | Not even implemented |
+| ObscuredCheatingDetector | Catch memory edits | Exists but doesn't trigger |
 
-ACTk provides "obscured" versions of primitive types that encrypt values in memory:
+I loaded BepInEx, injected Harmony patches, modified game values in memory - not a peep from ACTk. The callbacks just aren't hooked up.
 
-- `ObscuredInt` - Encrypted integer
-- `ObscuredFloat` - Encrypted float
-- `ObscuredString` - Encrypted string
-- `ObscuredBool` - Encrypted boolean
+### ObscuredTypes: Partial Implementation
 
-**Demo Implementation**: The `User` class in `De.Base.dll` uses some ObscuredTypes, but not comprehensively. Many values remain as plain types.
+ACTk provides encrypted variable types (`ObscuredInt`, `ObscuredFloat`, etc.) that make memory editing harder. The `User` class uses some of these, but it's inconsistent. Plenty of plain `int` and `float` values sitting there unprotected.
 
-### Why Demo Anti-Cheat Is Weak
+### Why BepInEx Just Works
 
-1. **BepInEx loads before ACTk initializes**
-   - Doorstop proxy DLL (winhttp.dll) preloads
-   - Mods can patch detector methods before they run
+Here's the trick: Unity Doorstop (which BepInEx uses) loads **before** any game code runs:
 
-2. **No server-side validation**
-   - Single-player demo has no server checks
-   - All validation is client-side
+```
+1. Game launches
+2. winhttp.dll proxy intercepts (Doorstop)
+3. BepInEx loads and patches everything
+4. Game assemblies finally load
+5. ACTk initializes... but methods are already patched
+6. Game runs, thinking everything is fine
+```
 
-3. **Detectors appear to be disabled or minimal**
-   - No observed blocking of common mod techniques
-   - Harmony patches work without triggering detection
+By the time ACTk wakes up, it's too late. Its detection methods have been neutered.
 
 ---
 
-## Resource Dumping
+## Lua Scripting Deep Dive
 
-### Unity Asset Extraction
+The game uses MoonSharp (Lua 5.2 for .NET) for its quest and dialog systems. Here's what I found interesting:
 
-Unity assets are stored in:
-- `VOID DIVER_Data/resources.assets`
-- `VOID DIVER_Data/sharedassets*.assets`
-- `VOID DIVER_Data/StreamingAssets/`
+### The LuaApi Object
 
-**Tools for extraction:**
-- [AssetStudio](https://github.com/Perfare/AssetStudio) - GUI asset browser
-- [AssetRipper](https://github.com/AssetRipper/AssetRipper) - Full project extraction
-- [UABE](https://github.com/SeriousCache/UABE) - Asset Bundle Extractor
+The game injects a `LuaApi` userdata object that exposes game functions to Lua:
 
-### Extractable Assets
+```lua
+-- Dialog stuff
+LuaApi:ShowRadioText(speakerType, speakerId, emotion, text)
+LuaApi:ShowBubbleText(speakerType, speakerId, text)
+LuaApi:OpenDialogAsync(mode)
 
-| Asset Type | Location | Format |
-|------------|----------|--------|
-| Lua Scripts | LuaEncrypted/ | XOR-encrypted .bytes |
-| Data Tables | TableEncrypted/ | XOR-encrypted .bytes |
-| Textures | *.assets | Unity Texture2D |
-| Models | *.assets | Unity Mesh |
-| Audio | *.assets | Unity AudioClip |
-| Prefabs | *.assets | Unity Prefab |
+-- Quest stuff
+LuaApi:GetQuestState()
+LuaApi:SetQuestState(state)
 
-### Assembly Dumping
+-- Items
+LuaApi:GiveEquipment(itemId, count)
 
-For analyzing game code:
+-- And a bunch more...
+```
 
-1. **dnSpy** - Decompile and debug .NET assemblies
-2. **ILSpy** - Alternative decompiler
-3. **dotPeek** - JetBrains decompiler
+### Script Injection Is Trivial
 
-Key assemblies to analyze:
-- `De.InGame.dll` - Combat, AI, game logic
-- `De.Base.dll` - Core types, user data, enums
-- `De.Lua.dll` - Lua API implementation
+Since I can decrypt, modify, and re-encrypt Lua files with the known XOR key, I can inject arbitrary Lua code that the game will happily execute. Fun for modding, terrifying from a security perspective.
 
 ---
 
-## Runtime Injection Points
+## Tools I Wrote
 
-### BepInEx Entry
+The `tools/` folder has PowerShell scripts I used during analysis:
 
-BepInEx uses Unity Doorstop to inject before game code runs:
+| Script | What It Does |
+|--------|--------------|
+| `Script_Resource_Loader.ps1` | Decrypts Lua and Table files |
+| `Asset_Bundle_Manager.ps1` | Batch decryption with key derivation |
+| `IL_Instruction_Set.ps1` | Dumps AntiCheatManager IL bytecode |
+| `Environment_Capability_Query.ps1` | Enumerates game config and ACTk state |
+| `Native_Interop_Layer.ps1` | Analyzes bootstrap and DI framework |
+| `Lua_Integration_Test.ps1` | Tests MoonSharp parsing compatibility |
 
-```
-Game Launch
-    ↓
-winhttp.dll (doorstop proxy) intercepts
-    ↓
-Mono runtime initialized early
-    ↓
-BepInEx.Preloader runs
-    ↓
-BepInEx.dll loaded
-    ↓
-Plugins in BepInEx/plugins/ loaded
-    ↓
-Game assemblies load (De.*.dll)
-    ↓
-ACTk initializes (too late to block mods)
-    ↓
-Game runs with patches applied
-```
-
-### Harmony Patching
-
-HarmonyX can intercept any .NET method:
-
-```csharp
-// Prefix: Run before original, can skip original
-[HarmonyPrefix]
-static bool MyPrefix(ref int damage) {
-    damage *= 10;  // Modify parameter
-    return true;   // false = skip original
-}
-
-// Postfix: Run after original, can modify return
-[HarmonyPostfix]
-static void MyPostfix(ref float __result) {
-    __result *= 2f;  // Double the return value
-}
-```
-
-### Reflection Access
-
-Game types accessible via reflection:
-
-```csharp
-var assembly = AppDomain.CurrentDomain.GetAssemblies()
-    .First(a => a.GetName().Name == "De.InGame");
-var controllerType = assembly.GetTypes()
-    .First(t => t.Name == "CharacterController");
-```
+Nothing fancy - just quick scripts I threw together while poking around.
 
 ---
 
-## Lua Runtime Analysis
+## What I Expect in the Full Release
 
-### MoonSharp Integration
+Based on my experience with other Unity games, here's my prediction for the full release:
 
-The game uses MoonSharp (Lua 5.2 for .NET):
+### Likely Changes
 
-- Scripts loaded via `De.Lua.dll` → `LuaRunner`
-- `LuaApi` object injected as global userdata
-- Coroutine-based async via `await()` helper
+- **Real encryption** - AES or at least multi-byte XOR with IV
+- **Active ACTk** - Detectors actually connected and triggering
+- **Server validation** - For multiplayer/leaderboards
+- **Code obfuscation** - Maybe Dotfuscator or similar
 
-### LuaApi Surface
+### Possible Changes
 
-The `LuaApi` object exposes these categories:
+- **IL2CPP build** - No more .NET assemblies to decompile
+- **Custom packer** - Encrypted asset bundles
+- **Kernel anti-cheat** - EasyAntiCheat, BattlEye, etc.
 
-| Category | Functions |
-|----------|-----------|
-| Dialog | ShowRadioText, ShowBubbleText, OpenDialogAsync, AppendDialogAsync |
-| Quest | GetQuestState, SetQuestState, IsAllTaskAchieved |
-| NPC | SetNpcState, GetNpcPosition, AddDialog, RemoveDialog |
-| Items | GiveEquipment, AcquireParadox, RemoveParadox |
-| UI | ShowSystemToastText, PlayPing |
-| Audio | PlaySfx |
-| Utility | WaitDelayAsync, LogInfo, LogError |
+### Unlikely But Possible
 
-### Script Injection Possibility
-
-Since Lua scripts are XOR-encrypted with a known key:
-
-1. Decrypt existing script
-2. Modify Lua code
-3. Re-encrypt with same key
-4. Replace original file
-
-**Note**: This works in the demo. Full release may add integrity checks.
+- **VMProtect/Themida** - Heavy-duty protection (rare for indie games)
+- **Always-online DRM** - Hope not, but you never know
 
 ---
 
-## Data Table Structure
+## My Other VOID DIVER Project
 
-### Decrypted CSV Format
+If you're interested in the actual mod I built using this research:
 
-Tables use pipe-delimited CSV with headers:
-
-```csv
-Id|Name|Hp|Attack|Defense|...
-200001|Zombie|100|10|5|...
-200002|Ghost|80|15|3|...
-```
-
-### Key Tables
-
-| Table | Contents |
-|-------|----------|
-| Monster.csv | Enemy stats, IDs, behavior |
-| Equipment.csv | Item stats, grades, effects |
-| Skill.csv | Skill definitions, costs, damage |
-| Npc.csv | NPC IDs, names, positions |
-| Character.csv | Playable character stats |
-| Buff.csv | Status effect definitions |
-| DropReward.csv | Loot tables |
+**[VoidDiverModMenu](https://github.com/msantiagodev/VoidDiverModMenu)** - BepInEx mod with radar overlay, god mode, damage multipliers, and other fun stuff for the demo.
 
 ---
 
-## Expected Full Release Security
+## Final Thoughts
 
-Based on industry standards, expect:
+This was a fun weekend project. The demo's security is essentially non-existent, which made it great for learning and experimentation. I'm curious to see what the full release looks like - hopefully the devs step up their protection game.
 
-### Encryption
-- AES-256 or similar for assets
-- Per-file or derived keys
-- Possible IL2CPP build (no .NET assemblies)
+If you're getting into game security research, VOID DIVER's demo is actually a decent starting point. The architecture is clean, the protection is minimal, and there's enough complexity in the Lua scripting to keep things interesting.
 
-### Anti-Cheat
-- Active detectors enabled
-- Memory scanning
-- Process integrity checks
-- Possible kernel-level driver (EasyAntiCheat, etc.)
+Happy hacking (responsibly),
 
-### Server Validation
-- Online requirement for some features
-- Server-authoritative game state
-- Anti-cheat telemetry
-
-### Code Protection
-- IL obfuscation (Dotfuscator, ConfuserEx)
-- String encryption
-- Control flow obfuscation
-
----
-
-## Tools Reference
-
-| Tool | Purpose | Link |
-|------|---------|------|
-| dnSpy | .NET decompiler/debugger | [GitHub](https://github.com/dnSpy/dnSpy) |
-| ILSpy | .NET decompiler | [GitHub](https://github.com/icsharpcode/ILSpy) |
-| AssetStudio | Unity asset extraction | [GitHub](https://github.com/Perfare/AssetStudio) |
-| BepInEx | Unity modding framework | [GitHub](https://github.com/BepInEx/BepInEx) |
-| HarmonyX | Runtime patching | [GitHub](https://github.com/BepInEx/HarmonyX) |
-
----
-
-## Analysis Scripts Documentation
-
-The `tools/` folder contains PowerShell scripts for analyzing and extracting game data.
-
-### Core Decryption Scripts
-
-#### Script_Resource_Loader.ps1
-**Purpose**: Decrypt Lua and Table assets
-
-```
-Functionality:
-- Decrypts LuaEncrypted/*.bytes using XOR key 0xD2
-- Decrypts TableEncrypted/*.bytes using XOR key 0xEA
-- Outputs plaintext .lua and .csv files to C:\temp\decrypted\
-- Displays preview of decrypted content
-```
-
-#### Asset_Bundle_Manager.ps1
-**Purpose**: Full asset decryption with key derivation
-
-```
-Functionality:
-- Tests multiple XOR keys to find correct one
-- Derives table key from known plaintext ("Id," header)
-- Batch decrypts all Lua and Table files
-- Displays file listing and content samples
-```
-
-### Security Analysis Scripts
-
-#### IL_Instruction_Set.ps1
-**Purpose**: Analyze anti-cheat method bytecode
-
-```
-Functionality:
-- Loads NemoLib.dll via reflection
-- Extracts IL bytecode from AntiCheatManager methods
-- Searches for detector references in binary:
-  - SpeedHackDetector
-  - InjectionDetector
-  - WallHackDetector
-  - TimeCheatingDetector
-- Checks Global.dll and De.Scenes.dll for ACTk references
-```
-
-#### Environment_Capability_Query.ps1
-**Purpose**: Enumerate game configuration and anti-cheat state
-
-```
-Functionality:
-- Scans De.*.dll for AppManager, GameSetting, Config types
-- Enumerates EEnvironment modes (Dev/Release)
-- Checks SRDebugger initialization patterns
-- Analyzes ACTk.Examples.Genuine.Runtime.dll
-- Reads AppSetting JSON configuration
-- Checks User class for ObscuredTypes usage
-- Reads boot.config for debug flags
-```
-
-#### Native_Interop_Layer.ps1
-**Purpose**: Analyze game bootstrap and DI framework
-
-```
-Functionality:
-- Analyzes NemoLib.dll NativeBase/MonoBase classes
-- Finds all VContainer LifetimeScope subclasses
-- Examines Global.dll and Assembly-CSharp.dll structure
-- Binary searches for SROptions/SRDebug strings
-- Checks for BepInEx/Doorstop installation presence
-```
-
-### Diagnostic Scripts
-
-#### Diagnostics_Binder.ps1
-**Purpose**: Runtime debugging setup
-
-#### Diagnostics_Init_Trace.ps1
-**Purpose**: Trace game initialization sequence
-
-#### Diagnostics_Overlay_Core.ps1 / Diagnostics_Overlay_Main.ps1
-**Purpose**: Debug overlay rendering analysis
-
-#### Input_System_Diagnostics.ps1
-**Purpose**: Analyze Unity New Input System integration
-
-### Utility Scripts
-
-#### Lua_Integration_Test.ps1
-**Purpose**: Test MoonSharp Lua parsing
-
-```
-Functionality:
-- Loads MoonSharp.Interpreter.dll
-- Creates Script instance and parses Common.lua
-- Verifies enum definitions (ESpeaker, ECampaignQuestState)
-- Tests Quest and Mission Lua file parsing
-- Lists all defined global variables
-```
-
-#### Configuration_Setting_Provider.ps1
-**Purpose**: Extract game configuration values
-
-#### Localization_Key_Mapper.ps1
-**Purpose**: Map localization string keys
-
-#### Core_Context_Initializer.ps1
-**Purpose**: Analyze VContainer dependency injection setup
-
----
-
-## Demo Security System Deep Dive
-
-### Layer 1: Asset Encryption
-
-**Implementation**: Single-byte XOR cipher
-
-```
-┌─────────────────────────────────────────────────────┐
-│                Asset Loading Flow                    │
-├─────────────────────────────────────────────────────┤
-│  .bytes file (encrypted)                            │
-│       ↓                                             │
-│  Read raw bytes                                     │
-│       ↓                                             │
-│  XOR each byte with static key                      │
-│       ↓                                             │
-│  Parse as Lua/CSV                                   │
-└─────────────────────────────────────────────────────┘
-
-Keys stored in De.Base.dll as constants:
-  - LUA_KEY    = 0xD2
-  - TABLE_KEY  = 0xEA
-  - USER_KEY   = 0xBE (for save data)
-```
-
-**Weakness**: No key rotation, no IV, no MAC. Identical plaintexts produce identical ciphertexts.
-
-### Layer 2: Anti-Cheat Toolkit (ACTk)
-
-**Components Present**:
-
-```
-CodeStage.AntiCheat.*.dll
-├── Detectors.Runtime.dll
-│   ├── SpeedHackDetector      [INACTIVE in demo]
-│   ├── InjectionDetector      [INACTIVE in demo]
-│   ├── WallHackDetector       [NOT IMPLEMENTED]
-│   └── ObscuredCheatingDetector [PRESENT but bypassed]
-│
-├── ObscuredTypes.Runtime.dll
-│   ├── ObscuredInt            [PARTIAL USE]
-│   ├── ObscuredFloat          [PARTIAL USE]
-│   ├── ObscuredString         [MINIMAL USE]
-│   └── ObscuredBool           [MINIMAL USE]
-│
-├── Genuine.dll
-│   └── GenuineValidator       [NOT ENFORCING]
-│
-└── Storage.Runtime.dll
-    └── ObscuredPrefs          [FOR SAVE DATA]
-```
-
-**Demo Behavior**: Detectors are compiled in but callbacks are not connected or are set to permissive mode.
-
-### Layer 3: Code Distribution
-
-**Intentional Obscurity**:
-
-```
-Typical Unity Game:
-  Assembly-CSharp.dll  ← All game code here
-
-VOID DIVER Demo:
-  Assembly-CSharp.dll  ← Empty stub (7KB)
-  De.Base.dll          ← Core types (1.5MB)
-  De.InGame.dll        ← Game logic (1.1MB)
-  De.Lua.dll           ← Scripting
-  De.Scenes.dll        ← Scenes
-  NemoLib.dll          ← Framework
-```
-
-**Effect**: Casual modders looking at Assembly-CSharp find nothing useful.
-
-### Layer 4: Save Data Protection
-
-**Implementation**: XOR + ObscuredPrefs
-
-```
-User save data flow:
-  1. Serialize user object to JSON
-  2. XOR encrypt with USER_KEY (0xBE)
-  3. Store via Unity PlayerPrefs or ObscuredPrefs
-
-Location: %APPDATA%\..\LocalLow\[Company]\[Game]\
-```
-
-### Layer 5: Runtime Checks (Disabled)
-
-**Would-be protections** that exist in code but don't trigger:
-
-| Check | Code Location | Demo Status |
-|-------|---------------|-------------|
-| Speed hack detection | NemoLib.AntiCheatManager | Not calling callback |
-| Memory tampering | ACTk.ObscuredCheatingDetector | Not initialized |
-| DLL injection | ACTk.InjectionDetector | Not blocking |
-| File integrity | ACTk.GenuineValidator | Not enforcing |
-
-### Why BepInEx Works
-
-```
-Normal Game Boot:
-  1. Unity loads
-  2. Assemblies load
-  3. ACTk initializes detectors
-  4. Game runs (protected)
-
-With BepInEx (Doorstop):
-  1. Unity loads
-  2. winhttp.dll proxy intercepts ← INJECTION POINT
-  3. BepInEx preloader runs
-  4. Mods load and patch ACTk methods
-  5. Assemblies load (patches already in place)
-  6. ACTk initializes (but methods are patched)
-  7. Game runs (patches active)
-```
-
-**Key insight**: Doorstop loads before any game code, allowing mods to neuter anti-cheat before it activates.
-
----
-
-## Related Repositories
-
-- [VoidDiverModMenu](https://github.com/msantiagodev/VoidDiverModMenu) - Working mod for the demo
+**- Moises Santiago**
 
 ---
 
 ## License
 
-MIT License - Documentation only. Game assets belong to their respective owners.
+MIT License - This is documentation and tools only. Game assets belong to their respective owners. Don't be a jerk with this info.
